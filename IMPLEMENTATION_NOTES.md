@@ -37,3 +37,11 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - Halaman serta section tetap Server Component; navigasi aktif dan pencarian diisolasi pada komponen interaktif kecil.
 - Referensi struktur: https://www.pesonakei.com/budaya, https://www.pesonakei.com/bahasa, dan https://www.pesonakei.com/kedaruratan. Konten budaya Kei tidak disalin menjadi klaim mengenai Donggala.
 - Build, lint, TypeScript, dan pemeriksaan diff berhasil. Pengujian Chromium mencakup enam rute pada 1440/768/390/320 px, klik navbar, reset scroll, menu mobile, metadata, gambar, anchor, pencarian kamus, serta tautan telepon. Tidak ditemukan error runtime.
+
+## Navbar liquid glass
+
+- Permukaan navbar memakai komponen generik `components/ui/liquid-weather-glass.tsx`, diadaptasi dari referensi pengguna dengan tipe TypeScript, ID filter unik, dukungan reduced motion, dan lapisan dekoratif tanpa intersepsi pointer.
+- `SiteHeader` tetap Server Component. Komponen kecil `HeaderScrollEffect` memperbarui atribut presentasi berdasarkan scroll melalui listener pasif dan requestAnimationFrame.
+- Navbar lebar penuh berubah menjadi panel membulat saat scroll melewati 64 px dan kembali penuh di bawah 32 px. Drag/ekspansi dinonaktifkan pada navbar. Tinggi shell tetap untuk menghindari layout bergeser.
+- Dropdown mobile berada di luar permukaan glass tanpa terpotong dan membatasi tinggi sesuai viewport. Browser tanpa backdrop-filter memakai latar lebih pekat.
+- Build produksi, lint, TypeScript, serta diff check berhasil. Chromium memverifikasi penyusutan lebar, radius, blur, ketiadaan overflow, kestabilan layout, klik navigasi, menu mobile/Escape, reset saat kembali ke atas, dan reduced motion pada 1920/1440/1366/1280/768/390/320 px. Tidak ada error runtime.
