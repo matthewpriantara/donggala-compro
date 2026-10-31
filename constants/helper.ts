@@ -191,9 +191,9 @@ export const PORTAL = {
   villageCta: "Kenali Dua Desa",
   location: "KECAMATAN BANAWA TENGAH · DONGGALA",
   eyebrow: "SEBUAH PERJALANAN DI PESISIR SULAWESI",
-  headline: "Mengenal Towale",
-  headlineSecond: "dan Limboro",
-  headlineAccent: "dari dekat.",
+  headline: "Towale dan Limboro,",
+  headlineSecond: "dua pesona",
+  headlineAccent: "dalam satu perjalanan.",
   description:
     "Dari benang sutra ke birunya samudra. Temukan pusaka tenun Kaili, bentang teluk bahari, dan cerita yang hidup bersama warga.",
   heroImage: "/images/hero_limboro_coastal.png",
