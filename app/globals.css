@@ -1714,7 +1714,7 @@ em {
   isolation: isolate;
 }
 .hero-wave {
-  margin-top: calc(-1 * var(--wave-height));
+  margin-top: 0;
   color: var(--color-ocean-950);
   z-index: 2;
 }
@@ -1725,6 +1725,7 @@ em {
   width: 100%;
   height: calc(100% + 88px);
   fill: currentColor;
+  transform: translateY(100%);
   will-change: transform;
 }
 .hero-inner {
@@ -1754,5 +1755,134 @@ em {
 @media (prefers-reduced-motion: reduce) {
   .wave-surface {
     will-change: auto;
+  }
+}
+
+/* The first viewport contains the header and a full photographic hero. */
+:root {
+  --header-height: 90px;
+  --hero-wave-height: clamp(96px, 11vw, 168px);
+}
+.hero,
+.hero-inner {
+  min-height: calc(100svh - var(--header-height));
+}
+.hero-inner {
+  padding-top: 120px;
+  padding-bottom: 110px;
+}
+.hero-carousel-images {
+  position: absolute;
+  inset: 0;
+  bottom: calc(-1 * var(--hero-wave-height));
+  z-index: -3;
+  overflow: hidden;
+}
+.hero-shade {
+  bottom: calc(-1 * var(--hero-wave-height));
+}
+.hero-wave {
+  --wave-height: var(--hero-wave-height);
+}
+.hero-slide {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.hero-slide.is-active {
+  opacity: 1;
+}
+.hero .scroll-cue {
+  bottom: 35px;
+}
+.hero-carousel-controls {
+  position: absolute;
+  z-index: 3;
+  right: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.hero-carousel-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.hero-slide-dot,
+.hero-carousel-pause {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 36px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  color: #ffffffe0;
+}
+.hero-slide-dot span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffffff80;
+  transition:
+    width 0.3s,
+    background-color 0.3s;
+}
+.hero-slide-dot[aria-pressed="true"] {
+  width: 40px;
+}
+.hero-slide-dot[aria-pressed="true"] span {
+  background: white;
+  width: 30px;
+  border-radius: 10px;
+}
+.hero-slide-counter {
+  margin-left: 14px;
+  font-family: ui-monospace, monospace;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  text-shadow: 0 1px 8px #041d2a88;
+}
+.hero-carousel-pause {
+  margin-left: 8px;
+  opacity: 0.7;
+}
+.hero-slide-dot:hover,
+.hero-carousel-pause:hover {
+  background: #ffffff22;
+}
+@media (max-width: 1350px) {
+  :root {
+    --header-height: 76px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-inner {
+    padding-top: 110px;
+    padding-bottom: 96px;
+  }
+  .hero-carousel-controls {
+    bottom: 22px;
+  }
+  .hero-slide-counter {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 600px) and (max-height: 740px) {
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 40px);
+  }
+  .hero-description {
+    font-size: 14px;
+  }
+  .hero-actions {
+    gap: 6px;
+    margin-top: 18px;
+  }
+  .hero-actions .button,
+  .hero-actions .text-link {
+    font-size: 14px;
   }
 }

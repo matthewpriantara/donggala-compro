@@ -564,3 +564,29 @@ export const TOPIC_PAGES = {
   },
 } as const;
 export type TopicKey = keyof typeof TOPIC_PAGES;
+
+export const HERO_SLIDES = [
+  {
+    image: "/images/hero_limboro_coastal.png",
+    alt: "Panorama teluk berpasir putih dan pepohonan pesisir Limboro",
+    caption: "TELUK LIMBORO",
+  },
+  {
+    image: "/images/wisata_limboro.jpeg",
+    alt: "Pantai Limboro dengan pohon kelapa, pasir, dan laut tenang",
+    caption: "PESISIR LIMBORO",
+  },
+  {
+    image: "/images/wisata_towale.jpg",
+    alt: "Pohon kelapa dan perahu warga di pesisir Towale",
+    caption: "PESISIR TOWALE",
+  },
+] as const;
+export const HERO_CAROUSEL = {
+  interval: 6000,
+  label: "Panorama Towale dan Limboro",
+  roleDescription: "carousel",
+  pause: "Jeda pergantian gambar",
+  play: "Lanjutkan pergantian gambar",
+  choose: "Tampilkan panorama",
+} as const;

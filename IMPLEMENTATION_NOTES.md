@@ -52,3 +52,12 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - GSAP ScrollTrigger menggerakkan wave dari bawah ke atas sesuai posisi scroll dengan scrub 0.8; tidak menggunakan animasi loop atau beberapa layer. Komponen interaktif diisolasi pada `components/ui/wave-divider.tsx`, hero dan halaman tetap Server Component.
 - `gsap.matchMedia` menonaktifkan parallax saat reduced motion aktif dan melakukan cleanup ketika preferensi berubah atau komponen dilepas. Panduan API: https://gsap.com/docs/v3/GSAP/gsap.matchMedia/ dan https://gsap.com/docs/v3/Plugins/ScrollTrigger/.
 - Build, lint, TypeScript, serta pemeriksaan diff berhasil. Chromium memverifikasi satu wave, gerakan naik saat scroll, tidak ada celah antarsection, teks/CTA bebas tumpang tindih, tanpa overflow pada 1440/768/390/320 px, reduced motion, dan perpindahan rute tanpa error runtime.
+
+## Hero layar penuh dan carousel
+
+- Viewport awal terdiri dari navbar dan hero setinggi `100svh`; wave ditempatkan setelah hero tanpa margin negatif, sehingga tidak muncul pada layar awal.
+- Ketiga foto pengguna ditampilkan berurutan dengan crossfade otomatis setiap 6 detik. Foto pertama identik dengan `design_pendev/assets/hero_limboro_coastal.png` dan sudah tersedia di public. Hanya foto pertama dipreload.
+- Kontrol kanan bawah memakai pill/titik putih dan counter `01 / 03`, disertai pemilihan gambar dan tombol jeda. Autoplay dijeda ketika kontrol mendapat fokus/hover atau tab tersembunyi, dan dinonaktifkan untuk reduced motion.
+- Carousel diisolasi pada leaf `modules/hero/hero-carousel.tsx`; headline dan container hero tetap SSR. Konten serta konfigurasi carousel tersentralisasi pada constants.
+- Wave GSAP tersembunyi awalnya dan naik setelah scroll; foto diteruskan ke area transisi agar tidak menyisakan latar kosong. Reduced motion menggunakan pergantian keadaan tanpa animasi.
+- Build, lint, dan TypeScript berhasil. Chromium menguji viewport 1440×900, 768×1024, 390×844, dan 320×720: batas hero tepat pada tinggi layar, wave di luar viewport awal dan muncul setelah scroll, tiga foto valid, indikator serta CTA tidak bertumpuk, tanpa overflow/runtime error. Autoplay sampai foto ketiga, jeda, pemilihan manual, dan reduced motion berhasil.
