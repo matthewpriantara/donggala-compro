@@ -2078,3 +2078,131 @@ body:has(.hero) .site-header {
   color: var(--color-sand-100);
   background-color: var(--color-ocean-900);
 }
+
+.topic-deep-dive {
+  background: #082735;
+  border-block: 1px solid var(--line);
+}
+.deep-dive-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+.deep-dive-card {
+  padding: 36px;
+  border: 1px solid #335564;
+  border-radius: var(--card-radius);
+  background: linear-gradient(145deg, #123a49, #0a2c3e);
+}
+.deep-dive-number {
+  display: block;
+  color: #82ded2;
+  font:
+    13px ui-monospace,
+    monospace;
+  margin-bottom: 24px;
+}
+.deep-dive-card h3 {
+  font-size: 34px;
+}
+.deep-dive-card > p {
+  color: #b6cbd2;
+  font-size: 16px;
+  margin-top: 22px;
+}
+.deep-dive-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+}
+.deep-dive-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #c9d8dd;
+  font-size: 15px;
+  line-height: 1.8;
+  border-top: 1px solid #335564;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+.deep-dive-card li svg {
+  flex-shrink: 0;
+  color: #82ded2;
+  margin-top: 5px;
+}
+.topic-faq {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+}
+.topic-faq details {
+  border-bottom: 1px solid #40606d;
+}
+.topic-faq summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 17px;
+  line-height: 1.7;
+  padding-block: 22px;
+}
+.topic-faq summary::-webkit-details-marker {
+  display: none;
+}
+.topic-faq summary:focus-visible {
+  outline: 2px solid #55bbdd;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.topic-faq summary > span {
+  flex-shrink: 0;
+  font-size: 24px;
+  color: #82ded2;
+  transition: transform 0.2s;
+}
+.topic-faq details[open] summary > span {
+  transform: rotate(45deg);
+}
+.topic-faq details p {
+  padding-bottom: 24px;
+  color: #b6cbd2;
+  font-size: 16px;
+}
+.topic-detail-action {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .deep-dive-grid,
+  .topic-faq {
+    grid-template-columns: 1fr;
+  }
+  .topic-faq {
+    gap: 24px;
+    margin-top: 55px;
+  }
+}
+@media (max-width: 600px) {
+  .deep-dive-card {
+    padding: 26px 22px;
+  }
+  .deep-dive-card h3 {
+    font-size: 30px;
+  }
+  .deep-dive-card li {
+    font-size: 14px;
+  }
+  .topic-faq summary {
+    font-size: 16px;
+  }
+  .topic-detail-action .button {
+    text-align: center;
+  }
+}

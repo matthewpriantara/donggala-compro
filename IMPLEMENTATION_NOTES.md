@@ -74,3 +74,13 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - `public/images/tenun-donggala-border.svg` adalah tile horizontal 560 byte yang diturunkan dari segmen sulur/eyelet tepi SVG pengguna. Aset asli tetap dipertahankan. Tile dipakai ulang sebagai background repeat-x, bukan merasterkan atau memuat ulang keseluruhan kain.
 - Tinggi pita 80 px desktop dan 60 px mobile, memakai kanvas biru tua dengan motif asli berwarna putih, koral, dan emas. Komponen `PatternDivider` murni SSR dan dekoratif (`aria-hidden`).
 - Build, lint, TypeScript, dan diff check berhasil; browser memverifikasi dua batas section, pemuatan SVG, repeat horizontal, dan ketiadaan overflow pada desktop/mobile.
+
+## Pendalaman lima halaman navbar
+
+- `/desa`: karakter dua desa, potensi kunjungan, akses peta, dan status validasi statistik.
+- `/kriya-kuliner`: mengenal motif/bahan/perawatan tenun, informasi komposisi dan penyimpanan pangan yang perlu ditanyakan kepada pembuat, serta alur kontak pengrajin tanpa harga tetap.
+- `/budaya`: etika dokumentasi, penghormatan ruang kerja warga, dan kepedulian lingkungan.
+- `/bahasa`: konteks kosakata awal, perbedaan dialek, penggunaan pencarian, dan keterangan bahwa rekaman audio belum tersedia.
+- `/kedaruratan`: persiapan kontak lokal serta informasi lokasi/kejadian untuk disampaikan kepada operator, tanpa mengarang nomor lokal atau peta evakuasi.
+- Setiap halaman mendapat dua kartu informasi khusus, tiga FAQ native yang bisa dioperasikan dengan keyboard, dan CTA yang sesuai konteks. Teks terpusat dalam constants; route tetap SSR dengan enam modul.
+- Build, lint, TypeScript, dan diff check berhasil. Chromium memeriksa kelima rute pada 1440/390/320 px, metadata, menu aktif, jumlah konten, keyboard FAQ, overflow, dan error runtime; semuanya lolos.

@@ -464,7 +464,7 @@ export const TOPIC_PAGES = {
     guide: [
       {
         title: "Konfirmasi sebelum membeli",
-        text: "Harga yang ditampilkan merupakan acuan PRD. Cocokkan harga terkini, pilihan produk, dan stok dengan pengrajin melalui katalog platform.",
+        text: "Konfirmasikan harga terkini, pilihan produk, dan stok langsung dengan pengrajin melalui katalog platform.",
       },
       {
         title: "Tanyakan bahan dan perawatan",
@@ -593,3 +593,231 @@ export const HERO_CAROUSEL = {
 } as const;
 
 export const TENUN_DIVIDER_IMAGE = "/images/tenun-donggala-border.svg";
+
+export const TOPIC_DETAILS = {
+  desa: {
+    eyebrow: "KENALI KARAKTER WILAYAH",
+    title: "Pilih cara Anda mengenal dua desa.",
+    cards: [
+      {
+        title: "Towale: kriya dan bentang pesisir",
+        text: "Awali perjumpaan dengan cerita penenun, lalu kenali bentang alam yang menjadi bagian dari kehidupan warga.",
+        points: [
+          "Tenun Buya Bomba: tanyakan proses, bahan, dan makna motif kepada pembuatnya.",
+          "Pusentasi: kenali geowisata sumur air laut alami bersama pendamping setempat.",
+          "Pantai Bonebula: konfirmasikan akses dan kondisi pesisir sebelum berkunjung.",
+        ],
+      },
+      {
+        title: "Limboro: laut dan hasil bumi",
+        text: "Lengkung pesisir Kaluku dan olahan sagu memperlihatkan hubungan warga dengan sumber penghidupannya.",
+        points: [
+          "Pantai Kaluku: bicarakan kondisi laut dan pendampingan sebelum aktivitas bahari.",
+          "Olahan sagu: kenali produk serta prosesnya melalui kunjungan yang disepakati bersama warga.",
+          "Tradisi nelayan: hormati area tambat perahu dan aktivitas kerja sehari-hari.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question:
+          "Bisakah Towale dan Limboro dijelajahi dalam satu perjalanan?",
+        answer:
+          "Keduanya dapat menjadi bagian dari rencana perjalanan bersama warga. Pilihan paket 2 hari 1 malam tercantum di platform; durasi, rute, dan ketersediaan perlu dikonfirmasi kepada pengelola.",
+      },
+      {
+        question: "Di mana melihat peta dan informasi akses?",
+        answer:
+          "Gunakan peta eksplorasi pada platform Jelajah Donggala. Konfirmasikan lokasi pertemuan, kondisi jalan, serta kebutuhan transportasi langsung kepada pendamping lokal; estimasi jarak dan waktu terverifikasi belum tersedia di portal ini.",
+      },
+      {
+        question: "Apakah statistik desa sudah final?",
+        answer:
+          "Angka penduduk, keluarga, luas wilayah, dan dusun masih berupa data perencanaan dari PRD. Portal belum menyajikannya sebagai data resmi pemerintah desa yang telah divalidasi.",
+      },
+    ],
+    actionLabel: "Buka peta eksplorasi desa",
+    actionHref: "https://jelajah-donggala.vercel.app/cari",
+    isExternal: true,
+  },
+  karya: {
+    eyebrow: "LEBIH DEKAT DENGAN PEMBUATNYA",
+    title: "Ada proses di balik setiap karya.",
+    cards: [
+      {
+        title: "Mengenal sehelai tenun",
+        text: "Nilai tenun tidak berhenti pada rupa. Percakapan dengan penenun membantu memahami keterampilan dan pilihan di balik kain yang Anda lihat.",
+        points: [
+          "Tanyakan nama motif serta penuturan maknanya menurut penenun.",
+          "Kenali bahan, ukuran, waktu pengerjaan, dan kemungkinan pesanan khusus.",
+          "Mintalah petunjuk perawatan yang sesuai dengan bahan kain tersebut.",
+        ],
+      },
+      {
+        title: "Mengenal cita rasa pesisir",
+        text: "Keripik dan cookies sagu serta sajian ikan memperkenalkan bahan lokal melalui kreasi dapur warga.",
+        points: [
+          "Tanyakan komposisi, alergen, serta informasi kemasan sebelum membeli pangan.",
+          "Konfirmasikan masa simpan dan cara membawa produk dalam perjalanan.",
+          "Untuk sajian ikan, tanyakan pilihan tangkapan dan kesiapan penyajian hari itu.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question: "Bagaimana membeli atau menghubungi pembuatnya?",
+        answer:
+          "Tombol pada kartu mengarahkan Anda ke katalog platform Jelajah Donggala. Pilih produk dan gunakan kontak pengrajin atau pengelola yang tersedia di sana untuk bersepakat langsung.",
+      },
+      {
+        question: "Mengapa harga tidak ditampilkan di portal ini?",
+        answer:
+          "Pilihan bahan, ukuran, jumlah pesanan, dan ketersediaan dapat memengaruhi penawaran. Mintalah harga terkini langsung kepada pembuat sebelum melakukan pembayaran.",
+      },
+      {
+        question: "Apakah bisa mengikuti proses menenun atau mengolah sagu?",
+        answer:
+          "Platform memuat rencana aktivitas workshop menenun dan kelas olahan sagu. Kunjungan mengikuti kesiapan tuan rumah, sehingga jadwal serta bentuk kegiatan perlu disepakati terlebih dahulu.",
+      },
+    ],
+    actionLabel: "Jelajahi katalog warga",
+    actionHref: "https://jelajah-donggala.vercel.app#karya",
+    isExternal: true,
+  },
+  budaya: {
+    eyebrow: "ETIKA PERJUMPAAN",
+    title: "Menghormati cerita, merawat tempatnya.",
+    cards: [
+      {
+        title: "Belajar dari penenun Towale",
+        text: "Penenun adalah sumber utama untuk mengenal pengalaman dan pengetahuan yang hidup di balik kriya Kaili.",
+        points: [
+          "Tanyakan apakah proses kerja dapat diamati tanpa mengganggu.",
+          "Mintalah izin sebelum merekam wajah, alat, atau percakapan pribadi.",
+          "Jika membagikan cerita, hormati cara narasumber ingin disebut dan dikutip.",
+        ],
+      },
+      {
+        title: "Menjadi tamu di pesisir Limboro",
+        text: "Ruang yang kita datangi untuk berwisata juga menjadi tempat tinggal dan ruang kerja masyarakat.",
+        points: [
+          "Dengarkan arahan warga tentang area yang boleh diakses.",
+          "Jaga ruang tambat perahu dan jangan memindahkan peralatan nelayan.",
+          "Bawa kembali sampah dan nikmati alam tanpa mengambil biota atau merusak karang.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question: "Apakah semua motif tenun memiliki makna yang sama?",
+        answer:
+          "Portal memberi pengantar tentang Buya Bomba, tetapi tidak menggantikan penuturan penenun. Tanyakan nama serta cerita tiap motif kepada pembuatnya karena pengalaman dan penjelasannya dapat berbeda.",
+      },
+      {
+        question: "Bolehkah mendokumentasikan aktivitas warga?",
+        answer:
+          "Mintalah persetujuan terlebih dahulu, termasuk untuk penggunaan foto atau video di media sosial. Hormati penolakan dan hindari menghalangi kegiatan warga demi dokumentasi.",
+      },
+      {
+        question: "Di mana belajar cara menyapa warga?",
+        answer:
+          "Halaman Bahasa Kaili menyediakan kosakata awal beserta konteks penggunaannya. Untuk dialek dan pengucapan yang sesuai, belajarlah langsung kepada penutur setempat.",
+      },
+    ],
+    actionLabel: "Belajar sapaan Bahasa Kaili",
+    actionHref: "/bahasa",
+    isExternal: false,
+  },
+  bahasa: {
+    eyebrow: "DARI KATA KE PERCAKAPAN",
+    title: "Gunakan sapaan pada saat yang tepat.",
+    cards: [
+      {
+        title: "Saat bertamu dan mengenal karya",
+        text: "Mulai dengan sikap terbuka, perkenalkan diri, dan dengarkan cara warga menyapa Anda.",
+        points: [
+          "Ndokumo: entri awal untuk sapaan halo atau apa kabar.",
+          "Mabelo: entri untuk mengapresiasi sesuatu yang indah, elok, atau bagus.",
+          "Tanyakan pilihan sapaan yang sopan untuk lawan bicara dan dialek setempat.",
+        ],
+      },
+      {
+        title: "Saat berbagi makanan dan berterima kasih",
+        text: "Meja makan dan percakapan sederhana menjadi kesempatan untuk mendengar bahasa digunakan dalam keseharian.",
+        points: [
+          "Kande: entri awal yang dalam PRD digunakan untuk ajakan makan.",
+          "Tarimakasi: entri untuk menyampaikan terima kasih.",
+          "Mintalah contoh penggunaan langsung, bukan menganggap setiap kata selalu memiliki arti atau bentuk yang sama.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question: "Apakah kosakata ini berlaku untuk semua dialek Kaili?",
+        answer:
+          "Belum tentu. Entri awal mengikuti PRD dan memerlukan validasi penutur lokal. Bahasa Kaili memiliki ragam dialek; penggunaan dan pengucapan dapat berbeda menurut wilayah serta konteks.",
+      },
+      {
+        question: "Apakah tersedia audio pengucapan?",
+        answer:
+          "Belum ada rekaman audio terverifikasi di portal ini. Untuk mempelajari pengucapan, mintalah contoh dari penutur setempat dan izin jika ingin merekamnya.",
+      },
+      {
+        question: "Bagaimana menggunakan pencarian kamus?",
+        answer:
+          "Ketik kata Kaili, arti bahasa Indonesia, atau situasi pada kolom pencarian. Daftar akan disaring secara langsung; kosongkan pencarian untuk melihat seluruh kosakata awal.",
+      },
+    ],
+    actionLabel: "Kenali etika bertamu",
+    actionHref: "/budaya",
+    isExternal: false,
+  },
+  kedaruratan: {
+    eyebrow: "SIAPKAN INFORMASI PENTING",
+    title: "Bantu petugas mengenali kebutuhan Anda.",
+    cards: [
+      {
+        title: "Catatan sebelum berangkat",
+        text: "Lengkapi nomor nasional di halaman ini dengan informasi lokal yang dikonfirmasi bersama pendamping.",
+        points: [
+          "Nama dan nomor pendamping atau pengelola kegiatan.",
+          "Lokasi pertemuan, patokan yang mudah dikenali, serta waktu kembali yang disepakati.",
+          "Kontak fasilitas kesehatan setempat dan arahan jalur evakuasi yang berlaku.",
+        ],
+      },
+      {
+        title: "Informasi saat menghubungi bantuan",
+        text: "Sampaikan situasi dan lokasi secara jelas, lalu ikuti pertanyaan serta arahan operator.",
+        points: [
+          "Lokasi kejadian dan patokan terdekat yang dapat dikenali.",
+          "Jenis kejadian, jumlah orang yang membutuhkan bantuan, dan kondisi yang Anda amati.",
+          "Nomor yang dapat dihubungi kembali serta informasi akses menuju lokasi.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question: "Apakah peta platform merupakan peta evakuasi?",
+        answer:
+          "Bukan. Peta platform digunakan untuk eksplorasi wilayah. Peta evakuasi lokal terverifikasi belum tersedia di portal; minta pendamping menunjukkan jalur serta titik kumpul yang ditetapkan setempat.",
+      },
+      {
+        question: "Apakah nomor Puskesmas Banawa Tengah sudah tersedia?",
+        answer:
+          "Belum ada nomor lokal yang telah diverifikasi untuk ditampilkan. Mintalah kontak terbaru kepada pemerintah desa atau pendamping sebelum berkunjung dan simpan secara luring bila diperlukan.",
+      },
+      {
+        question: "Apakah nomor nasional menjamin respons di semua lokasi?",
+        answer:
+          "Cakupan dan kesiapan layanan mengikuti wilayah. Persiapkan kontak lokal, dan sampaikan lokasi serta situasi kepada operator agar kebutuhan bantuan dapat dipahami dengan jelas.",
+      },
+    ],
+    actionLabel: "Kembali mengenali wilayah desa",
+    actionHref: "/desa",
+    isExternal: false,
+  },
+} as const;
+export const DETAIL_UI = {
+  questions: "PERTANYAAN UMUM",
+  questionsTitle: "Hal yang perlu Anda ketahui.",
+} as const;
