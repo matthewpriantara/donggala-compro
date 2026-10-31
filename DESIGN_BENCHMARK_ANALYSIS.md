@@ -85,6 +85,27 @@ Dokumen ini memuat hasil *scraping*, dekonstruksi arsitektur informasi, studi ti
   - Penekanan kuat pada **Inovasi Tata Kelola Digital & Geospasial**: *1220+ Titik Terpetakan*.
   - Integrasi 4 klaster keilmuan (Saintek, Agro, Soshum, Medika) dalam bingkai kemandirian ekonomi desa.
 
+### 9. Jelajah Kei Kecil / Pesona Kei (`www.pesonakei.com`)
+- **Wilayah**: Kepulauan Kei Kecil, Kab. Maluku Tenggara, Maluku
+- **Tech Stack**: Next.js (Turbopack, App Router), Tailwind CSS v4, Montserrat & Caveat Font
+- **Identitas Visual**: Pesisir Bahari Kelas Dunia (*World-Class Marine Ecotourism*).
+- **Color System Canggih (CSS Variables & LAB)**:
+  - **Ocean**: `--color-ocean-950` (`#041D2A`), `--color-ocean-900` (`#0A2C3E`), `--color-ocean-700` (`#1A4D68`) untuk canvas gelap yang dalam dan mewah.
+  - **Lagoon**: `--color-lagoon-600` (`#0D8D82`), `--color-lagoon-300` (`#82DED2`), `--color-lagoon-700` (`#166F66`) untuk aksen air toska, terumbu karang, dan tombol interaktif.
+  - **Sand**: `--color-sand-100` (`#F5F3ED`) untuk latar bagian terang bernuansa pasir putih halus.
+  - **Coral**: `--color-coral-600` (`#D9553F`), `--color-coral-700` (`#B24133`) untuk aksen hangat terumbu karang hidup.
+- **Micro-Interactions & Komponen Modern**:
+  - `SplashScreen`: Transisi pembuka yang mulus dan memikat.
+  - `TiltCard`: Efek tilt 3D interaktif pada kartu kuliner dan destinasi.
+  - `MarqueeStrip`: Teks berjalan horizontal sebagai pemisah ritme section (*"Pasir terhalus di Asia · Laguna sebening kristal · Budaya yang menjaga laut"*).
+  - `Hero Slider`: Progress slide dinamis `01 / 03` dengan headline puitis.
+  - `StaggerGrid` & `FadeIn`: Animasi masuk bertingkat yang halus.
+- **Inovasi Modul Konten**:
+  - **Kamus Bahasa Lokal (`/bahasa`)**: *"Sapa warga dengan bahasanya sendiri"*. Kosakata dasar bahasa daerah untuk pelancong.
+  - **Modul Kedaruratan Pesisir (`/kedaruratan`)**: Peringatan kondisi laut pasang surut ekstrem (*meti*), daftar nomor darurat terpadu (112, 115, 119, 110, puskesmas), dan panduan pertolongan pertama kecelakaan pantai.
+  - **Budaya Konservasi Adat (`/budaya`)**: Dokumentasi hukum adat *Sasi Laut* (larangan memanen laut berkala demi kelestarian karang) dan konstitusi adat *Larvul Ngabal*.
+  - **Multibahasa**: Komponen `<Tr id="..." en="..." zh="..." />` untuk wisatawan nusantara dan mancanegara.
+
 ---
 
 ## 2. Matriks Pembelajaran untuk Jelajah Donggala
@@ -95,7 +116,10 @@ Dokumen ini memuat hasil *scraping*, dekonstruksi arsitektur informasi, studi ti
 | **Storytelling Kriya** | *Cakrawala Rote* & *Saga Mandar* | **Esai Foto Tenun Donggala**: Mengangkat profil perajin sepuh Buya Bomba & Subaer, filosofi motif bunga mekar kemakmuran, dan proses ATBM (Alat Tenun Bukan Mesin) tradisional. |
 | **Geospasial & Peta** | *Merawi Pangeran* & *Manguyung Maratua* | **Peta Koridor Banawa Tengah**: Pin GPS interaktif untuk spot snorkeling Pantai Kaluku, sumur laut alami Pusentasi, sentra tenun Towale, dan jalur evakuasi pesisir. |
 | **Klaster Program** | *Muna Merona* | **4 Klaster Pengabdian KKN UGM**: Agro-Maritim (Sagu & Perikanan), Saintek (WebGIS & Mitigasi Bencana), Soshum (Branding Tenun & Ekowisata), dan Medika (Posyandu & Stunting). |
-| **Branding & Visual** | *Cerita Neira* & *Komodo Hub* | **Editorial Maritim-Heritage**: Tipografi Display Serif (`Fraunces`), Selat Makassar Deep Navy (`#0C2340`), Coastal Teal (`#0D9488`), Aksen Emas Buya Bomba (`#D97706`), dan Warm Sand (`#FDFBF7`). |
+| **Branding & Visual** | *Cerita Neira*, *Pesona Kei* & *Komodo Hub* | **Editorial Maritim-Heritage**: Tipografi Display Serif (`Fraunces`), Selat Makassar Deep Ocean (`#041D2A` / `#0C2340`), Lagoon Turquoise (`#0D8D82`), Aksen Emas Buya Bomba (`#D97706`), dan Warm Sand (`#F5F3ED`). |
+| **Micro-Interactions** | *Pesona Kei* | **Animasi & Rhythm Section**: Efek `TiltCard` interaktif pada showcase tenun & olahan pangan, serta `Marquee Running Strip` pembatas ritme dinamis antar-section. |
+| **Kamus Sapaan Lokal** | *Pesona Kei* | **Kamus Sapaan Bahasa Kaili**: Kosakata percakapan praktis (Ledo/Tara) agar pengunjung dapat menyapa warga penenun Towale dan nelayan Limboro secara santun. |
+| **Keselamatan Pesisir** | *Pesona Kei* & *Muna Merona* | **Modul Kedaruratan & Mitigasi**: Peringatan ombak Selat Makassar, kontak darurat terpadu (112, Basarnas 115, Puskesmas, Posko Bencana), dan pertolongan pertama kecelakaan pantai. |
 | **Etika Komunitas** | *Prinsip KKN UGM* | **Community-Based Tourism**: Tidak ada pemesanan otomatis tanpa konfirmasi warga. Call to action diarahkan langsung ke narahubung pemuda/Pokdarwis via WhatsApp. |
 
 ---

@@ -46795,6 +46795,133 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "hySxh",
+          "name": "Benchmark 09: Pesona Kei Synthesis",
+          "width": "fill_container",
+          "fill": "#F0FDF4",
+          "cornerRadius": 12,
+          "stroke": "#A7F3D0",
+          "strokeWidth": 1,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "sNrDl",
+              "name": "Note Title",
+              "fill": "#064E3B",
+              "content": "4. Studi Benchmark 09: Pesona Kei (www.pesonakei.com) & Penerapan di Donggala",
+              "fontFamily": "Fraunces",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "tR9sw",
+              "name": "Pesona Kei Analysis Row",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "U34V4",
+                  "name": "PCol 1 - Color System",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rXxwb",
+                      "name": "PCol 1 Title",
+                      "fill": "#064E3B",
+                      "content": "Color System Bahari (LAB/CSS)",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EFet6",
+                      "name": "PCol 1 Body",
+                      "fill": "#374151",
+                      "content": "• Ocean-950 (#041D2A): Latar maritim dalam untuk hero & footer\n• Lagoon-600 (#0D8D82): Aksen air toska teluk Limboro & tombol\n• Sand-100 (#F5F3ED): Latar hangat pasir Pantai Kaluku & bonebula\n• Coral-600 (#D9553F): Aksen hangat terumbu & benang tenun Kaili",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KbYLP",
+                  "name": "PCol 2 - Micro-interactions",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WPwg5",
+                      "name": "PCol 2 Title",
+                      "fill": "#064E3B",
+                      "content": "Micro-Interactions & Ritme",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BgB5W",
+                      "name": "PCol 2 Body",
+                      "fill": "#374151",
+                      "content": "• Marquee Running Strip: Banner teks mengalir penegas identitas koridor\n• TiltCard 3D Parallax: Efek interaktif kursor pada kartu produk tenun & wisata\n• Slide Indicator (01/03): Progress visual transisi foto hero\n• Multilingual Ready (<Tr>): Dukungan teks dwi-bahasa (ID/EN)",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SXshV",
+                  "name": "PCol 3 - Modul Konten",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VPmDR",
+                      "name": "PCol 3 Title",
+                      "fill": "#064E3B",
+                      "content": "Fitur Budaya & Keselamatan",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "a0DmO",
+                      "name": "PCol 3 Body",
+                      "fill": "#374151",
+                      "content": "• Kamus Sapaan Bahasa Kaili: Frasa praktis menyapa perajin & nelayan lokal\n• Kedaruratan Pesisir: Peringatan pasang surut, mitigasi tsunami & nomor SAR\n• Konservasi Adat: Menampilkan kearifan lokal bahari yang menjaga alam\n• Akses Cepat Maps: Tombol Google Maps langsung pada tiap destinasi",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -48055,6 +48182,65 @@
                       "name": "Card Action Link",
                       "fill": "#F7F15F",
                       "content": "Lihat nomor penting →",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VCmK6",
+                  "name": "Hub Card: Kamus Bahasa Kaili",
+                  "width": "fill_container",
+                  "fill": "#041D2A",
+                  "cornerRadius": 16,
+                  "stroke": "#0D8D82",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JUNfU",
+                      "name": "Card Content Top",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qqFOk",
+                          "name": "Card Title",
+                          "fill": "#82DED2",
+                          "content": "Bahasa Kaili",
+                          "fontFamily": "Fraunces",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "F3Ef5T",
+                          "name": "Card Desc",
+                          "fill": "#CBD5E1",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sapa warga dengan bahasanya. Kosakata santun Kaili untuk menyapa penenun Towale dan nelayan pesisir Limboro.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "AX5NQ",
+                      "name": "Card Action Link",
+                      "fill": "#F7F15F",
+                      "content": "Sapa warga →",
                       "fontFamily": "Plus Jakarta Sans",
                       "fontSize": 13,
                       "fontWeight": "bold"
@@ -49737,6 +49923,54 @@
                   "name": "Link",
                   "fill": "#F7F15F",
                   "content": "Lihat nomor penting →",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FCG2V",
+              "name": "Hub Card M: Bahasa Kaili",
+              "width": "fill_container",
+              "fill": "#041D2A",
+              "cornerRadius": 14,
+              "stroke": "#0D8D82",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 18,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eujBa",
+                  "name": "Title",
+                  "fill": "#82DED2",
+                  "content": "Bahasa Kaili",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "K1ATI",
+                  "name": "Desc",
+                  "fill": "#CBD5E1",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sapa warga dengan bahasanya. Kosakata santun Kaili untuk menyapa penenun Towale dan nelayan Limboro.",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "DOl3R",
+                  "name": "Link",
+                  "fill": "#F7F15F",
+                  "content": "Sapa warga →",
                   "fontFamily": "Plus Jakarta Sans",
                   "fontSize": 13,
                   "fontWeight": "bold"
