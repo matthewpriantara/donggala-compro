@@ -45,3 +45,10 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - Navbar lebar penuh berubah menjadi panel membulat saat scroll melewati 64 px dan kembali penuh di bawah 32 px. Drag/ekspansi dinonaktifkan pada navbar. Tinggi shell tetap untuk menghindari layout bergeser.
 - Dropdown mobile berada di luar permukaan glass tanpa terpotong dan membatasi tinggi sesuai viewport. Browser tanpa backdrop-filter memakai latar lebih pekat.
 - Build produksi, lint, TypeScript, serta diff check berhasil. Chromium memverifikasi penyusutan lebar, radius, blur, ketiadaan overflow, kestabilan layout, klik navigasi, menu mobile/Escape, reset saat kembali ke atas, dan reduced motion pada 1920/1440/1366/1280/768/390/320 px. Tidak ada error runtime.
+
+## Wave hero dengan GSAP
+
+- Pita marquee di bawah hero diganti dengan satu SVG wave yang menyatu dengan warna section berikutnya, mengikuti referensi bentuk transisi Cerita Neira (https://ceritaneira.com).
+- GSAP ScrollTrigger menggerakkan wave dari bawah ke atas sesuai posisi scroll dengan scrub 0.8; tidak menggunakan animasi loop atau beberapa layer. Komponen interaktif diisolasi pada `components/ui/wave-divider.tsx`, hero dan halaman tetap Server Component.
+- `gsap.matchMedia` menonaktifkan parallax saat reduced motion aktif dan melakukan cleanup ketika preferensi berubah atau komponen dilepas. Panduan API: https://gsap.com/docs/v3/GSAP/gsap.matchMedia/ dan https://gsap.com/docs/v3/Plugins/ScrollTrigger/.
+- Build, lint, TypeScript, serta pemeriksaan diff berhasil. Chromium memverifikasi satu wave, gerakan naik saat scroll, tidak ada celah antarsection, teks/CTA bebas tumpang tindih, tanpa overflow pada 1440/768/390/320 px, reduced motion, dan perpindahan rute tanpa error runtime.

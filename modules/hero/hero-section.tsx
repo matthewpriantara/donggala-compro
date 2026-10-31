@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowDown, MapPin } from "lucide-react";
-import { PORTAL, MARQUEE_ITEMS, MOTIF_PATH } from "@/constants/helper";
+import { PORTAL } from "@/constants/helper";
+import { WaveDivider } from "@/components/ui/wave-divider";
 import { ExternalLink } from "@/components/ui/external-link";
 export function HeroSection() {
   return (
@@ -47,27 +48,7 @@ export function HeroSection() {
           {PORTAL.scroll}
         </a>
       </section>
-      <div className="marquee">
-        {[0, 1].map((copy) => (
-          <div
-            className="marquee-track"
-            aria-hidden={copy === 1 ? true : undefined}
-            key={copy}
-          >
-            {MARQUEE_ITEMS.map((item, index) => (
-              <span key={item}>
-                <Image
-                  src={`${MOTIF_PATH}${index % 2 ? "kuning" : "biru"}.png`}
-                  width={22}
-                  height={22}
-                  alt=""
-                />
-                {item}
-              </span>
-            ))}
-          </div>
-        ))}
-      </div>
+      <WaveDivider className="hero-wave" />
     </>
   );
 }
