@@ -67,3 +67,10 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - CTA gulir dihapus. Carousel menyisakan tombol pill/titik di tengah bawah tanpa counter atau tombol pause/play sesuai permintaan; autoplay tetap berhenti saat kontrol difokuskan/di-hover, tab tersembunyi, atau reduced motion aktif.
 - Navbar default tidak memiliki background maupun backdrop blur. Di beranda, navbar menumpang pada foto hero tanpa mengurangi tinggi satu viewport. Saat scroll, panel glass menggunakan rumus lebar dan gutter yang sama dengan `.wrap`.
 - Build, lint, dan TypeScript berhasil. Chromium memeriksa enam ukuran layar 320–1920 px: indikator berada di tengah, elemen yang diminta dihapus tidak dirender, navbar awal transparan, hero tepat satu layar, tepi navbar compact sama dengan konten, tautan/menu berfungsi, dan tidak ada overflow/runtime error.
+
+## Pita motif antarsection
+
+- Pita tenun ditambahkan pada batas Profil Desa → Kriya & Kuliner serta Kriya & Kuliner → Perjalanan di beranda.
+- `public/images/tenun-donggala-border.svg` adalah tile horizontal 560 byte yang diturunkan dari segmen sulur/eyelet tepi SVG pengguna. Aset asli tetap dipertahankan. Tile dipakai ulang sebagai background repeat-x, bukan merasterkan atau memuat ulang keseluruhan kain.
+- Tinggi pita 80 px desktop dan 60 px mobile, memakai kanvas biru tua dengan motif asli berwarna putih, koral, dan emas. Komponen `PatternDivider` murni SSR dan dekoratif (`aria-hidden`).
+- Build, lint, TypeScript, dan diff check berhasil; browser memverifikasi dua batas section, pemuatan SVG, repeat horizontal, dan ketiadaan overflow pada desktop/mobile.

@@ -590,3 +590,5 @@ export const HERO_CAROUSEL = {
   play: "Lanjutkan pergantian gambar",
   choose: "Tampilkan panorama",
 } as const;
+
+export const TENUN_DIVIDER_IMAGE = "/images/tenun-donggala-border.svg";
