@@ -46968,256 +46968,276 @@
           "id": "iX1ne",
           "name": "Section / Hero Banner",
           "width": "fill_container",
-          "fill": "#F4EFEA",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/hero_limboro_coastal.png",
+            "mode": "cover"
+          },
           "layout": "vertical",
           "gap": 24,
           "padding": [
-            72,
+            80,
             64
           ],
           "children": [
             {
               "type": "frame",
-              "id": "WeAPO",
-              "name": "Badge: Lokasi",
-              "fill": "#E8DFD5",
-              "cornerRadius": 999,
-              "padding": [
-                6,
-                14
-              ],
+              "id": "o0qb5I",
+              "name": "Hero Frosted Card",
+              "width": 800,
+              "fill": "#FDFBF7F2",
+              "cornerRadius": 24,
+              "stroke": "#FFFFFF",
+              "strokeWidth": 1.5,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 44,
               "children": [
+                {
+                  "type": "frame",
+                  "id": "BaX9m",
+                  "name": "Badge: Lokasi",
+                  "fill": "#E8DFD5",
+                  "cornerRadius": 999,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oaBGT",
+                      "name": "Badge Label",
+                      "fill": "#854D0E",
+                      "content": "Kecamatan Banawa Tengah, Kabupaten Donggala · Sulawesi Tengah",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
                 {
                   "type": "text",
-                  "id": "p60HW7",
-                  "name": "Badge Label",
-                  "fill": "#854D0E",
-                  "content": "Kecamatan Banawa Tengah, Kabupaten Donggala · Sulawesi Tengah",
-                  "fontFamily": "Plus Jakarta Sans",
-                  "fontSize": 12,
-                  "fontWeight": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "RbJ2M",
-              "name": "Hero Headline",
-              "fill": "#0C2340",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Mengenal Towale dan Limboro dari dekat",
-              "lineHeight": 1.18,
-              "fontFamily": "Fraunces",
-              "fontSize": 54,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "I3EeGe",
-              "name": "Hero Description",
-              "fill": "#3A4744",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Peta desa geospasial, katalog kriya tenun Kaili & olahan sagu, serta profil dua desa pesisir dalam satu pintu digital.",
-              "lineHeight": 1.45,
-              "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 20,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "KreNm",
-              "name": "Hero Actions",
-              "gap": 16,
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "Q8eI9X",
-                  "name": "Button: Buka Peta Desa",
+                  "id": "iKXR5",
+                  "name": "Hero Headline",
                   "fill": "#0C2340",
-                  "cornerRadius": 999,
-                  "padding": [
-                    12,
-                    26
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "bYfRU",
-                      "name": "Btn Label Peta",
-                      "fill": "#FFFFFF",
-                      "content": "Buka peta desa",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14,
-                      "fontWeight": "bold"
-                    }
-                  ]
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Mengenal Towale dan Limboro dari dekat",
+                  "lineHeight": 1.18,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 52,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "bmW4m",
+                  "name": "Hero Description",
+                  "fill": "#3A4744",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Peta desa geospasial, katalog kriya tenun Kaili & olahan sagu, serta profil dua desa pesisir dalam satu pintu digital.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
-                  "id": "exBvH",
-                  "name": "Button: Pesan Open Trip",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#0C2340",
-                  "strokeWidth": 1.5,
-                  "padding": [
-                    12,
-                    26
-                  ],
+                  "id": "clGIZ",
+                  "name": "Hero Actions",
+                  "gap": 16,
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "qXaDq",
-                      "name": "Btn Label Trip",
+                      "type": "frame",
+                      "id": "ofMAb",
+                      "name": "Button: Buka Peta Desa",
                       "fill": "#0C2340",
-                      "content": "Pesan open trip ↗",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14,
-                      "fontWeight": "bold"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "G8NsUS",
-              "name": "Quick Category Tags",
-              "gap": 12,
-              "padding": [
-                12,
-                0,
-                0,
-                0
-              ],
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "FUljq",
-                  "name": "Tag: Desa Towale",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#E2E8F0",
-                  "strokeWidth": 1,
-                  "padding": [
-                    6,
-                    14
-                  ],
-                  "children": [
+                      "cornerRadius": 999,
+                      "padding": [
+                        12,
+                        26
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GAKPM",
+                          "name": "Btn Label Peta",
+                          "fill": "#FFFFFF",
+                          "content": "Buka peta desa",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
                     {
-                      "type": "text",
-                      "id": "LgyTX",
-                      "name": "Tag Text",
-                      "fill": "#13201C",
-                      "content": "Desa Towale",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 12,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "qLjoZ",
-                  "name": "Tag: Desa Limboro",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#E2E8F0",
-                  "strokeWidth": 1,
-                  "padding": [
-                    6,
-                    14
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "B44CQ",
-                      "name": "Tag Text",
-                      "fill": "#13201C",
-                      "content": "Desa Limboro",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 12,
-                      "fontWeight": "600"
+                      "type": "frame",
+                      "id": "B5RQvR",
+                      "name": "Button: Pesan Open Trip",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#0C2340",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        12,
+                        26
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NzKyq",
+                          "name": "Btn Label Trip",
+                          "fill": "#0C2340",
+                          "content": "Pesan open trip ↗",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
                     }
                   ]
                 },
                 {
                   "type": "frame",
-                  "id": "YiGJU",
-                  "name": "Tag: Tenun Buya Bomba",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#E2E8F0",
-                  "strokeWidth": 1,
+                  "id": "gvKfP",
+                  "name": "Quick Category Tags",
+                  "gap": 10,
                   "padding": [
-                    6,
-                    14
+                    8,
+                    0,
+                    0,
+                    0
                   ],
                   "children": [
                     {
-                      "type": "text",
-                      "id": "JfI2f",
-                      "name": "Tag Text",
-                      "fill": "#13201C",
-                      "content": "Tenun Buya Bomba",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 12,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "wgo7S",
-                  "name": "Tag: Sentra Sagu & Pesisir",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#E2E8F0",
-                  "strokeWidth": 1,
-                  "padding": [
-                    6,
-                    14
-                  ],
-                  "children": [
+                      "type": "frame",
+                      "id": "y7ydU",
+                      "name": "Tag: Desa Towale",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#E2E8F0",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lntac",
+                          "name": "Tag Text",
+                          "fill": "#13201C",
+                          "content": "Desa Towale",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
                     {
-                      "type": "text",
-                      "id": "RcpSA",
-                      "name": "Tag Text",
-                      "fill": "#13201C",
-                      "content": "Sentra Sagu & Pesisir",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 12,
-                      "fontWeight": "600"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "fSQRY",
-                  "name": "Tag: Pusentasi Pusat Laut",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#E2E8F0",
-                  "strokeWidth": 1,
-                  "padding": [
-                    6,
-                    14
-                  ],
-                  "children": [
+                      "type": "frame",
+                      "id": "sDLa3",
+                      "name": "Tag: Desa Limboro",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#E2E8F0",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F51LG",
+                          "name": "Tag Text",
+                          "fill": "#13201C",
+                          "content": "Desa Limboro",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
                     {
-                      "type": "text",
-                      "id": "EMsdC",
-                      "name": "Tag Text",
-                      "fill": "#13201C",
-                      "content": "Pusentasi Pusat Laut",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 12,
-                      "fontWeight": "600"
+                      "type": "frame",
+                      "id": "z627Nq",
+                      "name": "Tag: Tenun Buya Bomba",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#E2E8F0",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sYf7M",
+                          "name": "Tag Text",
+                          "fill": "#13201C",
+                          "content": "Tenun Buya Bomba",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "cpUX8",
+                      "name": "Tag: Sentra Sagu & Pesisir",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#E2E8F0",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XQYxq",
+                          "name": "Tag Text",
+                          "fill": "#13201C",
+                          "content": "Sentra Sagu & Pesisir",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rhpUK",
+                      "name": "Tag: Pusentasi Pusat Laut",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#E2E8F0",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sOUaK",
+                          "name": "Tag Text",
+                          "fill": "#13201C",
+                          "content": "Pusentasi Pusat Laut",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -48944,124 +48964,142 @@
           "id": "BCdLo",
           "name": "Section / Hero Mobile",
           "width": "fill_container",
-          "fill": "#F4EFEA",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/hero_limboro_coastal.png",
+            "mode": "cover"
+          },
           "layout": "vertical",
           "gap": 18,
           "padding": [
-            36,
-            20,
             40,
             20
           ],
           "children": [
             {
               "type": "frame",
-              "id": "HOVn5",
-              "name": "Badge Lokasi Mobile",
-              "fill": "#E8DFD5",
-              "cornerRadius": 999,
-              "padding": [
-                4,
-                10
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "iWYlI",
-                  "name": "Badge Text",
-                  "fill": "#854D0E",
-                  "content": "Banawa Tengah · Donggala",
-                  "fontFamily": "Plus Jakarta Sans",
-                  "fontSize": 11,
-                  "fontWeight": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "UPF8T",
-              "name": "Hero Headline Mobile",
-              "fill": "#0C2340",
-              "textGrowth": "fixed-width",
+              "id": "SuuBN",
+              "name": "Hero Frosted Card Mobile",
               "width": "fill_container",
-              "content": "Mengenal Towale & Limboro dari dekat",
-              "lineHeight": 1.2,
-              "fontFamily": "Fraunces",
-              "fontSize": 34,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "MSwUx",
-              "name": "Hero Desc Mobile",
-              "fill": "#3A4744",
-              "textGrowth": "fixed-width",
-              "width": "fill_container",
-              "content": "Peta desa geospasial, katalog UMKM tenun & olahan sagu, serta profil dua desa pesisir dalam satu pintu.",
-              "lineHeight": 1.45,
-              "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 15,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "B4djSW",
-              "name": "Hero Actions Mobile",
-              "width": "fill_container",
+              "fill": "#FDFBF7F5",
+              "cornerRadius": 20,
+              "stroke": "#FFFFFF",
+              "strokeWidth": 1.5,
               "layout": "vertical",
-              "gap": 10,
+              "gap": 16,
+              "padding": 24,
               "children": [
                 {
                   "type": "frame",
-                  "id": "H3BL5l",
-                  "name": "Button Peta Mobile",
-                  "width": "fill_container",
-                  "fill": "#0C2340",
+                  "id": "igzjO",
+                  "name": "Badge Lokasi Mobile",
+                  "fill": "#E8DFD5",
                   "cornerRadius": 999,
                   "padding": [
-                    12,
-                    20
+                    4,
+                    10
                   ],
-                  "justifyContent": "center",
-                  "alignItems": "center",
                   "children": [
                     {
                       "type": "text",
-                      "id": "zhw9k",
-                      "name": "Btn Peta Text",
-                      "fill": "#FFFFFF",
-                      "content": "Buka peta desa",
+                      "id": "c6wVkD",
+                      "name": "Badge Text",
+                      "fill": "#854D0E",
+                      "content": "Banawa Tengah · Donggala",
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14,
+                      "fontSize": 11,
                       "fontWeight": "bold"
                     }
                   ]
                 },
                 {
-                  "type": "frame",
-                  "id": "HoUaw",
-                  "name": "Button Trip Mobile",
+                  "type": "text",
+                  "id": "eTLOq",
+                  "name": "Hero Headline Mobile",
+                  "fill": "#0C2340",
+                  "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "fill": "#FFFFFF",
-                  "cornerRadius": 999,
-                  "stroke": "#0C2340",
-                  "strokeWidth": 1.5,
-                  "padding": [
-                    12,
-                    20
-                  ],
-                  "justifyContent": "center",
-                  "alignItems": "center",
+                  "content": "Mengenal Towale & Limboro dari dekat",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 32,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "LeN2b",
+                  "name": "Hero Desc Mobile",
+                  "fill": "#3A4744",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Peta desa geospasial, katalog UMKM tenun & olahan sagu, serta profil dua desa pesisir dalam satu pintu.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ismwR",
+                  "name": "Hero Actions Mobile",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
                   "children": [
                     {
-                      "type": "text",
-                      "id": "DiWJW",
-                      "name": "Btn Trip Text",
+                      "type": "frame",
+                      "id": "MlZIU",
+                      "name": "Button Peta Mobile",
+                      "width": "fill_container",
                       "fill": "#0C2340",
-                      "content": "Pesan open trip ↗",
-                      "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14,
-                      "fontWeight": "bold"
+                      "cornerRadius": 999,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "u1Xa65",
+                          "name": "Btn Peta Text",
+                          "fill": "#FFFFFF",
+                          "content": "Buka peta desa",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p4sVg",
+                      "name": "Button Trip Mobile",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 999,
+                      "stroke": "#0C2340",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DP6Fu",
+                          "name": "Btn Trip Text",
+                          "fill": "#0C2340",
+                          "content": "Pesan open trip ↗",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
                     }
                   ]
                 }
