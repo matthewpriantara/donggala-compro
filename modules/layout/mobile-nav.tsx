@@ -1,58 +1,55 @@
-"use client"
-
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { NAV_LINKS, COMPANY_NAME } from "@/constants/helper"
-
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { Menu, X } from "lucide-react";
+import { NAV_LINKS, PORTAL } from "@/constants/helper";
 export function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleToggleMenu = () => {
-    setIsOpen((prev) => !prev)
+  const [isOpen, setIsOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setIsOpen(false);
+        buttonRef.current?.focus();
+      }
+    }
+    if (isOpen) document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [isOpen]);
+  function handleToggleMenu() {
+    setIsOpen((value) => !value);
   }
-
-  const handleCloseMenu = () => {
-    setIsOpen(false)
+  function handleCloseMenu() {
+    setIsOpen(false);
   }
-
   return (
-    <div className="md:hidden">
-      <Button
-        variant="ghost"
-        size="icon"
+    <div className="mobile-nav">
+      <button
+        ref={buttonRef}
+        type="button"
         onClick={handleToggleMenu}
-        aria-label={isOpen ? "Tutup menu" : "Buka menu"}
+        aria-label={isOpen ? PORTAL.closeMenu : PORTAL.openMenu}
         aria-expanded={isOpen}
+        aria-controls="mobile-navigation"
       >
-        {isOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-      </Button>
-
+        {isOpen ? <X /> : <Menu />}
+      </button>
       {isOpen && (
-        <div className="fixed inset-x-0 top-16 z-50 border-b border-neutral-200 bg-white/95 p-6 backdrop-blur-md shadow-lg dark:border-neutral-800 dark:bg-neutral-950/95 animate-in slide-in-from-top-2">
-          <nav className="flex flex-col gap-4">
-            <span className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
-              {COMPANY_NAME}
-            </span>
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={handleCloseMenu}
-                className="text-base font-medium text-neutral-800 hover:text-neutral-950 dark:text-neutral-200 dark:hover:text-white"
-              >
-                {link.title}
-              </Link>
-            ))}
-            <div className="pt-4 border-t border-neutral-100 dark:border-neutral-800">
-              <Button asChild className="w-full" onClick={handleCloseMenu}>
-                <Link href="#kontak">Hubungi Kami</Link>
-              </Button>
-            </div>
-          </nav>
-        </div>
+        <nav id="mobile-navigation" aria-label={PORTAL.navigation}>
+          {NAV_LINKS.map((item) => (
+            <a key={item.href} href={item.href} onClick={handleCloseMenu}>
+              {item.title}
+            </a>
+          ))}
+          <a
+            href={PORTAL.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleCloseMenu}
+          >
+            {PORTAL.platform} ↗
+          </a>
+        </nav>
       )}
     </div>
-  )
+  );
 }

@@ -235,7 +235,7 @@ Untuk mencegah disorientasi pengunjung, semua tombol diarahkan ke rute atau anch
 - [x] **Fase 1: Riset & Benchmarking** — Scraping dan dekonstruksi 8 portal KKN UGM + Pesona Kei.
 - [x] **Fase 2: Kanvas Desain** — Perancangan artboard Desktop (1440) dan Mobile (390) di `compro/design_pendev/kkn.pen`.
 - [x] **Fase 3: Panduan Coding & PRD** — Pembuatan `PESONA_KEI_COMPONENT_GUIDE.md` dan `PRD_WEBSITE_COMPRO_DONGGALA.md`.
-- [ ] **Fase 4: Instalasi Dependensi** — Memasang `motion`, `lenis`, `sonner` pada proyek `compro/`.
-- [ ] **Fase 5: Pembaharuan Konstanta** — Menyelaraskan `constants/helper.ts` dengan data Towale, Limboro, dan deep-link `jelajah-donggala.vercel.app`.
-- [ ] **Fase 6: Komponen Motion & Section Refactor** — Menerapkan `SmoothScroll`, `TiltCard`, `MarqueeStrip`, serta section baru (Kamus Kaili & Kedaruratan).
+- [x] **Fase 4: Instalasi Dependensi** — Memasang `motion`, `lenis`, `sonner` pada proyek `compro/`.
+- [x] **Fase 5: Pembaharuan Konstanta** — Menyelaraskan `constants/helper.ts` dengan data Towale, Limboro, dan deep-link `jelajah-donggala.vercel.app`.
+- [x] **Fase 6: Komponen Motion & Section Refactor** — Menerapkan `SmoothScroll`, `TiltCard`, `MarqueeStrip`, serta section baru (Kamus Kaili & Kedaruratan).
 - [ ] **Fase 7: Verifikasi & Audit Produksi** — Menjalankan `next build`, pengujian responsif, dan audit linting.
