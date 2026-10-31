@@ -1,3 +1,4 @@
+import { TopicDeepDive } from "@/modules/details/topic-deep-dive";
 import type { Metadata } from "next";
 import { TOPIC_PAGES, COMPANY_NAME } from "@/constants/helper";
 import { TopicHero } from "@/modules/details/topic-hero";
@@ -21,6 +22,7 @@ export default function Page() {
       <TopicHero topic="budaya" />
       <TopicIntroduction topic="budaya" />
       <CultureStories />
+      <TopicDeepDive topic="budaya" />
       <TopicGuide topic="budaya" />
       <RelatedTopics topic="budaya" />
     </>
