@@ -26,7 +26,6 @@ export const COMPANY_DESCRIPTION =
 // 2. NAVIGASI UTAMA
 // ============================================================================
 export const NAV_LINKS: readonly NavItem[] = [
-  { title: "Beranda", href: "/" },
   { title: "Profil Desa", href: "/desa" },
   { title: "Kriya & Kuliner", href: "/kriya-kuliner" },
   { title: "Budaya", href: "/budaya" },
@@ -189,7 +188,7 @@ export const PORTAL = {
   platform: "Platform Jelajah",
   heroCta: "Buka Platform Jelajah Donggala",
   villageCta: "Kenali Dua Desa",
-  location: "KECAMATAN BANAWA TENGAH · DONGGALA",
+  location: "Kecamatan Banawa Tengah, Donggala, Sulawesi Tengah",
   eyebrow: "SEBUAH PERJALANAN DI PESISIR SULAWESI",
   headline: "Towale dan Limboro,",
   headlineSecond: "dua pesona",
@@ -201,7 +200,6 @@ export const PORTAL = {
   heroCaption: "TELUK LIMBORO",
   heroNote: "Dua desa. Beragam cerita. Satu perjalanan.",
   scroll: "GULIR UNTUK MENGENAL",
-  edition: "SULAWESI TENGAH, INDONESIA",
   aboutEyebrow: "SELAMAT DATANG DI DONGGALA",
   aboutTitle: "Dua desa pesisir,",
   aboutAccent: "satu denyut kearifan.",
