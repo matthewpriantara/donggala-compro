@@ -36,15 +36,6 @@ export function HeroSection() {
                 <ArrowDown size={16} />
               </a>
             </div>
-            <div className="hero-card-bottom">
-              <Image
-                src={`${MOTIF_PATH}kuning.png`}
-                alt=""
-                width={26}
-                height={26}
-              />
-              <span>{PORTAL.heroNote}</span>
-            </div>
           </div>
           <span className="hero-coordinate">
             <MapPin size={14} />

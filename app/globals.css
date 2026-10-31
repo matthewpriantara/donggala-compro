@@ -254,12 +254,12 @@ em {
 }
 .hero-card {
   width: 590px;
-  background: #041d2aeb;
-  border: 1px solid #51738366;
-  border-radius: 4px 72px 4px 4px;
-  padding: 40px 42px 24px;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 20px 70px #00121b25;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  backdrop-filter: none;
+  box-shadow: none;
 }
 .hero .location {
   font-size: 8px;
@@ -1102,10 +1102,12 @@ em {
     object-position: 65% center;
   }
   .hero-card {
-    padding: 30px 24px 22px;
-    border-top-right-radius: 55px;
+    padding: 0;
     width: 100%;
-    background: #041d2ae0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
   }
   .hero .location {
     font-size: 7px;
