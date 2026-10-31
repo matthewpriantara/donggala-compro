@@ -1,4 +1,5 @@
 "use client";
+import { NavigationLink } from "@/components/ui/navigation-link";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS, PORTAL } from "@/constants/helper";
@@ -36,9 +37,13 @@ export function MobileNav() {
       {isOpen && (
         <nav id="mobile-navigation" aria-label={PORTAL.navigation}>
           {NAV_LINKS.map((item) => (
-            <a key={item.href} href={item.href} onClick={handleCloseMenu}>
+            <NavigationLink
+              key={item.href}
+              href={item.href}
+              onClick={handleCloseMenu}
+            >
               {item.title}
-            </a>
+            </NavigationLink>
           ))}
           <a
             href={PORTAL.url}
