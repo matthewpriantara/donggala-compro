@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import { SiteHeader, SiteFooter } from "@/modules/layout";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
@@ -9,6 +10,13 @@ import {
   COMPANY_DESCRIPTION,
   PORTAL,
 } from "@/constants/helper";
+const PLUS_JAKARTA_SANS = localFont({
+  src: "../public/fonts/plus-jakarta-sans.ttf",
+  variable: "--font-jakarta",
+  weight: "200 800",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: `${COMPANY_NAME} | ${COMPANY_TAGLINE}`,
   description: COMPANY_DESCRIPTION,
@@ -25,7 +33,7 @@ export default function RootLayout({
   readonly children: React.ReactNode;
 }) {
   return (
-    <html lang="id">
+    <html lang="id" className={PLUS_JAKARTA_SANS.variable}>
       <body>
         <a className="skip-link" href="#konten">
           {PORTAL.skip}
