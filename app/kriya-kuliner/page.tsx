@@ -20,7 +20,7 @@ export default function Page() {
     <>
       <TopicHero topic="karya" />
       <TopicIntroduction topic="karya" />
-      <ServicesSection />
+      <ServicesSection isDetail />
       <TopicGuide topic="karya" />
       <RelatedTopics topic="karya" />
     </>

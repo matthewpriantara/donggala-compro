@@ -215,6 +215,7 @@ export const PORTAL = {
   villagesTitle: "Berbeda pesona, bertaut cerita.",
   productsEyebrow: "DARI TANGAN WARGA",
   productsTitle: "Rasa, rupa, dan warisan.",
+  productsCta: "Jelajahi Kriya & Kuliner",
   productsText:
     "Bawa pulang cerita dalam sehelai tenun dan cita rasa yang tumbuh dari tanah sendiri.",
   productCta: "Detail & hubungi pengrajin",
