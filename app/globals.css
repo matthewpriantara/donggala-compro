@@ -14,6 +14,8 @@
   font-display: swap;
 }
 :root {
+  --page-gutter: clamp(28px, 10vw, 160px);
+  --content-width: 1280px;
   --color-ocean-950: #041d2a;
   --color-ocean-900: #0a2c3e;
   --color-ocean-700: #1a4d68;
@@ -38,7 +40,7 @@ body {
   margin: 0;
   background: var(--color-ocean-950);
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jakarta), Arial, Helvetica, sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
 }
@@ -97,7 +99,7 @@ em {
   color: var(--color-motif-yellow);
 }
 .wrap {
-  width: min(1240px, calc(100% - 112px));
+  width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
   margin-inline: auto;
 }
 .section {
@@ -160,10 +162,10 @@ em {
   z-index: 40;
 }
 .header-inner {
-  max-width: 1400px;
-  margin: auto;
+  width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
+  margin-inline: auto;
   min-height: 90px;
-  padding: 0 40px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -964,7 +966,7 @@ em {
 }
 @media (max-width: 1150px) {
   .header-inner {
-    padding-inline: 28px;
+    padding-inline: 0;
     gap: 16px;
   }
   .desktop-nav {
@@ -974,9 +976,7 @@ em {
   .brand > img {
     display: none;
   }
-  .wrap {
-    width: calc(100% - 64px);
-  }
+
   .about-grid,
   .culture-row {
     gap: 45px;
@@ -998,7 +998,7 @@ em {
     max-width: 100%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .desktop-nav,
   .header-cta {
     display: none;
@@ -1028,7 +1028,7 @@ em {
     flex-direction: column;
     background: #082735;
     box-shadow: 0 20px 30px #0004;
-    padding: 20px 28px;
+    padding: 20px var(--page-gutter);
     border-bottom: 1px solid #365665;
   }
   .mobile-nav nav a {
@@ -1072,14 +1072,14 @@ em {
   }
 }
 @media (max-width: 600px) {
-  .wrap {
-    width: calc(100% - 40px);
+  :root {
+    --page-gutter: 28px;
   }
   .section {
     padding-block: 65px;
   }
   .header-inner {
-    padding-inline: 20px;
+    padding-inline: 0;
   }
   .brand strong {
     font-size: 17px;
