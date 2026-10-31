@@ -16,6 +16,7 @@
 :root {
   --page-gutter: clamp(28px, 10vw, 160px);
   --content-width: 1280px;
+  --card-radius: 24px;
   --color-ocean-950: #041d2a;
   --color-ocean-900: #0a2c3e;
   --color-ocean-700: #1a4d68;
@@ -243,9 +244,13 @@ em {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background:
-    linear-gradient(90deg, #041d2a77, transparent 80%),
-    linear-gradient(0deg, #041d2a77, transparent 30%);
+  background: linear-gradient(
+    90deg,
+    #041d2ae6 0%,
+    #041d2ab8 30%,
+    #041d2a66 60%,
+    #041d2a14 100%
+  );
 }
 .hero-inner {
   position: relative;
@@ -354,7 +359,7 @@ em {
 .about-photo {
   height: 390px;
   position: relative;
-  border-radius: 100px 5px 5px 5px;
+  border-radius: 100px var(--card-radius) var(--card-radius) var(--card-radius);
   overflow: hidden;
 }
 .about-photo img {
@@ -395,7 +400,7 @@ em {
   background: #0a2c3e;
   margin-top: 65px;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: var(--card-radius);
   padding: 33px 12px;
 }
 .stats > div {
@@ -439,7 +444,7 @@ em {
   border: 1px solid var(--line);
   background: #092532;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: var(--card-radius);
 }
 .village-photo {
   height: 290px;
@@ -525,7 +530,7 @@ em {
 }
 .product-card {
   border: 1px solid #d8dfd9;
-  border-radius: 5px;
+  border-radius: var(--card-radius);
   overflow: hidden;
   background: #fffdfa;
 }
@@ -608,7 +613,7 @@ em {
 }
 .trip-card {
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: var(--card-radius);
   overflow: hidden;
 }
 .trip-photo {
@@ -660,7 +665,7 @@ em {
   display: flex;
   align-items: center;
   gap: 30px;
-  border-radius: 5px;
+  border-radius: var(--card-radius);
 }
 .map-callout > svg {
   color: #82ded2;
@@ -706,12 +711,12 @@ em {
   place-items: center;
   background: radial-gradient(ellipse, #8d4f6a44, transparent 70%);
   border: 1px solid #69455366;
-  border-radius: 4px 80px 4px 4px;
+  border-radius: var(--card-radius) 80px var(--card-radius) var(--card-radius);
 }
 .culture-art.biru {
   background: radial-gradient(ellipse, #2c7b9044, transparent 70%);
   border-color: #28607766;
-  border-radius: 80px 4px 4px 4px;
+  border-radius: 80px var(--card-radius) var(--card-radius) var(--card-radius);
 }
 .culture-art img {
   width: 180px;
@@ -798,7 +803,7 @@ em {
   background: #fffcf6;
   border: 1px solid #ddd8cb;
   border-top: 2px solid #ab5a47;
-  border-radius: 3px;
+  border-radius: var(--card-radius);
   padding: 25px;
 }
 .emergency-card strong {
@@ -1032,6 +1037,9 @@ em {
 @media (max-width: 600px) {
   :root {
     --page-gutter: 28px;
+  }
+  :root {
+    --card-radius: 20px;
   }
   .section {
     padding-block: 65px;
@@ -1396,7 +1404,7 @@ em {
   min-width: 0;
   height: 340px;
   border: 1px solid #315263;
-  border-radius: 80px 4px 4px 4px;
+  border-radius: 80px var(--card-radius) var(--card-radius) var(--card-radius);
   overflow: hidden;
 }
 .topic-photo img {
@@ -1459,7 +1467,7 @@ em {
   gap: 20px;
   padding: 24px;
   border: 1px solid #365563;
-  border-radius: 4px;
+  border-radius: var(--card-radius);
   font-size: 17px;
 }
 .related-grid a:hover {
