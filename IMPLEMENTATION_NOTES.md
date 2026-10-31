@@ -84,3 +84,11 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - `/kedaruratan`: persiapan kontak lokal serta informasi lokasi/kejadian untuk disampaikan kepada operator, tanpa mengarang nomor lokal atau peta evakuasi.
 - Setiap halaman mendapat dua kartu informasi khusus, tiga FAQ native yang bisa dioperasikan dengan keyboard, dan CTA yang sesuai konteks. Teks terpusat dalam constants; route tetap SSR dengan enam modul.
 - Build, lint, TypeScript, dan diff check berhasil. Chromium memeriksa kelima rute pada 1440/390/320 px, metadata, menu aktif, jumlah konten, keyboard FAQ, overflow, dan error runtime; semuanya lolos.
+
+## Perbaikan 404 pada preview development
+
+- Masalah direproduksi pada server development lama di localhost:3000: beranda merespons 200, sedangkan `/desa` dan `/budaya` merespons 404 meskipun file route tersedia.
+- Preview dinyalakan ulang dengan direktori output development khusus `.next-dev`; build/start production tetap menggunakan `.next`. Pemisahan ini mencegah validasi build menyentuh direktori output preview yang sedang berjalan.
+- Direktori baru diabaikan Git dan ESLint; path tipe Next.js development ditambahkan ke tsconfig. Root html juga menandai scroll-behavior untuk mendukung transisi route Next.js.
+- Setelah restart: kelima halaman memberi HTTP 200, semua klik navbar desktop/mobile berhasil dan tidak ada error runtime. Pengujian diulang setelah menjalankan build produksi bersamaan dengan preview; semua route dan klik tetap berhasil. Lint dan build lolos.
+- Gunakan `pnpm dev` untuk preview dengan Fast Refresh. Jika tab lama menyimpan hasil navigasi 404, lakukan hard refresh setelah restart server.

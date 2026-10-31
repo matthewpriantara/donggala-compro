@@ -33,7 +33,11 @@ export default function RootLayout({
   readonly children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className={PLUS_JAKARTA_SANS.variable}>
+    <html
+      lang="id"
+      className={PLUS_JAKARTA_SANS.variable}
+      data-scroll-behavior="smooth"
+    >
       <body>
         <a className="skip-link" href="#konten">
           {PORTAL.skip}
