@@ -61,3 +61,9 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - Carousel diisolasi pada leaf `modules/hero/hero-carousel.tsx`; headline dan container hero tetap SSR. Konten serta konfigurasi carousel tersentralisasi pada constants.
 - Wave GSAP tersembunyi awalnya dan naik setelah scroll; foto diteruskan ke area transisi agar tidak menyisakan latar kosong. Reduced motion menggunakan pergantian keadaan tanpa animasi.
 - Build, lint, dan TypeScript berhasil. Chromium menguji viewport 1440×900, 768×1024, 390×844, dan 320×720: batas hero tepat pada tinggi layar, wave di luar viewport awal dan muncul setelah scroll, tiga foto valid, indikator serta CTA tidak bertumpuk, tanpa overflow/runtime error. Autoplay sampai foto ketiga, jeda, pemilihan manual, dan reduced motion berhasil.
+
+## Penyederhanaan kontrol dan penyelarasan navbar
+
+- CTA gulir dihapus. Carousel menyisakan tombol pill/titik di tengah bawah tanpa counter atau tombol pause/play sesuai permintaan; autoplay tetap berhenti saat kontrol difokuskan/di-hover, tab tersembunyi, atau reduced motion aktif.
+- Navbar default tidak memiliki background maupun backdrop blur. Di beranda, navbar menumpang pada foto hero tanpa mengurangi tinggi satu viewport. Saat scroll, panel glass menggunakan rumus lebar dan gutter yang sama dengan `.wrap`.
+- Build, lint, dan TypeScript berhasil. Chromium memeriksa enam ukuran layar 320–1920 px: indikator berada di tengah, elemen yang diminta dihapus tidak dirender, navbar awal transparan, hero tepat satu layar, tepi navbar compact sama dengan konten, tautan/menu berfungsi, dan tidak ada overflow/runtime error.

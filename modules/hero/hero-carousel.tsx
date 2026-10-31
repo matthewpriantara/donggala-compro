@@ -2,29 +2,24 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Pause, Play } from "lucide-react";
 import { HERO_CAROUSEL, HERO_SLIDES } from "@/constants/helper";
 import { useMediaQuery } from "@/hooks/use-media-query";
 
 export function HeroCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const [hasFocus, setHasFocus] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const shouldReduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
 
   useEffect(() => {
-    if (isPaused || hasFocus || isHovered || shouldReduceMotion) return;
+    if (hasFocus || isHovered || shouldReduceMotion) return;
     const timer = window.setInterval(() => {
       if (!document.hidden)
         setActiveIndex((index) => (index + 1) % HERO_SLIDES.length);
     }, HERO_CAROUSEL.interval);
     return () => window.clearInterval(timer);
-  }, [isPaused, hasFocus, isHovered, shouldReduceMotion]);
+  }, [hasFocus, isHovered, shouldReduceMotion]);
 
-  function handleTogglePause() {
-    setIsPaused((value) => !value);
-  }
   function handleSelectSlide(index: number) {
     setActiveIndex(index);
   }
@@ -71,25 +66,6 @@ export function HeroCarousel() {
               <span />
             </button>
           ))}
-          <span className="hero-slide-counter" aria-hidden="true">
-            {String(activeIndex + 1).padStart(2, "0")} /{" "}
-            {String(HERO_SLIDES.length).padStart(2, "0")}
-          </span>
-          {!shouldReduceMotion && (
-            <button
-              className="hero-carousel-pause"
-              type="button"
-              onClick={handleTogglePause}
-              aria-label={isPaused ? HERO_CAROUSEL.play : HERO_CAROUSEL.pause}
-              aria-pressed={isPaused}
-            >
-              {isPaused ? (
-                <Play size={14} aria-hidden="true" />
-              ) : (
-                <Pause size={14} aria-hidden="true" />
-              )}
-            </button>
-          )}
         </div>
       </div>
     </>
