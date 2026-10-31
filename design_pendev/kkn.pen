@@ -50406,6 +50406,3013 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "BGYnb",
+      "x": 17600,
+      "y": 2400,
+      "name": "Donggala Pesona Bahari (Kei Edition) / Desktop / 1440",
+      "width": 1440,
+      "fill": "#041D2A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "p0sc28",
+          "name": "Header / Pesona Kei Dark Nav",
+          "width": "fill_container",
+          "fill": "#041D2AF2",
+          "stroke": "#1A4D68",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            22,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mfO64",
+              "name": "Brand Logo Group",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LA0Yt",
+                  "name": "Logo Icon",
+                  "width": 42,
+                  "height": 42,
+                  "fill": "#0D8D82",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LxnGf",
+                      "name": "Logo Letter",
+                      "fill": "#FFFFFF",
+                      "content": "JD",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y659n",
+                  "name": "Brand Text Column",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BQ7ZC",
+                      "name": "Brand Title",
+                      "fill": "#FFFFFF",
+                      "content": "Jelajah Donggala",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 19,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AVPu8",
+                      "name": "Brand Subtitle",
+                      "fill": "#82DED2",
+                      "content": "Towale & Limboro · Banawa Tengah",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M6HMbq",
+              "name": "Nav Menu Items",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mesP7",
+                  "name": "Nav Link Beranda",
+                  "fill": "#82DED2",
+                  "content": "Beranda",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "uZBzi",
+                  "name": "Nav Link Destinasi",
+                  "fill": "#CBD5E1",
+                  "content": "Destinasi",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "C7bmb",
+                  "name": "Nav Link Kriya & Kuliner",
+                  "fill": "#CBD5E1",
+                  "content": "Kriya & Kuliner",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Jsdiv",
+                  "name": "Nav Link Budaya & Tradisi",
+                  "fill": "#CBD5E1",
+                  "content": "Budaya & Tradisi",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Q7jr7C",
+                  "name": "Nav Link Bahasa Kaili",
+                  "fill": "#CBD5E1",
+                  "content": "Bahasa Kaili",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Lvd4y",
+                  "name": "Nav Link Peta",
+                  "fill": "#CBD5E1",
+                  "content": "Peta",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "Cx9dI",
+                  "name": "Nav Link Kedaruratan",
+                  "fill": "#CBD5E1",
+                  "content": "Kedaruratan",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DFz62",
+              "name": "Button: Hubungi Kami",
+              "fill": "#0D8D82",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                22
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EYFVd",
+                  "name": "CTA Label",
+                  "fill": "#FFFFFF",
+                  "content": "Hubungi Kami",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f4lmyq",
+          "name": "Section / Hero Pesona Bahari",
+          "width": "fill_container",
+          "height": 680,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/hero_limboro_coastal.png",
+            "mode": "cover"
+          },
+          "layout": "vertical",
+          "padding": [
+            80,
+            64,
+            60,
+            64
+          ],
+          "justifyContent": "space_between",
+          "children": [
+            {
+              "type": "frame",
+              "id": "onv42",
+              "name": "Hero Frosted Content Card",
+              "width": 820,
+              "fill": "#041D2AF0",
+              "cornerRadius": 24,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1.5,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 44,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zUvbb",
+                  "name": "Hero Eyebrow Badge",
+                  "fill": "#0A2C3E",
+                  "cornerRadius": 999,
+                  "stroke": "#0D8D82",
+                  "strokeWidth": 1,
+                  "gap": 8,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "W2KuB",
+                      "name": "Live Dot",
+                      "width": 8,
+                      "height": 8,
+                      "fill": "#82DED2",
+                      "cornerRadius": 999
+                    },
+                    {
+                      "type": "text",
+                      "id": "l2LzS",
+                      "name": "Eyebrow Text",
+                      "fill": "#82DED2",
+                      "content": "KECAMATAN BANAWA TENGAH · KABUPATEN DONGGALA",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "d35Suz",
+                  "name": "Hero Display Headline",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Surga Bahari & Warisan Tenun di Tanah Kaili",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 52,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "X6BWqV",
+                  "name": "Hero Description",
+                  "fill": "#CBD5E1",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pasir putih melengkung di pesisir Teluk Limboro, tenun ikat pusaka Buya Bomba di Towale, dan kearifan masyarakat bahari yang hidup selaras dengan laut.",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "XMJp4",
+                  "name": "Hero Action Buttons",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FSyxQ",
+                      "name": "Primary CTA: Jelajahi Sekarang",
+                      "fill": "#0D8D82",
+                      "cornerRadius": 999,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "f2zhZ8",
+                          "name": "Primary Label",
+                          "fill": "#FFFFFF",
+                          "content": "Jelajahi Sekarang →",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XnjHI",
+                      "name": "Secondary CTA: Buka Peta",
+                      "fill": "#0A2C3E",
+                      "cornerRadius": 999,
+                      "stroke": "#82DED2",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        14,
+                        28
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NCZIO",
+                          "name": "Secondary Label",
+                          "fill": "#82DED2",
+                          "content": "Buka Peta Geospasial ↗",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jHa8o",
+              "name": "Hero Slide Progress Indicator",
+              "fill": "#041D2ACC",
+              "cornerRadius": 999,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1,
+              "gap": 16,
+              "padding": [
+                10,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KUGGC",
+                  "name": "Slide Number",
+                  "fill": "#82DED2",
+                  "content": "01 / 03",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "xAGbE",
+                  "name": "Slide Caption",
+                  "fill": "#FFFFFF",
+                  "content": "PANORAMA PESISIR TELUK LIMBORO",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "bold",
+                  "letterSpacing": 1.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "j84h7A",
+          "name": "Section / Marquee Running Strip",
+          "width": "fill_container",
+          "height": 52,
+          "fill": "#0A2C3E",
+          "stroke": "#1A4D68",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "padding": [
+            14,
+            64
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DLh54",
+              "name": "Marquee Ticker Text",
+              "fill": "#82DED2",
+              "content": "❖ AIR TOSKA TELUK LIMBORO · TENUN IKAT BUYA BOMBA · GEOWISATA PUSENTASI · SENTRA SAGU ALAMI · PESONA SELAT MAKASSAR ❖",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "bold",
+              "letterSpacing": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KeBTS",
+          "name": "Section / Sambutan Dua Desa",
+          "width": "fill_container",
+          "fill": "#041D2A",
+          "gap": 56,
+          "padding": [
+            80,
+            64
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Y26NRC",
+              "name": "Sambutan Copy Column",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IkYuo",
+                  "name": "Eyebrow Badge",
+                  "fill": "#0A2C3E",
+                  "cornerRadius": 999,
+                  "stroke": "#0D8D82",
+                  "strokeWidth": 1,
+                  "padding": [
+                    4,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "x8TYLS",
+                      "name": "Eyebrow Text",
+                      "fill": "#82DED2",
+                      "content": "SELAMAT DATANG DI DONGGALA",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Eq4kO",
+                  "name": "Sambutan Headline",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Dua desa pesisir, denyut kearifan yang terjaga",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 40,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "k7E8H",
+                  "name": "Sambutan Paragraph",
+                  "fill": "#CBD5E1",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Towale dan Limboro adalah rumah bagi kriya tenun ikat tertua di Tanah Kaili, fenomena geologi laut purba Pusentasi, dan bentang teluk bahari dengan perbukitan tropis yang asri. Situs ini adalah pintu masuk Anda, dari workshop menenun hingga kosakata bahasa Kaili untuk menyapa warga.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "cfz7X",
+                  "name": "Village Tag Badges",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "x2IO1",
+                      "name": "Tag: Desa Towale · Kriya & Pusentasi",
+                      "fill": "#0A2C3E",
+                      "cornerRadius": 999,
+                      "stroke": "#1A4D68",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F98xvR",
+                          "name": "Tag Text",
+                          "fill": "#82DED2",
+                          "content": "Desa Towale · Kriya & Pusentasi",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WBqCw",
+                      "name": "Tag: Desa Limboro · Pantai & Sagu",
+                      "fill": "#0A2C3E",
+                      "cornerRadius": 999,
+                      "stroke": "#1A4D68",
+                      "strokeWidth": 1,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mi8y9",
+                          "name": "Tag Text",
+                          "fill": "#82DED2",
+                          "content": "Desa Limboro · Pantai & Sagu",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z62Pzb",
+              "name": "Sambutan Photo Card",
+              "clip": true,
+              "width": 580,
+              "height": 380,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "assets/hero_limboro_coastal.png",
+                "mode": "cover"
+              },
+              "cornerRadius": 20,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z0A8Pj",
+          "name": "Section / Cita Rasa & Hasil Bumi",
+          "width": "fill_container",
+          "fill": "#F5F3ED",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "y8XdOz",
+              "name": "Kuliner Section Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JCZBL",
+                  "name": "Badge Eyebrow",
+                  "fill": "#E8E2D4",
+                  "cornerRadius": 999,
+                  "padding": [
+                    4,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g9m5E",
+                      "name": "Badge Text",
+                      "fill": "#0D8D82",
+                      "content": "KRIYA & PANGAN LOKAL",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Urq9p",
+                  "name": "Kuliner Title",
+                  "fill": "#041D2A",
+                  "content": "Cita rasa dari tanah dan laut Donggala",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 38,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "nr7hO",
+                  "name": "Kuliner Subtitle",
+                  "fill": "#5F6E69",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Karya tenun ikat bersejarah, kudapan olahan sagu alami, dan sajian laut yang menghidupi warga pesisir.",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XQxJB",
+              "name": "Staggered Tilt Cards Row",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YSuH8",
+                  "name": "Tilt Card: Kain Tenun Buya Bomba",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 22,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XkERb",
+                      "name": "Card Content Top",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "O8wS1x",
+                          "name": "Pill Badge",
+                          "fill": "#ECFDF5",
+                          "cornerRadius": 999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "v7ai8",
+                              "name": "Badge Text",
+                              "fill": "#0D8D82",
+                              "content": "Kriya Pusaka",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "C6lBCO",
+                          "name": "Card Title",
+                          "fill": "#041D2A",
+                          "content": "Kain Tenun Buya Bomba",
+                          "fontFamily": "Fraunces",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wLlDE",
+                          "name": "Card Description",
+                          "fill": "#5F6E69",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Tenun sutra ikat Kaili bermotif bunga mekar kemakmuran, ditenun dengan ATBM tradisional oleh ibu-ibu penenun Towale.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wHv0y",
+                      "name": "Card Footer",
+                      "width": "fill_container",
+                      "stroke": "#F3EEE3",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "URZIz",
+                          "name": "Card Price",
+                          "fill": "#0D8D82",
+                          "content": "Rp450.000 / lembar",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vNgrs",
+                          "name": "Card Creator",
+                          "fill": "#94A3B8",
+                          "content": "Oleh: Kelompok Subaer Towale",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cLaKx",
+                  "name": "Tilt Card: Keripik Sagu Gurih",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 22,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "sgXMg",
+                      "name": "Card Content Top",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Lz3ZQ",
+                          "name": "Pill Badge",
+                          "fill": "#FEF3C7",
+                          "cornerRadius": 999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "It6KA",
+                              "name": "Badge Text",
+                              "fill": "#B45309",
+                              "content": "Kudapan Pesisir",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "E5ZMo",
+                          "name": "Card Title",
+                          "fill": "#041D2A",
+                          "content": "Keripik Sagu Gurih",
+                          "fontFamily": "Fraunces",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "L6oGga",
+                          "name": "Card Description",
+                          "fill": "#5F6E69",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Olahan empulur sagu alami pilihan, renyah dan gurih khas pesisir Limboro untuk teman minum teh sore.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u1z658",
+                      "name": "Card Footer",
+                      "width": "fill_container",
+                      "stroke": "#F3EEE3",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w23jU",
+                          "name": "Card Price",
+                          "fill": "#0D8D82",
+                          "content": "Rp20.000 / 250 g",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ypr4N",
+                          "name": "Card Creator",
+                          "fill": "#94A3B8",
+                          "content": "Oleh: KWT Sejahtera Limboro",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Voyzv",
+                  "name": "Tilt Card: Cookies Sagu Rendah Gula",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 22,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BZHLv",
+                      "name": "Card Content Top",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "eVIf2",
+                          "name": "Pill Badge",
+                          "fill": "#EFF8FF",
+                          "cornerRadius": 999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nVLiR",
+                              "name": "Badge Text",
+                              "fill": "#0F70A6",
+                              "content": "Pangan Sehat",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZbpAC",
+                          "name": "Card Title",
+                          "fill": "#041D2A",
+                          "content": "Cookies Sagu Rendah Gula",
+                          "fontFamily": "Fraunces",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "K7M6Ok",
+                          "name": "Card Description",
+                          "fill": "#5F6E69",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Inovasi kue kering berbahan dasar pati sagu lokal bebas gluten, kaya serat dan sehat untuk keluarga.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V9UF1",
+                      "name": "Card Footer",
+                      "width": "fill_container",
+                      "stroke": "#F3EEE3",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HHdHL",
+                          "name": "Card Price",
+                          "fill": "#0D8D82",
+                          "content": "Rp25.000 / toples",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pV0ea",
+                          "name": "Card Creator",
+                          "fill": "#94A3B8",
+                          "content": "Oleh: Sentra Pangan Limboro",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UTZHm",
+                  "name": "Tilt Card: Ikan Bakar Selat Makassar",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 22,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "CB09m",
+                      "name": "Card Content Top",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "DPGVT",
+                          "name": "Pill Badge",
+                          "fill": "#FEE2E2",
+                          "cornerRadius": 999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "CgwiG",
+                              "name": "Badge Text",
+                              "fill": "#B91C1C",
+                              "content": "Kuliner Bahari",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 11,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "DJJi1",
+                          "name": "Card Title",
+                          "fill": "#041D2A",
+                          "content": "Ikan Bakar Selat Makassar",
+                          "fontFamily": "Fraunces",
+                          "fontSize": 20,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kgTi5",
+                          "name": "Card Description",
+                          "fill": "#5F6E69",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ikan karang segar tangkapan hari itu, dibakar bumbu rempah rica dan disantap hangat bersama dange sagu.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZTCt9",
+                      "name": "Card Footer",
+                      "width": "fill_container",
+                      "stroke": "#F3EEE3",
+                      "strokeWidth": {
+                        "top": 1
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XYeMK",
+                          "name": "Card Price",
+                          "fill": "#0D8D82",
+                          "content": "Segar Harian",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "text",
+                          "id": "U5N1sA",
+                          "name": "Card Creator",
+                          "fill": "#94A3B8",
+                          "content": "Oleh: Nelayan Pesisir Kaluku",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yIN9h",
+          "name": "Section / Budaya & Tradisi",
+          "width": "fill_container",
+          "fill": "#041D2A",
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "btXJ2",
+              "name": "Budaya Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SUvGP",
+                  "name": "Badge Eyebrow",
+                  "fill": "#0A2C3E",
+                  "cornerRadius": 999,
+                  "stroke": "#0D8D82",
+                  "strokeWidth": 1,
+                  "padding": [
+                    4,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qvfXp",
+                      "name": "Badge Text",
+                      "fill": "#82DED2",
+                      "content": "WARISAN LELUHUR",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "uBLJC",
+                  "name": "Budaya Title",
+                  "fill": "#FFFFFF",
+                  "content": "Warisan yang menjaga tanah dan laut tetap hidup",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 38,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "UuXn3",
+                  "name": "Budaya Subtitle",
+                  "fill": "#CBD5E1",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Filosofi tenun ikat perempuan Kaili dan etika konservasi nelayan yang menjaga harmoni pesisir Donggala.",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I041U",
+              "name": "Story Row 1: Towale Tenun",
+              "width": "fill_container",
+              "gap": 48,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "A83t4q",
+                  "name": "Story 1 Photo",
+                  "clip": true,
+                  "width": 580,
+                  "height": 360,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1760328773320-a5a1c75703bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyNzEyMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "cover"
+                  },
+                  "cornerRadius": 18,
+                  "stroke": "#1A4D68",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "VlQzv",
+                  "name": "Story 1 Text Col",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bd4an",
+                      "name": "Story 1 Eyebrow",
+                      "fill": "#82DED2",
+                      "content": "TRADISI KRIYA TENUN · DESA TOWALE",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "uRwDZ",
+                      "name": "Story 1 Title",
+                      "fill": "#FFFFFF",
+                      "content": "Filosofi Tenun Buya Bomba",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VHWOi",
+                      "name": "Story 1 Body",
+                      "fill": "#CBD5E1",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bagi masyarakat Kaili di Towale, selembar Buya Bomba bukan sekadar kain hiasan. Setiap helai benang merekam doa keselamatan, status kehormatan, dan filosofi hubungan manusia dengan alam. Tradisi ini diwariskan turun-temurun dari ibu kepada anak perempuannya dengan alat tenun gedokan tradisional.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rysg4",
+                      "name": "Story 1 Link",
+                      "fill": "#82DED2",
+                      "content": "Pelajari filosofi tenun →",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vVqGr",
+              "name": "Story Row 2: Limboro Konservasi",
+              "width": "fill_container",
+              "gap": 48,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Nq1G6",
+                  "name": "Story 2 Text Col",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vpldQ",
+                      "name": "Story 2 Eyebrow",
+                      "fill": "#82DED2",
+                      "content": "KONSERVASI PESISIR · DESA LIMBORO",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ew2gG",
+                      "name": "Story 2 Title",
+                      "fill": "#FFFFFF",
+                      "content": "Kearifan Konservasi Teluk Limboro",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pLL1o",
+                      "name": "Story 2 Body",
+                      "fill": "#CBD5E1",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Nelayan Limboro menjaga perairan teluk dengan prinsip kearifan bahari: tidak merusak terumbu karang tempat pemijahan ikan dan menjaga vegetasi pantai serta rumpun sagu sebagai benteng alami dari abrasi gelombang Selat Makassar. Harmoni ini yang membuat air pantai tetap toska dan jernih.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "eLLVM",
+                      "name": "Story 2 Link",
+                      "fill": "#82DED2",
+                      "content": "Pelajari konservasi pesisir →",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "I8z0uM",
+                  "name": "Story 2 Photo",
+                  "clip": true,
+                  "width": 580,
+                  "height": 360,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "assets/hero_limboro_coastal.png",
+                    "mode": "cover"
+                  },
+                  "cornerRadius": 18,
+                  "stroke": "#1A4D68",
+                  "strokeWidth": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JVTFT",
+          "name": "Section / Kamus Bahasa Kaili",
+          "width": "fill_container",
+          "fill": "#0A2C3E",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "S0LvAN",
+              "name": "Bahasa Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "E9NwE",
+                  "name": "Badge Eyebrow",
+                  "fill": "#041D2A",
+                  "cornerRadius": 999,
+                  "stroke": "#0D8D82",
+                  "strokeWidth": 1,
+                  "padding": [
+                    4,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G4xED",
+                      "name": "Badge Text",
+                      "fill": "#82DED2",
+                      "content": "KAMUS PRAKTIS BAHASA DAERAH",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "zNBN1",
+                  "name": "Bahasa Title",
+                  "fill": "#FFFFFF",
+                  "content": "Sapa warga dengan bahasanya sendiri",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 38,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "g4VIP",
+                  "name": "Bahasa Subtitle",
+                  "fill": "#CBD5E1",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Beberapa kata Kaili yang Anda ucapkan akan membuka lebih banyak senyum daripada seribu foto saat Anda berkunjung ke Towale dan Limboro.",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "x7jWA2",
+              "name": "Words Grid Row",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "O2MsvI",
+                  "name": "Word Card: Ndokumo",
+                  "width": "fill_container",
+                  "fill": "#041D2A",
+                  "cornerRadius": 18,
+                  "stroke": "#1A4D68",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Z7o0k",
+                      "name": "Kaili Word",
+                      "fill": "#82DED2",
+                      "content": "Ndokumo",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 26,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zyehb",
+                      "name": "Arti Word",
+                      "fill": "#FFFFFF",
+                      "content": "Halo / Apa Kabar",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S1RAN",
+                      "name": "Context Word",
+                      "fill": "#94A3B8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sapaan santun saat berpapasan dengan warga desa atau bertamu ke rumah panggung penenun.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kY5LO",
+                  "name": "Word Card: Tarimakasi",
+                  "width": "fill_container",
+                  "fill": "#041D2A",
+                  "cornerRadius": 18,
+                  "stroke": "#1A4D68",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VCvMH",
+                      "name": "Kaili Word",
+                      "fill": "#82DED2",
+                      "content": "Tarimakasi",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 26,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "B0cAXG",
+                      "name": "Arti Word",
+                      "fill": "#FFFFFF",
+                      "content": "Terima Kasih",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VGN3f",
+                      "name": "Context Word",
+                      "fill": "#94A3B8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Ungkapan terima kasih setelah menikmati sajian kopi atau selesai berbelanja karya tenun.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DDYsV",
+                  "name": "Word Card: Mabelo",
+                  "width": "fill_container",
+                  "fill": "#041D2A",
+                  "cornerRadius": 18,
+                  "stroke": "#1A4D68",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jjOOm",
+                      "name": "Kaili Word",
+                      "fill": "#82DED2",
+                      "content": "Mabelo",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 26,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hTuIp",
+                      "name": "Arti Word",
+                      "fill": "#FFFFFF",
+                      "content": "Indah / Elok / Bagus",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GEVy7",
+                      "name": "Context Word",
+                      "fill": "#94A3B8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Pujian tulus saat menyaksikan bentang pantai teluk Limboro atau motif tenun yang halus.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aisef",
+                  "name": "Word Card: Kande",
+                  "width": "fill_container",
+                  "fill": "#041D2A",
+                  "cornerRadius": 18,
+                  "stroke": "#1A4D68",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l7PiO",
+                      "name": "Kaili Word",
+                      "fill": "#82DED2",
+                      "content": "Kande",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 26,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kiZA3",
+                      "name": "Arti Word",
+                      "fill": "#FFFFFF",
+                      "content": "Makan / Mari Makan",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A35u0P",
+                      "name": "Context Word",
+                      "fill": "#94A3B8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Ajakan ramah bersantap bersama ikan bakar segar dan olahan sagu di tepi pantai.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "olzsA",
+          "name": "Section / Kedaruratan Pesisir",
+          "width": "fill_container",
+          "fill": "#F5F3ED",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "yaulL",
+              "name": "Darurat Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZbXZR",
+                  "name": "Badge Eyebrow",
+                  "fill": "#FEE2E2",
+                  "cornerRadius": 999,
+                  "padding": [
+                    4,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pZaUJ",
+                      "name": "Badge Text",
+                      "fill": "#B91C1C",
+                      "content": "KESELAMATAN & MITIGASI PESISIR",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "bold",
+                      "letterSpacing": 1.1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "GXsdU",
+                  "name": "Darurat Title",
+                  "fill": "#041D2A",
+                  "content": "Informasi Kedaruratan Pesisir Selat Makassar",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 38,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "i5WI6o",
+                  "name": "Darurat Subtitle",
+                  "fill": "#5F6E69",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Perairan Banawa Tengah dipengaruhi dinamika pasang surut Selat Makassar. Simpan kontak darurat resmi untuk respon cepat.",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K7ebo",
+              "name": "Emergency Contacts Grid Row",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jcg66",
+                  "name": "Emergency Card: 112",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hHhUl",
+                      "name": "Card Number",
+                      "fill": "#0D8D82",
+                      "content": "112",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pUJjN",
+                      "name": "Card Label",
+                      "fill": "#041D2A",
+                      "content": "Darurat Nasional",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q3NDy",
+                      "name": "Card Desc",
+                      "fill": "#5F6E69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bebas pulsa 24 jam untuk segala kedaruratan di wilayah Indonesia.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SfgZL",
+                  "name": "Emergency Card: 115",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gkzJx",
+                      "name": "Card Number",
+                      "fill": "#0D8D82",
+                      "content": "115",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Pc8nR",
+                      "name": "Card Label",
+                      "fill": "#041D2A",
+                      "content": "Basarnas / SAR Palu",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "g0je1",
+                      "name": "Card Desc",
+                      "fill": "#5F6E69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Kedaruratan bahari, pertolongan perahu, dan kecelakaan laut pesisir.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PhMTq",
+                  "name": "Emergency Card: 119",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VpI0a",
+                      "name": "Card Number",
+                      "fill": "#0D8D82",
+                      "content": "119",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dGcV6",
+                      "name": "Card Label",
+                      "fill": "#041D2A",
+                      "content": "Kedaruratan Medis",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "loPOz",
+                      "name": "Card Desc",
+                      "fill": "#5F6E69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Ambulans dan evakuasi gawat darurat medis cepat.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NGsoc",
+                  "name": "Emergency Card: 0457-xxx",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 18,
+                  "stroke": "#E2DCD2",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a4Tm8G",
+                      "name": "Card Number",
+                      "fill": "#0D8D82",
+                      "content": "0457-xxx",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 32,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "estHe",
+                      "name": "Card Label",
+                      "fill": "#041D2A",
+                      "content": "Puskesmas Banawa Tengah",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bOHoO",
+                      "name": "Card Desc",
+                      "fill": "#5F6E69",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Pelayanan kesehatan tingkat pertama terdekat untuk warga dan wisatawan.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e2KYez",
+          "name": "Footer / Jelajah Donggala Dark Footer",
+          "width": "fill_container",
+          "fill": "#041D2A",
+          "stroke": "#1A4D68",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            64,
+            48,
+            64
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "EKi9U",
+              "name": "Footer Columns Row",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JxgJH",
+                  "name": "Footer Col 1: Identitas",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zC11m",
+                      "name": "Footer Brand Title",
+                      "fill": "#FFFFFF",
+                      "content": "Jelajah Donggala",
+                      "fontFamily": "Fraunces",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "r69qf9",
+                      "name": "Footer Brand Desc",
+                      "fill": "#CBD5E1",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Portal pariwisata terpadu berbasis masyarakat untuk Desa Towale dan Desa Limboro, Kecamatan Banawa Tengah, Kabupaten Donggala, Sulawesi Tengah.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b6kx9r",
+                  "name": "Footer Col 2: Navigasi",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YUPd0",
+                      "name": "Col 2 Title",
+                      "fill": "#FFFFFF",
+                      "content": "Eksplorasi Wilayah",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "i2CjQu",
+                      "name": "Link Profil Desa Towale",
+                      "fill": "#94A3B8",
+                      "content": "Profil Desa Towale",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xyWoX",
+                      "name": "Link Profil Desa Limboro",
+                      "fill": "#94A3B8",
+                      "content": "Profil Desa Limboro",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Jq9Q4",
+                      "name": "Link Kriya Tenun Buya Bomba",
+                      "fill": "#94A3B8",
+                      "content": "Kriya Tenun Buya Bomba",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w7dsi",
+                      "name": "Link Sentra Sagu & Kuliner",
+                      "fill": "#94A3B8",
+                      "content": "Sentra Sagu & Kuliner",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pDkOj",
+                      "name": "Link Peta Geospasial Koridor",
+                      "fill": "#94A3B8",
+                      "content": "Peta Geospasial Koridor",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Nc6N1",
+                  "name": "Footer Col 3: Kedaruratan",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v4HFK",
+                      "name": "Col 3 Title",
+                      "fill": "#FFFFFF",
+                      "content": "Kontak & Bantuan",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vdvXh",
+                      "name": "C3 L1",
+                      "fill": "#94A3B8",
+                      "content": "Kecamatan Banawa Tengah, Donggala",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xfzum",
+                      "name": "C3 L2",
+                      "fill": "#94A3B8",
+                      "content": "Email: jelajahdonggala.kknugm@gmail.com",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p7UnS",
+                      "name": "C3 L3",
+                      "fill": "#82DED2",
+                      "content": "Posko KKN-PPM UGM Banawa Tengah",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "L3OdzC",
+              "name": "Footer Bottom Bar",
+              "width": "fill_container",
+              "stroke": "#1A4D68",
+              "strokeWidth": {
+                "top": 1
+              },
+              "padding": [
+                20,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "epwmp",
+                  "name": "Copy Text",
+                  "fill": "#64748B",
+                  "content": "© 2026 Jelajah Donggala · KKN-PPM Universitas Gadjah Mada bersama Pemdes Towale & Limboro.",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ugr7T",
+                  "name": "Pesona Kei Tribute Tag",
+                  "fill": "#82DED2",
+                  "content": "Design System terinspirasi dari Pesona Kei (KKN UGM 2026)",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "M4gu3",
+      "x": 19200,
+      "y": 2400,
+      "name": "Donggala Pesona Bahari (Kei Edition) / Mobile / 390",
+      "width": 390,
+      "fill": "#041D2A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "wietl",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "fill": "#041D2AF2",
+          "stroke": "#1A4D68",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            16,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Z8BPPT",
+              "name": "Brand Group",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X9NDxv",
+                  "name": "Logo Box",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "#0D8D82",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "CV74Y",
+                      "name": "Logo Text",
+                      "fill": "#FFFFFF",
+                      "content": "JD",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jP6YI",
+                  "name": "Brand Title",
+                  "fill": "#FFFFFF",
+                  "content": "Jelajah Donggala",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 17,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "M2XQO",
+              "name": "Btn Menu",
+              "fill": "#0A2C3E",
+              "cornerRadius": 999,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1,
+              "padding": [
+                8,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "K0bCuk",
+                  "name": "Menu Text",
+                  "fill": "#82DED2",
+                  "content": "Menu",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "b6e8Uc",
+          "name": "Section / Mobile Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "assets/hero_limboro_coastal.png",
+            "mode": "cover"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            28,
+            16,
+            32,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "bdW52",
+              "name": "Hero Card M",
+              "width": "fill_container",
+              "fill": "#041D2AF2",
+              "cornerRadius": 18,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1.5,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 22,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pAq0O",
+                  "name": "Badge M",
+                  "fill": "#0A2C3E",
+                  "cornerRadius": 999,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HcPwt",
+                      "name": "Text",
+                      "fill": "#82DED2",
+                      "content": "BANAWA TENGAH · DONGGALA",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 10,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "w6wBAC",
+                  "name": "Headline",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Surga Bahari & Warisan Tenun di Tanah Kaili",
+                  "lineHeight": 1.2,
+                  "fontFamily": "Fraunces",
+                  "fontSize": 30,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "q77LJJ",
+                  "name": "Desc",
+                  "fill": "#CBD5E1",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pasir putih melengkung di Teluk Limboro dan tenun ikat pusaka Buya Bomba di Towale dalam satu portal wisata terpadu.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ehSek",
+                  "name": "Btns M",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IOi6W",
+                      "name": "Btn Jelajah",
+                      "width": "fill_container",
+                      "fill": "#0D8D82",
+                      "cornerRadius": 999,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hXKvo",
+                          "name": "Text",
+                          "fill": "#FFFFFF",
+                          "content": "Jelajahi Sekarang →",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "x0owuH",
+                      "name": "Btn Peta",
+                      "width": "fill_container",
+                      "fill": "#0A2C3E",
+                      "cornerRadius": 999,
+                      "stroke": "#82DED2",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zl7NZ",
+                          "name": "Text",
+                          "fill": "#82DED2",
+                          "content": "Buka Peta Geospasial ↗",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xV1LM",
+          "name": "Marquee Strip M",
+          "width": "fill_container",
+          "fill": "#0A2C3E",
+          "padding": [
+            12,
+            16
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "G3kOQ",
+              "name": "Ticker",
+              "fill": "#82DED2",
+              "content": "❖ TELUK LIMBORO · BUYA BOMBA · PUSENTASI ❖",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sOnbe",
+          "name": "Section / Sambutan M",
+          "width": "fill_container",
+          "fill": "#041D2A",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": [
+            36,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "LNQLX",
+              "name": "Title",
+              "fill": "#FFFFFF",
+              "content": "Dua desa pesisir, denyut kearifan yang terjaga",
+              "fontFamily": "Fraunces",
+              "fontSize": 26,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "hUlzP",
+              "name": "Body",
+              "fill": "#CBD5E1",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Towale dan Limboro menyatukan seni tenun ikat pusaka Kaili dengan eksotisme teluk bahari berair toska.",
+              "lineHeight": 1.5,
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "e0cjrk",
+              "name": "Photo M",
+              "clip": true,
+              "width": "fill_container",
+              "height": 200,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "assets/hero_limboro_coastal.png",
+                "mode": "cover"
+              },
+              "cornerRadius": 14
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KzFh2",
+          "name": "Section / Kuliner M",
+          "width": "fill_container",
+          "fill": "#F5F3ED",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            36,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "g71em",
+              "name": "Title",
+              "fill": "#041D2A",
+              "content": "Cita rasa & kriya Donggala",
+              "fontFamily": "Fraunces",
+              "fontSize": 26,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "leEr8",
+              "name": "Card: Kain Tenun Buya Bomba",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TyDmt",
+                  "name": "Badge",
+                  "fill": "#0D8D82",
+                  "content": "Towale · Kriya",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "v1a8ba",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Kain Tenun Buya Bomba",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "iqXZK",
+                  "name": "Price",
+                  "fill": "#0D8D82",
+                  "content": "Rp450.000 / lembar",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XxucW",
+              "name": "Card: Keripik Sagu Gurih",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E4HAH",
+                  "name": "Badge",
+                  "fill": "#0D8D82",
+                  "content": "Limboro · Pangan",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "nF6Z5",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Keripik Sagu Gurih",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "MeCaK",
+                  "name": "Price",
+                  "fill": "#0D8D82",
+                  "content": "Rp20.000 / 250g",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LKMGB",
+              "name": "Card: Cookies Sagu Rendah Gula",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vsyQ1",
+                  "name": "Badge",
+                  "fill": "#0D8D82",
+                  "content": "Limboro · Sehat",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "HzIdX",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Cookies Sagu Rendah Gula",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "zbb6c",
+                  "name": "Price",
+                  "fill": "#0D8D82",
+                  "content": "Rp25.000 / toples",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NTGuT",
+              "name": "Card: Ikan Bakar Selat Makassar",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 14,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oi7HV",
+                  "name": "Badge",
+                  "fill": "#0D8D82",
+                  "content": "Donggala · Laut",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "m2DgYG",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Ikan Bakar Selat Makassar",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "HTbKD",
+                  "name": "Price",
+                  "fill": "#0D8D82",
+                  "content": "Segar Harian",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r9hX6W",
+          "name": "Section / Kamus Bahasa M",
+          "width": "fill_container",
+          "fill": "#0A2C3E",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            36,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "w7csU",
+              "name": "Title",
+              "fill": "#FFFFFF",
+              "content": "Sapa warga dengan bahasanya",
+              "fontFamily": "Fraunces",
+              "fontSize": 24,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "x3DEf1",
+              "name": "WCard M",
+              "width": "fill_container",
+              "fill": "#041D2A",
+              "cornerRadius": 12,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1,
+              "padding": [
+                14,
+                18
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "i28gc",
+                  "name": "Word",
+                  "fill": "#82DED2",
+                  "content": "Ndokumo",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "IQblj",
+                  "name": "Arti",
+                  "fill": "#FFFFFF",
+                  "content": "Halo / Apa Kabar",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uWHht",
+              "name": "WCard M",
+              "width": "fill_container",
+              "fill": "#041D2A",
+              "cornerRadius": 12,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1,
+              "padding": [
+                14,
+                18
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EqGAf",
+                  "name": "Word",
+                  "fill": "#82DED2",
+                  "content": "Tarimakasi",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "QklVA",
+                  "name": "Arti",
+                  "fill": "#FFFFFF",
+                  "content": "Terima Kasih",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FCw8Y",
+              "name": "WCard M",
+              "width": "fill_container",
+              "fill": "#041D2A",
+              "cornerRadius": 12,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1,
+              "padding": [
+                14,
+                18
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "o7Rxvs",
+                  "name": "Word",
+                  "fill": "#82DED2",
+                  "content": "Mabelo",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "HiyuO",
+                  "name": "Arti",
+                  "fill": "#FFFFFF",
+                  "content": "Indah / Bagus",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YTuxo",
+              "name": "WCard M",
+              "width": "fill_container",
+              "fill": "#041D2A",
+              "cornerRadius": 12,
+              "stroke": "#1A4D68",
+              "strokeWidth": 1,
+              "padding": [
+                14,
+                18
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "e59ZzS",
+                  "name": "Word",
+                  "fill": "#82DED2",
+                  "content": "Kande",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 18,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "jLxDt",
+                  "name": "Arti",
+                  "fill": "#FFFFFF",
+                  "content": "Makan / Ayo Makan",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uVH5g",
+          "name": "Section / Kedaruratan M",
+          "width": "fill_container",
+          "fill": "#F5F3ED",
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            32,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "wJrjX",
+              "name": "Title",
+              "fill": "#041D2A",
+              "content": "Kontak Kedaruratan Pesisir",
+              "fontFamily": "Fraunces",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "or17E",
+              "name": "Row M",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                16
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rX6Dw",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Darurat Nasional",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "CVwtk",
+                  "name": "Num",
+                  "fill": "#0D8D82",
+                  "content": "112",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XvKjs",
+              "name": "Row M",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                16
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "joL60",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Basarnas SAR Palu",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "FrmSb",
+                  "name": "Num",
+                  "fill": "#0D8D82",
+                  "content": "115",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yej7t",
+              "name": "Row M",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": "#E2DCD2",
+              "strokeWidth": 1,
+              "padding": [
+                12,
+                16
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l65gy",
+                  "name": "Name",
+                  "fill": "#041D2A",
+                  "content": "Ambulans Medis",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "ancNg",
+                  "name": "Num",
+                  "fill": "#0D8D82",
+                  "content": "119",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u2PMNF",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "fill": "#041D2A",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            36,
+            16,
+            32,
+            16
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "XvkX8",
+              "name": "Title",
+              "fill": "#FFFFFF",
+              "content": "Jelajah Donggala",
+              "fontFamily": "Fraunces",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "gS9rY",
+              "name": "Desc",
+              "fill": "#CBD5E1",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Portal pariwisata terpadu Desa Towale & Desa Limboro, Kec. Banawa Tengah, Kab. Donggala.",
+              "lineHeight": 1.5,
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "aMKgp",
+              "name": "Copy",
+              "fill": "#64748B",
+              "content": "© 2026 Jelajah Donggala · KKN-PPM UGM",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
