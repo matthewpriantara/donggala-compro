@@ -1,0 +1,191 @@
+[
+  {
+    "id": "01_saga_mandar",
+    "title": "Saga Mandar",
+    "url": "https://www.sagamandar.com/",
+    "region": "Kec. Campalagian, Polewali Mandar, Sulawesi Barat (Desa Laliko & Katumbangan Lemo)",
+    "institution": "KKN-PPM UGM 2026 Periode II",
+    "design_theme": "Maritim & Agraris, The Odyssey of Saga Mandar",
+    "key_features": [
+      "Interactive logo philosophy tooltip breakdown",
+      "Two-village split: Laliko (bahari) vs Katumbangan Lemo (agraris)",
+      "Thematic exploration cards: Mangrove Explorer, Ocean Dive, Baby Turtle, Tenun Heritage"
+    ],
+    "desktop_screenshot": "01_saga_mandar_desktop.png",
+    "mobile_screenshot": "01_saga_mandar_mobile.png",
+    "desktop_size_bytes": 3965671,
+    "mobile_size_bytes": 86154
+  },
+  {
+    "id": "02_muna_merona",
+    "title": "Muna Merona",
+    "url": "https://munamerona.site/",
+    "region": "Kec. Kabangka, Kab. Muna, Sulawesi Tenggara (Desa Komba-Komba & Wakobalu Agung)",
+    "institution": "KKN-PPM UGM 2026",
+    "design_theme": "Etnik Modern & Pesisir Agro-Maritim",
+    "key_features": [
+      "Hero quantitative stats: 28 Mahasiswa, 100+ Proker, 2 Desa, 50 Hari",
+      "4 Signature acronym programs with SDG badges: MANIS, TIBA, SANTUN, LAMBU MUNA",
+      "Sora Muna community festival showcase & village monograph articles"
+    ],
+    "desktop_screenshot": "02_muna_merona_desktop.png",
+    "mobile_screenshot": "02_muna_merona_mobile.png",
+    "desktop_size_bytes": 3012633,
+    "mobile_size_bytes": 826469
+  },
+  {
+    "id": "03_manguyung_maratua",
+    "title": "Manguyung Maratua",
+    "url": "https://manguyungmaratua.com/",
+    "region": "Pulau Maratua, Kab. Berau, Kalimantan Timur (Desa Teluk Harapan & Payung-Payung)",
+    "institution": "KKN-PPM UGM 2026 Periode II",
+    "design_theme": "Kawasan Strategis Pariwisata Nasional (KSPN) Ekowisata Bahari",
+    "key_features": [
+      "Interactive island map with work-program location pins",
+      "Smooth organic wave vector dividers (hero-wave.svg, about-aura.svg)",
+      "Comprehensive profile of remote island community"
+    ],
+    "desktop_screenshot": "03_manguyung_maratua_desktop.png",
+    "mobile_screenshot": "03_manguyung_maratua_mobile.png",
+    "desktop_size_bytes": 2214932,
+    "mobile_size_bytes": 638212
+  },
+  {
+    "id": "04_cakrawala_rote",
+    "title": "Cakrawala Rote",
+    "url": "https://cakrawalarote.vercel.app/",
+    "region": "Kec. Rote Barat, Kab. Rote Ndao, NTT (Desa Bo\u2019a & Nemberala)",
+    "institution": "KKN-PPM UGM 2025 Periode II",
+    "design_theme": "Editorial Heritage, Fotografi Humanis & Budaya Lisan",
+    "key_features": [
+      "Oral history video/audio archive: 3 tribal chiefs, 5 elders, 8 traditional stories",
+      "Photo essay UMKM: Benang-Benang Kehidupan dari Rote (Tenun Lambi Tei, Ti\u2019i Langga)",
+      "High-contrast storytelling layout with cultural dignity"
+    ],
+    "desktop_screenshot": "04_cakrawala_rote_desktop.png",
+    "mobile_screenshot": "04_cakrawala_rote_mobile.png",
+    "desktop_size_bytes": 898473,
+    "mobile_size_bytes": 266236
+  },
+  {
+    "id": "05_cerita_neira",
+    "title": "Cerita Neira",
+    "url": "https://ceritaneira.com/",
+    "region": "Kec. Banda, Kab. Maluku Tengah (Desa Rajawali & TanaRatah)",
+    "institution": "KKN-PPM UGM 2026",
+    "design_theme": "Historis Kepulauan Rempah & Minimalis Elegan",
+    "key_features": [
+      "Poetic local dialect narrative: Katong Bacarita Par Banda Neira",
+      "Generous whitespace, classic editorial serif typography",
+      "Digital village governance and natural resource conservation focus"
+    ],
+    "desktop_screenshot": "05_cerita_neira_desktop.png",
+    "mobile_screenshot": "05_cerita_neira_mobile.png",
+    "desktop_size_bytes": 3629691,
+    "mobile_size_bytes": 767668
+  },
+  {
+    "id": "06_visit_belok_pelaga",
+    "title": "Visit Belok Pelaga",
+    "url": "https://www.visitbelokpelaga.com/",
+    "region": "Kec. Petang, Kab. Badung, Bali (Desa Pelaga & Desa Belok/Sidan)",
+    "institution": "KKN-PPM UGM / Ekowisata Kolaboratif",
+    "design_theme": "Koridor Dataran Tinggi: Dua Desa, Satu Perjalanan",
+    "key_features": [
+      "Spatial elevation corridor concept: Pelaga (700 mdpl) to Belok/Sidan (1500 mdpl)",
+      "Landmark bridge integration (Jembatan Tukad Bangkung) as unifying visual anchor",
+      "Agrotourism, flora, coffee routes & gastronomy guide"
+    ],
+    "desktop_screenshot": "06_visit_belok_pelaga_desktop.png",
+    "mobile_screenshot": "06_visit_belok_pelaga_mobile.png",
+    "desktop_size_bytes": 2247792,
+    "mobile_size_bytes": 531351
+  },
+  {
+    "id": "07_medangup",
+    "title": "MedangUp!",
+    "url": "https://medangup.com/",
+    "region": "Pulau Medang, Kab. Sumbawa, NTB (Desa Bajo Medang & Bugis Medang)",
+    "institution": "KKN-PPM UGM 2026 Periode II",
+    "design_theme": "Pesisir Kepulauan Tropis & Komparasi Kultural",
+    "key_features": [
+      "Side-by-side cultural duality: Bajo Medang (sea traditions) vs Bugis Medang (commerce/hills)",
+      "Dynamic destination carousel (01/11 slider)",
+      "Local marine biota catalogue: Sisok (siput laut), Tetehe (bulu babi), Mangrove"
+    ],
+    "desktop_screenshot": "07_medangup_desktop.png",
+    "mobile_screenshot": "07_medangup_mobile.png",
+    "desktop_size_bytes": 963237,
+    "mobile_size_bytes": 444496
+  },
+  {
+    "id": "08_merawi_pangeran",
+    "title": "Merawi Pangeran",
+    "url": "https://merawi-pangeran.vercel.app/",
+    "region": "Kec. Bandungan, Kab. Semarang, Jawa Tengah (Desa Sidomukti & Jetis)",
+    "institution": "KKN-PPM UGM 2026",
+    "design_theme": "Inovasi Tata Kelola Digital & Geospasial",
+    "key_features": [
+      "1220+ GPS geospatial points mapped for village administration",
+      "4 Academic faculty clusters (Saintek, Agro, Soshum, Medika) integration",
+      "Systematic digital monograph of village resources"
+    ],
+    "desktop_screenshot": "08_merawi_pangeran_desktop.png",
+    "mobile_screenshot": "08_merawi_pangeran_mobile.png",
+    "desktop_size_bytes": 639694,
+    "mobile_size_bytes": 338022
+  },
+  {
+    "id": "09_pesona_kei",
+    "title": "Jelajah Kei Kecil (Pesona Kei)",
+    "url": "https://www.pesonakei.com/",
+    "region": "Kepulauan Kei Kecil, Kab. Maluku Tenggara, Maluku",
+    "institution": "KKN-PPM UGM 2026",
+    "design_theme": "World-Class Marine Ecotourism & Sensory Micro-Interactions",
+    "key_features": [
+      "Sophisticated color system (Ocean, Lagoon, Sand, Coral in CSS variables)",
+      "SmoothScroll (Lenis) & 3D TiltCard (Framer Motion / Motion)",
+      "Local language dictionary (Kamus Bahasa Kei / Veveu Evav)",
+      "Coastal emergency & maritime safety guide (Pasang surut meti & hotline SAR)"
+    ],
+    "desktop_screenshot": "09_pesona_kei_desktop.png",
+    "mobile_screenshot": "09_pesona_kei_mobile.png",
+    "desktop_size_bytes": 1422887,
+    "mobile_size_bytes": 430420
+  },
+  {
+    "id": "10_komodo_hub",
+    "title": "Komodo Digital Hub",
+    "url": "https://komododigitalhub.vercel.app/",
+    "region": "Kec. Komodo, Kab. Manggarai Barat, NTT (Desa Warloka Pesisir & Pasir Panjang Rinca)",
+    "institution": "KKN-PPM UGM 2026",
+    "design_theme": "Single-Door Village Hub Architecture & Community Ecotourism",
+    "key_features": [
+      "Two villages in numbers (Key demographic & geographical metrics)",
+      "Split dual-village cards with high contrast and direct CTAs",
+      "5 Integrated ecosystem modules (Lanskap, UMKM, Lensa, Kesehatan, Layanan)",
+      "Community-based Open Trip booking funnel"
+    ],
+    "desktop_screenshot": "10_komodo_hub_desktop.png",
+    "mobile_screenshot": "10_komodo_hub_mobile.png",
+    "desktop_size_bytes": 2993021,
+    "mobile_size_bytes": 1251662
+  },
+  {
+    "id": "11_jelajah_donggala",
+    "title": "Jelajah Donggala Web App",
+    "url": "https://jelajah-donggala.vercel.app/",
+    "region": "Kec. Banawa Tengah, Kab. Donggala, Sulawesi Tengah (Desa Towale & Limboro)",
+    "institution": "KKN-PPM UGM 2026",
+    "design_theme": "Transactional Ecotourism, Open Trip Booking & Artisan Marketplace",
+    "key_features": [
+      "Interactive schedule & departure calendar for open trips",
+      "Product catalog with direct artisan contact details / WhatsApp",
+      "Interactive OpenStreetMap geolocated explorer with route previews"
+    ],
+    "desktop_screenshot": "11_jelajah_donggala_desktop.png",
+    "mobile_screenshot": "11_jelajah_donggala_mobile.png",
+    "desktop_size_bytes": 1490780,
+    "mobile_size_bytes": 402486
+  }
+]
