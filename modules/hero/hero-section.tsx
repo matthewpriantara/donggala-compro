@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { HeroCarousel } from "./hero-carousel";
 import { ArrowDown, MapPin } from "lucide-react";
 import { PORTAL } from "@/constants/helper";
 import { WaveDivider } from "@/components/ui/wave-divider";
@@ -7,14 +7,7 @@ export function HeroSection() {
   return (
     <>
       <section id="beranda" className="hero">
-        <Image
-          src={PORTAL.heroImage}
-          alt={PORTAL.heroAlt}
-          fill
-          preload
-          sizes="100vw"
-          className="hero-image"
-        />
+        <HeroCarousel />
         <div className="hero-shade" />
         <div className="hero-inner wrap">
           <div className="hero-card">
@@ -38,10 +31,6 @@ export function HeroSection() {
             <MapPin size={16} aria-hidden="true" />
             <span>{PORTAL.location}</span>
           </span>
-          <div className="hero-caption">
-            <span className="caption-line" />
-            <span>{PORTAL.heroCaption}</span>
-          </div>
         </div>
         <a href="#tentang" className="scroll-cue">
           <ArrowDown size={14} />

@@ -21,23 +21,47 @@ export function WaveDivider({ className }: WaveDividerProps) {
 
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
-    media.add("(prefers-reduced-motion: no-preference)", () => {
-      gsap.fromTo(
-        wave,
-        { y: 16 },
-        {
-          y: -28,
-          ease: "none",
-          scrollTrigger: {
-            trigger: container,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 0.8,
-            invalidateOnRefresh: true,
+    const trigger = container.previousElementSibling;
+    if (!trigger) return;
+    media.add(
+      {
+        shouldAnimate: "(prefers-reduced-motion: no-preference)",
+        shouldReduce: "(prefers-reduced-motion: reduce)",
+      },
+      (context) => {
+        const settings = {
+          trigger,
+          start: "top top",
+          end: () =>
+            `+=${Math.max(260, trigger.getBoundingClientRect().height * 0.55)}`,
+          invalidateOnRefresh: true,
+        };
+        if (context.conditions?.shouldReduce) {
+          const handleProgress = (self: ScrollTrigger) => {
+            wave.style.transform =
+              self.progress > 0 ? "translateY(0%)" : "translateY(100%)";
+          };
+          ScrollTrigger.create({
+            ...settings,
+            onUpdate: handleProgress,
+            onRefresh: handleProgress,
+          });
+          return () => {
+            wave.style.removeProperty("transform");
+          };
+        }
+        gsap.fromTo(
+          wave,
+          { y: 0, yPercent: 100 },
+          {
+            y: 0,
+            yPercent: 0,
+            ease: "none",
+            scrollTrigger: { ...settings, scrub: 0.8 },
           },
-        },
-      );
-    });
+        );
+      },
+    );
 
     return () => media.revert();
   }, []);
