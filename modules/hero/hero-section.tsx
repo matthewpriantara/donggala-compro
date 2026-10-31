@@ -17,9 +17,6 @@ export function HeroSection() {
         <div className="hero-shade" />
         <div className="hero-inner wrap">
           <div className="hero-card">
-            <p className="eyebrow location">
-              {PORTAL.location}
-            </p>
             <h1>
               {PORTAL.headline}
               <br />
@@ -37,8 +34,8 @@ export function HeroSection() {
             </div>
           </div>
           <span className="hero-coordinate">
-            <MapPin size={14} />
-            {PORTAL.edition}
+            <MapPin size={16} aria-hidden="true" />
+            <span>{PORTAL.location}</span>
           </span>
           <div className="hero-caption">
             <span className="caption-line" />

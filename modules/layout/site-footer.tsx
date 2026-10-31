@@ -20,7 +20,7 @@ export function SiteFooter() {
         <div>
           <p className="eyebrow">{PORTAL.footerNav}</p>
           <nav>
-            {NAV_LINKS.slice(1).map((link) => (
+            {NAV_LINKS.filter((link) => link.href !== "/").map((link) => (
               <NavigationLink href={link.href} key={link.href}>
                 {link.title}
                 <ArrowUpRight size={13} />
