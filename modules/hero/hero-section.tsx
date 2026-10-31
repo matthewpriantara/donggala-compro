@@ -32,10 +32,6 @@ export function HeroSection() {
             <span>{PORTAL.location}</span>
           </span>
         </div>
-        <a href="#tentang" className="scroll-cue">
-          <ArrowDown size={14} />
-          {PORTAL.scroll}
-        </a>
       </section>
       <WaveDivider className="hero-wave" />
     </>
