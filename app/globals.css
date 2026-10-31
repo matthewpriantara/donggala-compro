@@ -1409,3 +1409,212 @@ em {
     letter-spacing: 0.08em;
   }
 }
+
+/* Topic routes share the same gutters, typography, and server-rendered shell. */
+.desktop-nav a[aria-current="page"],
+.mobile-nav a[aria-current="page"] {
+  color: var(--color-motif-yellow);
+}
+.desktop-nav a[aria-current="page"] {
+  box-shadow: inset 0 -2px var(--color-motif-yellow);
+}
+.topic-hero {
+  background: linear-gradient(120deg, #0a2c3e, #041d2a);
+  border-bottom: 1px solid var(--line);
+  padding-block: 32px 72px;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 48px;
+}
+.breadcrumbs a:hover {
+  color: #82ded2;
+}
+.topic-hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.topic-hero h1 {
+  font-size: clamp(40px, 4.4vw, 66px);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.topic-description {
+  margin-top: 26px;
+  color: #bdcfd5;
+  font-size: 17px;
+  max-width: 650px;
+}
+.topic-hero .text-link {
+  margin-top: 22px;
+  color: #82ded2;
+}
+.topic-visual {
+  position: relative;
+  min-width: 0;
+  height: 340px;
+  border: 1px solid #315263;
+  border-radius: 80px 4px 4px 4px;
+  overflow: hidden;
+}
+.topic-photo img {
+  object-fit: cover;
+}
+.topic-motif {
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse, #2b627455, transparent 70%);
+}
+.topic-introduction {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  padding-bottom: 0;
+}
+.topic-introduction p {
+  color: var(--muted);
+  font-size: 17px;
+}
+.topic-introduction p + p {
+  margin-top: 22px;
+}
+.topic-guide {
+  border-top: 1px solid var(--line);
+}
+.topic-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 42px;
+}
+.topic-guide-grid article {
+  border-top: 1px solid #365563;
+  padding-top: 24px;
+  min-width: 0;
+}
+.topic-guide-grid h3 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.topic-guide-grid p {
+  color: var(--muted);
+  font-size: 16px;
+}
+.related-topics {
+  background: #0a2c3e;
+  border-block: 1px solid var(--line);
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 36px;
+}
+.related-grid a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #365563;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.related-grid a:hover {
+  background: #133d4b;
+  color: #eeff99;
+}
+.dictionary-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.dictionary-search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 620px;
+  border: 1px solid #52727e;
+  padding: 15px 18px;
+  border-radius: 5px;
+  background: #041d2a;
+}
+.dictionary-search:focus-within {
+  outline: 2px solid #55bbdd;
+  outline-offset: 4px;
+}
+.dictionary-search input {
+  width: 100%;
+  min-width: 0;
+  font: inherit;
+  font-size: 16px;
+  color: white;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.dictionary-search input::placeholder {
+  color: #a3b9c2;
+}
+.dictionary-count {
+  margin-block: 20px;
+  color: #b6cbd2;
+  font-size: 14px;
+}
+.dictionary-empty {
+  padding-block: 40px;
+  color: #c9d7dc;
+}
+@media (max-width: 900px) {
+  .topic-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .topic-visual {
+    height: 260px;
+  }
+  .topic-introduction {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .topic-guide-grid {
+    grid-template-columns: 1fr;
+  }
+  .topic-guide-grid h3 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .topic-hero {
+    padding-block: 24px 50px;
+  }
+  .breadcrumbs {
+    margin-bottom: 32px;
+    font-size: 12px;
+  }
+  .topic-hero h1 {
+    font-size: 40px;
+  }
+  .topic-description,
+  .topic-introduction p {
+    font-size: 16px;
+  }
+  .topic-visual {
+    height: 220px;
+    border-top-left-radius: 60px;
+  }
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+  .related-grid a {
+    font-size: 16px;
+    padding: 20px;
+  }
+}

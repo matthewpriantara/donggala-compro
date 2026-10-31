@@ -28,3 +28,12 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - Nomor Puskesmas dan peta evakuasi tidak direkayasa. Peta eksplorasi diarahkan ke platform; tidak dilabeli sebagai peta evakuasi.
 - Target LCP, CLS, INP, audit aksesibilitas lengkap, dan ketersediaan semua rute platform tujuan belum diverifikasi pada deployment produksi. Fase 7 PRD tetap terbuka.
 - Referensi: dokumen kajian serta screenshot desktop/mobile semua 11 portal dalam `referensi_benchmark/`, dilengkapi penelusuran situs yang dapat diakses. Sebagian situs benchmark tidak dapat diakses saat pengerjaan.
+
+## Halaman detail topik
+
+- Navbar desktop, menu mobile, dan navigasi footer menuju `/desa`, `/kriya-kuliner`, `/budaya`, `/bahasa`, dan `/kedaruratan`. Beranda dan logo menuju `/`.
+- Setiap halaman mempunyai metadata, breadcrumb, pengantar khusus, konten topik, panduan berkunjung, dan tautan ke topik lainnya. Menu aktif menggunakan `aria-current="page"`.
+- Kamus Bahasa Kaili menyediakan pencarian kata, arti, serta situasi dan keadaan hasil kosong. Entri tetap memerlukan validasi penutur lokal.
+- Halaman serta section tetap Server Component; navigasi aktif dan pencarian diisolasi pada komponen interaktif kecil.
+- Referensi struktur: https://www.pesonakei.com/budaya, https://www.pesonakei.com/bahasa, dan https://www.pesonakei.com/kedaruratan. Konten budaya Kei tidak disalin menjadi klaim mengenai Donggala.
+- Build, lint, TypeScript, dan pemeriksaan diff berhasil. Pengujian Chromium mencakup enam rute pada 1440/768/390/320 px, klik navbar, reset scroll, menu mobile, metadata, gambar, anchor, pencarian kamus, serta tautan telepon. Tidak ditemukan error runtime.

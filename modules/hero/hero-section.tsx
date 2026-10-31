@@ -18,7 +18,6 @@ export function HeroSection() {
         <div className="hero-inner wrap">
           <div className="hero-card">
             <p className="eyebrow location">
-              <span />
               {PORTAL.location}
             </p>
             <h1>

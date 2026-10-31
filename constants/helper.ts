@@ -26,12 +26,12 @@ export const COMPANY_DESCRIPTION =
 // 2. NAVIGASI UTAMA
 // ============================================================================
 export const NAV_LINKS: readonly NavItem[] = [
-  { title: "Beranda", href: "#beranda" },
-  { title: "Profil Desa", href: "#tentang" },
-  { title: "Kriya & Kuliner", href: "#karya" },
-  { title: "Budaya", href: "#budaya" },
-  { title: "Bahasa Kaili", href: "#bahasa" },
-  { title: "Kedaruratan", href: "#kedaruratan" },
+  { title: "Beranda", href: "/" },
+  { title: "Profil Desa", href: "/desa" },
+  { title: "Kriya & Kuliner", href: "/kriya-kuliner" },
+  { title: "Budaya", href: "/budaya" },
+  { title: "Bahasa Kaili", href: "/bahasa" },
+  { title: "Kedaruratan", href: "/kedaruratan" },
 ];
 
 // ============================================================================
@@ -404,3 +404,165 @@ export const EMERGENCY_CONTACTS = [
   { number: "119", label: "Kegawatdaruratan medis", note: "Layanan kesehatan" },
 ] as const;
 export const MOTIF_PATH = "/images/elements/kotak 4 ";
+
+export const TOPIC_UI = {
+  home: "Beranda",
+  back: "Kembali ke beranda",
+  related: "LANJUTKAN PENJELAJAHAN",
+  relatedTitle: "Masih ada cerita untuk dikenali.",
+  readMore: "Kenali lebih dekat",
+  guide: "PANDUAN SEBELUM BERKUNJUNG",
+  guideTitle: "Bekal kecil untuk perjalanan yang baik.",
+  searchLabel: "Cari kosakata Kaili",
+  searchPlaceholder: "Cari kata, arti, atau situasi…",
+  noWords: "Belum ada kosakata yang sesuai. Coba kata lain.",
+  wordsUnit: "kosakata ditampilkan",
+} as const;
+export const TOPIC_PAGES = {
+  desa: {
+    path: "/desa",
+    label: "Profil Desa",
+    eyebrow: "TOWALE & LIMBORO · BANAWA TENGAH",
+    title: "Dua desa, dua cara merawat pesisir.",
+    description:
+      "Kenali karakter Towale dan Limboro sebelum menyusun perjalanan: warisan tenun Kaili, bentang bahari, dan kehidupan yang tumbuh bersama warga.",
+    image: "/images/wisata_towale.jpg",
+    imageAlt: "Pohon kelapa dan perahu di pesisir Towale",
+    introTitle: "Satu koridor, pengalaman yang saling melengkapi.",
+    paragraphs: [
+      "Towale mempertemukan pengunjung dengan kriya tenun Buya Bomba, Pusentasi, dan Pantai Bonebula. Luangkan waktu untuk melihat proses, mendengar cerita, dan memahami kehidupan di balik setiap tempat.",
+      "Limboro melanjutkan perjalanan melalui pesisir Kaluku, tradisi nelayan, dan pengolahan sagu. Perjalanan tidak hanya tentang berpindah destinasi, tetapi juga mengenal hubungan warga dengan laut dan hasil bumi.",
+    ],
+    guide: [
+      {
+        title: "Mulai dari percakapan",
+        text: "Hubungi pengelola lokal melalui platform untuk menanyakan akses, pendamping, dan kesiapan aktivitas warga.",
+      },
+      {
+        title: "Susun waktu yang lentur",
+        text: "Gabungkan kunjungan kriya dan pesisir tanpa memaksakan jadwal. Aktivitas mengikuti cuaca serta keseharian tuan rumah.",
+      },
+      {
+        title: "Gunakan peta eksplorasi",
+        text: "Buka peta platform untuk mengenali wilayah. Konfirmasikan kondisi jalan dan lokasi pertemuan sebelum berangkat.",
+      },
+    ],
+  },
+  karya: {
+    path: "/kriya-kuliner",
+    label: "Kriya & Kuliner",
+    eyebrow: "KARYA TANGAN · HASIL BUMI · CITA RASA",
+    title: "Kenali asalnya, hargai prosesnya.",
+    description:
+      "Di balik sehelai tenun dan sepiring sajian, ada keterampilan, bahan lokal, dan keseharian warga Towale serta Limboro.",
+    image: null,
+    imageAlt: "",
+    introTitle: "Belanja sebagai perjumpaan dengan pembuatnya.",
+    paragraphs: [
+      "Tenun Buya Bomba membuka ruang untuk mengenal motif, bahan, dan waktu pengerjaan bersama penenun Towale. Tanyakan perbedaan setiap kain serta cara merawatnya sebelum memilih karya untuk dibawa pulang.",
+      "Di Limboro, sagu hadir sebagai bahan pangan yang diolah menjadi keripik dan cookies. Sajian ikan pesisir mengikuti hasil tangkapan harian. Tanyakan bahan, porsi, dan ketersediaan langsung kepada pembuatnya.",
+    ],
+    guide: [
+      {
+        title: "Konfirmasi sebelum membeli",
+        text: "Harga yang ditampilkan merupakan acuan PRD. Cocokkan harga terkini, pilihan produk, dan stok dengan pengrajin melalui katalog platform.",
+      },
+      {
+        title: "Tanyakan bahan dan perawatan",
+        text: "Untuk tenun, tanyakan bahan dan petunjuk pencucian. Untuk pangan, periksa komposisi, alergen, kemasan, dan masa simpan bersama penjual.",
+      },
+      {
+        title: "Dukung karya warga",
+        text: "Hargai waktu pengerjaan serta izin dokumentasi. Pengaturan pembayaran dan pengambilan disepakati langsung dengan pembuat.",
+      },
+    ],
+  },
+  budaya: {
+    path: "/budaya",
+    label: "Budaya",
+    eyebrow: "WARISAN KAILI & KEPEDULIAN PADA ALAM",
+    title: "Budaya hidup dalam keseharian.",
+    description:
+      "Dari ketekunan menenun hingga cara menjaga pesisir, kenali nilai yang dirawat warga melalui cerita dan perjumpaan langsung.",
+    image: null,
+    imageAlt: "",
+    introTitle: "Datang untuk mendengar, bukan sekadar melihat.",
+    paragraphs: [
+      "Kriya tenun merupakan pintu masuk untuk mengenal warisan Kaili di Towale. Makna motif dan kisah keluarga sebaiknya didengar langsung dari penenun, dengan menghormati perbedaan penuturan serta pengalaman setiap orang.",
+      "Di pesisir Limboro, perjalanan yang menghargai budaya juga berarti menghormati ruang kerja nelayan dan menjaga lingkungan. Menikmati teluk membawa tanggung jawab untuk meninggalkannya tetap baik bagi warga.",
+    ],
+    guide: [
+      {
+        title: "Minta izin sebelum merekam",
+        text: "Tanyakan kesediaan warga sebelum memotret, merekam proses kerja, atau mempublikasikan cerita pribadi.",
+      },
+      {
+        title: "Hargai ruang dan waktu warga",
+        text: "Ikuti arahan tuan rumah saat berkunjung ke tempat menenun, rumah, atau ruang kerja nelayan.",
+      },
+      {
+        title: "Bawa pulang sampah",
+        text: "Hindari mengambil biota atau menyentuh karang. Pilih aktivitas bersama pendamping yang memahami kondisi pesisir.",
+      },
+    ],
+  },
+  bahasa: {
+    path: "/bahasa",
+    label: "Bahasa Kaili",
+    eyebrow: "KAMUS SAPAAN · BELAJAR BERSAMA WARGA",
+    title: "Mulai dengan satu sapaan.",
+    description:
+      "Kosakata sederhana untuk membuka percakapan dengan warga. Cari kata menurut arti atau situasi, lalu pelajari pengucapannya langsung dari penutur lokal.",
+    image: null,
+    imageAlt: "",
+    introTitle: "Bahasa bukan hanya daftar kata.",
+    paragraphs: [
+      "Sapaan memberi ruang untuk mengenal orang yang kita temui. Gunakan kamus ringkas ini sebagai pengantar ketika bertamu, mengapresiasi karya, atau berbagi makanan bersama warga.",
+      "Bahasa Kaili memiliki ragam dialek. Entri awal mengikuti PRD dan masih memerlukan validasi penutur setempat; arti, konteks, serta pengucapannya dapat berbeda. Jangan ragu meminta koreksi dengan santun.",
+    ],
+    guide: [
+      {
+        title: "Dengarkan pengucapannya",
+        text: "Mintalah warga mencontohkan kata sesuai dialek yang mereka gunakan. Halaman ini belum menyediakan rekaman audio terverifikasi.",
+      },
+      {
+        title: "Perhatikan situasinya",
+        text: "Tanyakan sapaan yang pantas digunakan kepada orang yang lebih tua atau saat pertama kali bertamu.",
+      },
+      {
+        title: "Belajar tanpa terburu-buru",
+        text: "Gunakan sedikit kata dengan niat baik. Ucapkan terima kasih ketika warga membantu memperbaiki pengucapan Anda.",
+      },
+    ],
+  },
+  kedaruratan: {
+    path: "/kedaruratan",
+    label: "Kedaruratan",
+    eyebrow: "KESELAMATAN PESISIR · KONTAK PENTING",
+    title: "Kenali bantuan sebelum dibutuhkan.",
+    description:
+      "Simpan kontak penting dan bicarakan rencana keselamatan bersama pendamping sebelum menjelajahi pesisir Towale dan Limboro.",
+    image: null,
+    imageAlt: "",
+    introTitle: "Persiapan dimulai sebelum tiba di pantai.",
+    paragraphs: [
+      "Pastikan pendamping mengetahui tujuan, kegiatan, dan waktu kembali Anda. Tanyakan kondisi laut, titik pertemuan, serta lokasi bantuan terdekat sebelum memulai aktivitas.",
+      "Daftar kontak di halaman ini merupakan nomor layanan nasional. Jangkauan dan kesiapan respons mengikuti wilayah. Kontak Puskesmas Banawa Tengah dan peta evakuasi lokal masih menunggu verifikasi pemerintah desa.",
+    ],
+    guide: [
+      {
+        title: "Simpan kontak lokal",
+        text: "Minta nomor pendamping serta fasilitas kesehatan terdekat sebelum berangkat. Catat juga secara luring jika sinyal terbatas.",
+      },
+      {
+        title: "Kenali lokasi Anda",
+        text: "Saat meminta bantuan, sampaikan lokasi atau patokan terdekat, jenis kejadian, jumlah orang, serta nomor yang dapat dihubungi kembali.",
+      },
+      {
+        title: "Konfirmasi jalur evakuasi",
+        text: "Minta pendamping menunjukkan titik kumpul dan jalur yang telah ditetapkan setempat. Peta eksplorasi platform bukan peta evakuasi resmi.",
+      },
+    ],
+  },
+} as const;
+export type TopicKey = keyof typeof TOPIC_PAGES;

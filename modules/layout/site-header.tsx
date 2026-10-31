@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { NavigationLink } from "@/components/ui/navigation-link";
 import Image from "next/image";
 import {
   COMPANY_NAME,
@@ -11,7 +13,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a href="#beranda" className="brand">
+        <Link href="/" className="brand">
           <span className="brand-mark">{PORTAL.initials}</span>
           <span>
             <strong>{COMPANY_NAME}</strong>
@@ -23,12 +25,12 @@ export function SiteHeader() {
             height={23}
             alt=""
           />
-        </a>
+        </Link>
         <nav className="desktop-nav" aria-label={PORTAL.navigation}>
           {NAV_LINKS.map((item) => (
-            <a key={item.href} href={item.href}>
+            <NavigationLink key={item.href} href={item.href}>
               {item.title}
-            </a>
+            </NavigationLink>
           ))}
         </nav>
         <ExternalLink href={PORTAL.url} className="button header-cta">
