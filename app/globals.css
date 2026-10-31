@@ -2073,3 +2073,8 @@ body:has(.hero) .site-header {
     text-align: center;
   }
 }
+
+.language-emergency-wave {
+  color: var(--color-sand-100);
+  background-color: var(--color-ocean-900);
+}

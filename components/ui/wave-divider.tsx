@@ -7,10 +7,14 @@ import { cn } from "@/lib/utils";
 
 interface WaveDividerProps {
   className?: string;
+  shouldRevealOnEnter?: boolean;
 }
 
 /** One decorative wave, moving upward with scroll rather than an autoplay loop. */
-export function WaveDivider({ className }: WaveDividerProps) {
+export function WaveDivider({
+  className,
+  shouldRevealOnEnter = false,
+}: WaveDividerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const waveRef = useRef<SVGSVGElement>(null);
 
@@ -30,10 +34,12 @@ export function WaveDivider({ className }: WaveDividerProps) {
       },
       (context) => {
         const settings = {
-          trigger,
-          start: "top top",
+          trigger: shouldRevealOnEnter ? container : trigger,
+          start: shouldRevealOnEnter ? "top bottom" : "top top",
           end: () =>
-            `+=${Math.max(260, trigger.getBoundingClientRect().height * 0.55)}`,
+            shouldRevealOnEnter
+              ? "bottom center"
+              : `+=${Math.max(260, trigger.getBoundingClientRect().height * 0.55)}`,
           invalidateOnRefresh: true,
         };
         if (context.conditions?.shouldReduce) {
@@ -64,7 +70,7 @@ export function WaveDivider({ className }: WaveDividerProps) {
     );
 
     return () => media.revert();
-  }, []);
+  }, [shouldRevealOnEnter]);
 
   return (
     <div

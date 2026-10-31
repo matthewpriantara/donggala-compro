@@ -1,3 +1,4 @@
+import { WaveDivider } from "@/components/ui/wave-divider";
 import { PatternDivider } from "@/components/ui/pattern-divider";
 import { TENUN_DIVIDER_IMAGE } from "@/constants/helper";
 import { HeroSection } from "@/modules/hero";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <PatternDivider imageUrl={TENUN_DIVIDER_IMAGE} />
       <JourneySection />
       <CultureSection />
+      <WaveDivider className="language-emergency-wave" shouldRevealOnEnter />
       <ContactSection />
     </>
   );
