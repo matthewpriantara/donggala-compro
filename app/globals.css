@@ -112,6 +112,9 @@ em {
   width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
   margin-inline: auto;
 }
+.container {
+  width: min(var(--content-width), calc(100% - 2 * var(--page-gutter)));
+}
 .section {
   padding-block: 104px;
 }
@@ -1029,7 +1032,7 @@ em {
   margin-top: 30px;
 }
 .site-footer {
-  padding-top: 70px;
+  border-top: 1px solid var(--line);
 }
 .footer-grid {
   display: grid;
@@ -2549,6 +2552,9 @@ body:has(.hero) .site-header {
   --color-info-foreground: var(--info-foreground);
   --color-info: var(--info);
   --color-destructive-foreground: var(--destructive-foreground);
+  --color-muted-foreground: #a8bec6;
+  --color-primary: #82ded2;
+  --color-border: #234252;
   @keyframes skeleton {
   to {
     background-position: -200% 0;

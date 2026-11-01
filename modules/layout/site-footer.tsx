@@ -1,49 +1,77 @@
-import Link from "next/link";
-import { NavigationLink } from "@/components/ui/navigation-link";
-import { ArrowUpRight } from "lucide-react";
+import { Footer7 } from "@/components/ui/footer-7";
 import { COMPANY_NAME, PORTAL, NAV_LINKS } from "@/constants/helper";
-import { ExternalLink } from "@/components/ui/external-link";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+
 export function SiteFooter() {
+  const sections = [
+    {
+      title: "Desa Wisata",
+      links: [
+        { name: "Desa Towale", href: "/desa#towale" },
+        { name: "Desa Limboro", href: "/desa#limboro" },
+        { name: "Geowisata Pusentasi", href: "/desa" },
+        { name: "Pantai Bonebula & Kaluku", href: "/desa" },
+      ],
+    },
+    {
+      title: "Kriya & Budaya",
+      links: [
+        { name: "Tenun Buya Sabe", href: "/kriya-kuliner#tenun" },
+        { name: "Kuliner Sagu Tradisional", href: "/kriya-kuliner#kuliner" },
+        { name: "Pusaka Bulava Mpongeo", href: "/budaya#ritual" },
+        { name: "Kamus Bahasa Kaili", href: "/bahasa" },
+      ],
+    },
+    {
+      title: "Layanan & Ekologi",
+      links: [
+        { name: "Standar Kesehatan CHSE", href: "/kesehatan" },
+        { name: "Kontak Darurat Pesisir", href: "/kedaruratan" },
+        { name: "Konservasi Mangrove", href: "/mangrove" },
+        { name: "Kemitraan KKN-PPM UGM", href: "/#tentang" },
+      ],
+    },
+  ];
+
+  const socialLinks = [
+    {
+      icon: <FaInstagram className="size-5" />,
+      href: "https://instagram.com/pokdarwis_towale",
+      label: "Instagram",
+    },
+    {
+      icon: <FaGithub className="size-5" />,
+      href: "https://github.com",
+      label: "GitHub",
+    },
+    {
+      icon: <FaLinkedin className="size-5" />,
+      href: "https://linkedin.com",
+      label: "LinkedIn",
+    },
+  ];
+
+  const legalLinks = [
+    { name: "Panduan Pengunjung", href: "/desa" },
+    { name: "Protokol Darurat", href: "/kedaruratan" },
+    { name: "Konservasi Pesisir", href: "/mangrove" },
+  ];
+
   return (
-    <footer className="wrap site-footer">
-      <div className="footer-grid">
-        <div>
-          <Link className="brand" href="/">
-            <span className="brand-mark">{PORTAL.initials}</span>
-            <span>
-              <strong>{COMPANY_NAME}</strong>
-              <small>{PORTAL.subtitle}</small>
-            </span>
-          </Link>
-          <p>{PORTAL.footerText}</p>
-        </div>
-        <div>
-          <p className="eyebrow">{PORTAL.footerNav}</p>
-          <nav>
-            {NAV_LINKS.filter((link) => link.href !== "/").map((link) => (
-              <NavigationLink href={link.href} key={link.href}>
-                {link.title}
-                <ArrowUpRight size={13} />
-              </NavigationLink>
-            ))}
-          </nav>
-        </div>
-        <div>
-          <p className="eyebrow">{PORTAL.footerContact}</p>
-          <p>{PORTAL.footerPartners}</p>
-          <p className="address">{PORTAL.footerAddress}</p>
-          <ExternalLink href={PORTAL.url} className="text-link">
-            {PORTAL.platform}
-          </ExternalLink>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <span>{PORTAL.copyright}</span>
-        <Link href="/desa">
-          {PORTAL.villageCta}
-          <ArrowUpRight size={14} />
-        </Link>
-      </div>
+    <footer className="site-footer">
+      <Footer7
+        logo={{
+          url: "/",
+          src: "/images/tenun-donggala-motif.png",
+          alt: `Logo ${COMPANY_NAME}`,
+          title: COMPANY_NAME,
+        }}
+        description={PORTAL.footerText}
+        sections={sections}
+        socialLinks={socialLinks}
+        copyright={PORTAL.copyright}
+        legalLinks={legalLinks}
+      />
     </footer>
   );
 }
