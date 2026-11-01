@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import {
   Card,
   CardHeader,
@@ -15,7 +16,7 @@ export function ContactSection() {
         <div className="emergency-heading">
           <div>
             <p className="eyebrow">{PORTAL.emergencyEyebrow}</p>
-            <h2>{PORTAL.emergencyTitle}</h2>
+            <RevealTitle as="h2">{PORTAL.emergencyTitle}</RevealTitle>
           </div>
         </div>
         <p className="emergency-intro">{PORTAL.emergencyText}</p>

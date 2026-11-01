@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
@@ -9,11 +10,11 @@ export function AboutSection() {
     <section id="tentang" className="section wrap">
       <FadeIn className="about-grid">
         <div>
-          <h2>
+          <RevealTitle as="h2">
             {PORTAL.aboutTitle}
             <br />
             <em>{PORTAL.aboutAccent}</em>
-          </h2>
+          </RevealTitle>
           <p className="body-copy">{PORTAL.aboutText}</p>
           <p className="body-copy">{PORTAL.aboutTextSecond}</p>
         </div>
@@ -38,11 +39,16 @@ export function AboutSection() {
       <p className="fine-print">{PORTAL.statsNote}</p>
       <div className="section-heading">
         <p className="eyebrow">{PORTAL.villagesEyebrow}</p>
-        <h2>{PORTAL.villagesTitle}</h2>
+        <RevealTitle as="h2">{PORTAL.villagesTitle}</RevealTitle>
       </div>
       <div className="village-grid">
         {VILLAGES.map((v) => (
-          <article className="village-card" id={v.href.split("/").pop()} style={{ scrollMarginTop: 120 }} key={v.name}>
+          <article
+            className="village-card"
+            id={v.href.split("/").pop()}
+            style={{ scrollMarginTop: 120 }}
+            key={v.name}
+          >
             <div className="village-photo">
               <Image
                 src={v.image}

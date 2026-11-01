@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import { HeroCarousel } from "./hero-carousel";
 import { ArrowDown, MapPin } from "lucide-react";
 import { PORTAL } from "@/constants/helper";
@@ -11,13 +12,13 @@ export function HeroSection() {
         <div className="hero-shade" />
         <div className="hero-inner wrap">
           <div className="hero-card">
-            <h1>
+            <RevealTitle as="h1">
               {PORTAL.headline}
               <br />
               {PORTAL.headlineSecond}
               <br />
               <em>{PORTAL.headlineAccent}</em>
-            </h1>
+            </RevealTitle>
             <p className="hero-description">{PORTAL.description}</p>
             <div className="hero-actions">
               <ExternalLink href={PORTAL.url}>{PORTAL.heroCta}</ExternalLink>
