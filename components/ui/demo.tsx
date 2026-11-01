@@ -5,10 +5,10 @@ function DemoOne() {
   return <Footer7 />;
 }
 
-function FeatureDemo() {
+function FeatureDemo(props: React.ComponentProps<typeof Feature>) {
   return (
     <div className="w-full">
-      <Feature />
+      <Feature {...props} />
     </div>
   );
 }

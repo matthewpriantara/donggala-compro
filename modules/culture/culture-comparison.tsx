@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Feature } from "@/components/ui/feature-with-image-comparison";
 import { PORTAL, CULTURE_STORIES } from "@/constants/helper";
 import styles from "./culture-editorial.module.css";
 
@@ -15,20 +15,13 @@ export function CultureComparison() {
           <p className="eyebrow">{PORTAL.cultureEyebrow}</p>
           <h2>{PORTAL.cultureTitle}</h2>
         </header>
-        <div className={styles.grid}>
-          {CULTURE_STORIES.map((story, index) => (
-            <article className={styles.story} key={story.tag}>
-              <figure className={styles.photo}>
-                <Image src={STORY_IMAGES[index]} alt={story.title} fill sizes="(max-width: 900px) 90vw, 44vw" />
-              </figure>
-              <div className={styles.copy}>
-                <p className={styles.label}>{story.tag}</p>
-                <h3>{story.title}</h3>
-                <p className={styles.description}>{story.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
+        <Feature
+          before={{ src: STORY_IMAGES[0], alt: CULTURE_STORIES[0].tag }}
+          after={{ src: STORY_IMAGES[1], alt: CULTURE_STORIES[1].tag }}
+          label={PORTAL.cultureTitle}
+          beforeContent={<article className={styles.copy}><p className={styles.label}>{CULTURE_STORIES[0].tag}</p><h3>{CULTURE_STORIES[0].title}</h3><p className={styles.description}>{CULTURE_STORIES[0].description}</p></article>}
+          afterContent={<article className={styles.copy}><p className={styles.label}>{CULTURE_STORIES[1].tag}</p><h3>{CULTURE_STORIES[1].title}</h3><p className={styles.description}>{CULTURE_STORIES[1].description}</p></article>}
+        />
       </div>
     </section>
   );
