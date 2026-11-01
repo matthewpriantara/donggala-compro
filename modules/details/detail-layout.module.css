@@ -194,6 +194,3 @@
   margin: 0;
   padding: 0;
 }
-:global(body):has(.shell) :global(.site-header) {
-  background: #041d2a;
-}

@@ -1,0 +1,30 @@
+/* The sticky wrapper never paints over content beside the floating panel. */
+.header.header {
+  background: transparent;
+  backdrop-filter: none;
+  border: 0;
+  box-shadow: none;
+}
+.header.header[data-scrolled="false"] .surface {
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.header.header[data-scrolled="false"] .surface :global(.glass-bend),
+.header.header[data-scrolled="false"] .surface :global(.glass-edge),
+.header.header[data-scrolled="false"] .surface :global(.glass-face) {
+  opacity: 0;
+}
+.header.header[data-scrolled="true"] .surface {
+  background: #08273566;
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+}
+.header.header[data-scrolled="true"] .surface :global(.glass-bend) {
+  opacity: 1;
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .header.header[data-scrolled="true"] .surface {
+    background: #082735d9;
+  }
+}

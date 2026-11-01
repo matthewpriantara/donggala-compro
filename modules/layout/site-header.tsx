@@ -1,3 +1,4 @@
+import styles from "./site-header.module.css";
 import { BrandLogo } from "./brand-logo";
 import { LiquidGlassCard } from "@/components/ui/liquid-weather-glass";
 import { HeaderScrollEffect } from "./header-scroll-effect";
@@ -13,10 +14,10 @@ import { MobileNav } from "./mobile-nav";
 
 export function SiteHeader() {
   return (
-    <header className="site-header" data-scrolled="false">
+    <header className={`site-header ${styles.header}`} data-scrolled="false">
       <HeaderScrollEffect />
       <LiquidGlassCard
-        className="header-surface"
+        className={`header-surface ${styles.surface}`}
         draggable={false}
         expandable={false}
         borderRadius="var(--header-radius, 0px)"
