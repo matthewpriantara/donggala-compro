@@ -1,3 +1,4 @@
+import { HEALTH_CHECKS, HEALTH_UI } from "@/constants/health-checks";
 import { Card } from "@/components/ui/card";
 import styles from "./detail-content.module.css";
 import Link from "next/link";
@@ -20,6 +21,19 @@ import { EmergencyDirectory } from "./emergency-directory";
 
 export function TopicDeepDive({ topic }: { topic: TopicKey }) {
   const content = TOPIC_DETAILS[topic];
+  const healthChecks = Object.values(HEALTH_CHECKS);
+  const cards = content.cards.map((card, index) =>
+    topic === "kesehatan"
+      ? {
+          ...card,
+          text: healthChecks[index].description,
+          points: [
+            healthChecks[index].reference,
+            healthChecks[index].preparation,
+          ],
+        }
+      : card,
+  );
   return (
     <section
       className={`topic-deep-dive ${styles.detail}`}
@@ -30,7 +44,7 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
         <h2>{content.title}</h2>
         {topic === "kedaruratan" && <EmergencyDirectory />}
         <div className="deep-dive-grid">
-          {content.cards.map((card, index) => (
+          {cards.map((card, index) => (
             <Card
               render={<article />}
               className={`deep-dive-card ${styles.card}`}
@@ -59,6 +73,21 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
                   </li>
                 ))}
               </ul>
+              {topic === "kesehatan" && (
+                <Link
+                  className="text-link"
+                  href={`/kesehatan/${Object.keys(HEALTH_CHECKS)[index]}`}
+                >
+                  {
+                    HEALTH_CHECKS[
+                      Object.keys(HEALTH_CHECKS)[
+                        index
+                      ] as keyof typeof HEALTH_CHECKS
+                    ].label
+                  }{" "}
+                  · {HEALTH_UI.open} <ArrowUpRight size={16} />
+                </Link>
+              )}
             </Card>
           ))}
         </div>
