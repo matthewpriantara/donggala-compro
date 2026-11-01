@@ -92,3 +92,10 @@ Implementasi mengikuti PRD_WEBSITE_COMPRO_DONGGALA.md dan ARCHITECTURE.md pada b
 - Direktori baru diabaikan Git dan ESLint; path tipe Next.js development ditambahkan ke tsconfig. Root html juga menandai scroll-behavior untuk mendukung transisi route Next.js.
 - Setelah restart: kelima halaman memberi HTTP 200, semua klik navbar desktop/mobile berhasil dan tidak ada error runtime. Pengujian diulang setelah menjalankan build produksi bersamaan dengan preview; semua route dan klik tetap berhasil. Lint dan build lolos.
 - Gunakan `pnpm dev` untuk preview dengan Fast Refresh. Jika tab lama menyimpan hasil navigasi 404, lakukan hard refresh setelah restart server.
+
+## Layout khusus halaman detail
+
+- Layout route khusus berlaku untuk Profil (termasuk subhalaman desa), Kriya & Kuliner, Budaya, Bahasa, Kesehatan, Darurat, dan Mangrove. Navbar tetap memiliki ruang dalam alur dokumen; hero detail menyediakan jarak breadcrumb/judul tanpa menumpuk navbar.
+- Narasi pembuka mendapat padding atas-bawah 80 px desktop dan 56 px mobile, menggantikan padding bawah nol yang membuat teks menempel ke batas section.
+- Halaman detail memakai kanvas baca pasir, kartu Coss netral, panduan berbentuk baris, serta daftar gambar-teks khusus. Halaman Profil/Kriya/Budaya tidak lagi mengimpor section landing page. Style diisolasi dengan CSS Module dan layout SSR sehingga desain landing tetap terjaga.
+- Build produksi dan lint file yang diubah berhasil. Chromium memeriksa sembilan rute pada 1440/390/320 px: judul di bawah navbar, ruang bawah narasi minimal 56 px, tidak ada overflow/runtime error, dan section landing tidak dipakai dalam tiga katalog detail. Overflow akibat kombinasi aspect-ratio/min-height gambar mobile telah diperbaiki.

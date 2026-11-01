@@ -1,0 +1,157 @@
+.shell {
+  padding-top: 0;
+  background: var(--color-sand-100);
+  color: #18333d;
+}
+.shell :global(section[id]),
+.shell :global(article[id]) {
+  scroll-margin-top: 124px;
+}
+.shell :global(.section) {
+  padding-block: 80px;
+}
+.shell :global(.topic-hero) {
+  padding-block: 44px 64px;
+  background: var(--color-ocean-950);
+  color: #f5f3ed;
+}
+.shell :global(.topic-hero-grid) {
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+.shell :global(.topic-hero-grid:has(.topic-motif)) {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 960px;
+}
+.shell :global(.topic-motif) {
+  display: none;
+}
+.shell :global(.topic-photo) {
+  height: 300px;
+  border-radius: 12px;
+}
+.shell :global(.topic-hero h1) {
+  font-size: clamp(36px, 4vw, 60px);
+}
+.shell :global(.breadcrumbs) {
+  margin-bottom: 36px;
+}
+.shell :global(.topic-introduction) {
+  padding-block: 80px;
+  gap: 56px;
+  align-items: start;
+  border-bottom: 1px solid #d7dcd8;
+}
+.shell :global(.topic-introduction p) {
+  color: #52656c;
+  max-width: 68ch;
+  line-height: 1.9;
+}
+.shell :global(.topic-introduction h2) {
+  font-size: clamp(30px, 3vw, 44px);
+}
+.shell :global(.topic-deep-dive) {
+  background: var(--color-sand-100);
+  color: #18333d;
+  --card: #fffdfa;
+  --card-foreground: #18333d;
+  --border: #d3dbd6;
+  --ring: #647a80;
+}
+.shell :global(.deep-dive-card) {
+  border-radius: 12px;
+}
+.shell :global(.deep-dive-card > p),
+.shell :global(.deep-dive-card li),
+.shell :global(.topic-faq [data-slot="accordion-panel"]) {
+  color: #52656c;
+}
+.shell :global(.topic-deep-dive .eyebrow),
+.shell :global(.topic-deep-dive .deep-dive-number),
+.shell :global(.deep-dive-card li svg) {
+  color: #61747a;
+}
+.shell :global(.topic-faq [data-slot="accordion-trigger"]) {
+  color: #18333d;
+}
+.shell :global(.topic-guide) {
+  border-color: #d3dbd6;
+}
+.shell :global(.topic-guide-grid) {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.shell :global(.topic-guide-grid article) {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 24px;
+  padding-block: 28px;
+  border-color: #d3dbd6;
+  align-items: start;
+}
+.shell :global(.topic-guide-grid h3) {
+  margin: 0;
+  font-size: 28px;
+}
+.shell :global(.topic-guide-grid p),
+.shell :global(.topic-guide .eyebrow) {
+  color: #52656c;
+}
+.shell :global(.related-topics) {
+  background: #e8ece6;
+  border-color: #d3dbd6;
+}
+.shell :global(.related-grid a) {
+  border: 0;
+  border-bottom: 1px solid #c3cec5;
+  border-radius: 0;
+  padding: 22px 0;
+}
+.shell :global(.related-grid a:hover) {
+  background: transparent;
+  color: #166f66;
+}
+.shell :global(.related-topics .eyebrow) {
+  color: #52656c;
+}
+@media (max-width: 900px) {
+  .shell :global(.topic-hero-grid) {
+    grid-template-columns: 1fr;
+  }
+  .shell :global(.topic-introduction) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .shell :global(.topic-guide-grid article) {
+    grid-template-columns: 32px 1fr;
+    gap: 16px;
+  }
+  .shell :global(.topic-guide-grid article > p) {
+    grid-column: 2;
+  }
+}
+@media (max-width: 600px) {
+  .shell {
+    padding-top: 0;
+  }
+  .shell :global(.section),
+  .shell :global(.topic-introduction) {
+    padding-block: 56px;
+  }
+  .shell :global(.topic-hero) {
+    padding-block: 32px 48px;
+  }
+  .shell :global(.topic-hero h1) {
+    font-size: 36px;
+  }
+  .shell :global(.topic-photo) {
+    height: 240px;
+  }
+}
+.shell :global(.topic-deep-dive a[href^="tel:"] strong) {
+  color: #18333d;
+}
+.shell :global(.topic-deep-dive a[href^="tel:"] small) {
+  color: #52656c;
+}

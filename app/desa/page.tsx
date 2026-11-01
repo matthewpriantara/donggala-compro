@@ -5,7 +5,7 @@ import { TopicHero } from "@/modules/details/topic-hero";
 import { TopicIntroduction } from "@/modules/details/topic-introduction";
 import { TopicGuide } from "@/modules/details/topic-guide";
 import { RelatedTopics } from "@/modules/details/related-topics";
-import { AboutSection } from "@/modules/about";
+import { DetailCollection } from "@/modules/details/detail-collection";
 export const metadata: Metadata = {
   title: `${TOPIC_PAGES.desa.label} | ${COMPANY_NAME}`,
   description: TOPIC_PAGES.desa.description,
@@ -21,7 +21,7 @@ export default function Page() {
     <>
       <TopicHero topic="desa" />
       <TopicIntroduction topic="desa" />
-      <AboutSection />
+      <DetailCollection topic="desa" />
       <TopicDeepDive topic="desa" />
       <TopicGuide topic="desa" />
       <RelatedTopics topic="desa" />

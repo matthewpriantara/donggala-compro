@@ -5,7 +5,7 @@ import { TopicHero } from "@/modules/details/topic-hero";
 import { TopicIntroduction } from "@/modules/details/topic-introduction";
 import { TopicGuide } from "@/modules/details/topic-guide";
 import { RelatedTopics } from "@/modules/details/related-topics";
-import { ServicesSection } from "@/modules/services";
+import { DetailCollection } from "@/modules/details/detail-collection";
 export const metadata: Metadata = {
   title: `${TOPIC_PAGES.karya.label} | ${COMPANY_NAME}`,
   description: TOPIC_PAGES.karya.description,
@@ -21,7 +21,7 @@ export default function Page() {
     <>
       <TopicHero topic="karya" />
       <TopicIntroduction topic="karya" />
-      <ServicesSection isDetail />
+      <DetailCollection topic="karya" />
       <TopicDeepDive topic="karya" />
       <TopicGuide topic="karya" />
       <RelatedTopics topic="karya" />
