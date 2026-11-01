@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -66,7 +67,7 @@ export function DetailCollection({
             </figure>
             <div className={styles.copy}>
               <p className={styles.label}>{item.label}</p>
-              <h2>{item.title}</h2>
+              <RevealTitle as="h2">{item.title}</RevealTitle>
               <p>{item.text}</p>
               {item.href &&
                 (item.external ? (

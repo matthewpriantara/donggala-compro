@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import { Card, CardHeader, CardTitle, CardPanel } from "@/components/ui/card";
 import {
   Accordion,
@@ -20,7 +21,7 @@ export function TopicGuide({ topic }: { topic: TopicKey }) {
       >
         <header className={styles.heading}>
           <p className="eyebrow">{TOPIC_UI.guide}</p>
-          <h2>{TOPIC_UI.guideTitle}</h2>
+          <RevealTitle as="h2">{TOPIC_UI.guideTitle}</RevealTitle>
         </header>
         {shouldCollapse ? (
           <Accordion

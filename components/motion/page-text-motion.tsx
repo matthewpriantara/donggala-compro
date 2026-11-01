@@ -33,6 +33,39 @@ export function PageTextMotion() {
               )
                 return;
               seen.add(element);
+              if (
+                element.querySelector(".title-reveal-word") &&
+                !element.querySelector("a, button, input")
+              ) {
+                const words = element.querySelectorAll(".title-reveal-word");
+                gsap.fromTo(
+                  words,
+                  {
+                    opacity: 0,
+                    yPercent: 65,
+                    rotationX: -12,
+                    filter: "blur(4px)",
+                    transformOrigin: "50% 100%",
+                  },
+                  {
+                    opacity: 1,
+                    yPercent: 0,
+                    rotationX: 0,
+                    filter: "blur(0px)",
+                    duration: 0.85,
+                    stagger: { amount: 0.35, from: "start" },
+                    ease: "power3.out",
+                    scrollTrigger: {
+                      trigger: element,
+                      start: "top 94%",
+                      end: "bottom top",
+                      toggleActions: "play reverse play reverse",
+                      invalidateOnRefresh: true,
+                    },
+                  },
+                );
+                return;
+              }
               gsap.fromTo(
                 element,
                 { opacity: 0, y: 18 },

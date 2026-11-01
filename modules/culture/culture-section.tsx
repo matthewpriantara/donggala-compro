@@ -1,7 +1,5 @@
-import {
-  PORTAL,
-  KAILI_WORDS,
-} from "@/constants/helper";
+import { RevealTitle } from "@/components/ui/reveal-title";
+import { PORTAL, KAILI_WORDS } from "@/constants/helper";
 import { CultureComparison } from "./culture-comparison";
 
 export function CultureStories() {
@@ -14,7 +12,7 @@ export function LanguageSection() {
         <div className="section-heading split-heading">
           <div>
             <p className="eyebrow">{PORTAL.languageEyebrow}</p>
-            <h2>{PORTAL.languageTitle}</h2>
+            <RevealTitle as="h2">{PORTAL.languageTitle}</RevealTitle>
           </div>
           <p>{PORTAL.languageText}</p>
         </div>

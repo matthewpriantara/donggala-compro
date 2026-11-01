@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ChevronRight } from "lucide-react";
@@ -20,7 +21,7 @@ export function TopicHero({ topic }: { topic: TopicKey }) {
         <div className="topic-hero-grid">
           <div>
             <p className="eyebrow">{page.eyebrow}</p>
-            <h1>{page.title}</h1>
+            <RevealTitle as="h1">{page.title}</RevealTitle>
             <p className="topic-description">{page.description}</p>
             <Link className="text-link" href="/">
               <ArrowLeft size={16} />

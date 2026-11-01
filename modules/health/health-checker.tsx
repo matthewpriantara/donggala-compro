@@ -1,4 +1,5 @@
 "use client";
+import { RevealTitle } from "@/components/ui/reveal-title";
 import { useRef, useState, type FormEvent } from "react";
 import { ArrowDown, RotateCcw, AlertCircle } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -74,7 +75,7 @@ export function HealthChecker({ slug }: { slug: HealthSlug }) {
         onChange={handleClearResult}
         onReset={handleClearResult}
       >
-        <h2>{HEALTH_UI.formTitle}</h2>
+        <RevealTitle as="h2">{HEALTH_UI.formTitle}</RevealTitle>
         <p id="measurement-help">{config.preparation}</p>
         <label className={styles.confirm}>
           <input required type="checkbox" name="adult" />
@@ -183,7 +184,7 @@ export function HealthChecker({ slug }: { slug: HealthSlug }) {
           <p className={styles.reading}>
             {HEALTH_UI.result} · {result.reading}
           </p>
-          <h2>{details.title}</h2>
+          <RevealTitle as="h2">{details.title}</RevealTitle>
           <p>{details.text}</p>
           <div className={styles.notice}>
             <AlertCircle size={22} aria-hidden="true" />
