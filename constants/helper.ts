@@ -477,6 +477,7 @@ export const VILLAGES = [
       "Desa wisata bahari dengan fenomena sumur raksasa alami Pusentasi, tradisi sakral pusaka Bulava Mpongeo, dan sentra kriya tenun sutra Buya Sabe.",
     highlights: ["Pusentasi (Pusat Laut)", "Tenun Buya Sabe", "Pantai Bonebula", "Hiu Paus & Karampuana"],
     cta: "Eksplorasi Towale",
+    href: "/desa/towale",
   },
   {
     name: "Limboro",
@@ -488,6 +489,7 @@ export const VILLAGES = [
       "Menyusuri garis pantai pasir putih Kaluku, terumbu karang dangkal, serta geliat dapur warga pengolah sagu dan tradisi nelayan pesisir.",
     highlights: ["Pantai Kaluku", "Sentra Olahan Sagu", "Snorkeling Karang", "Tradisi Nelayan"],
     cta: "Eksplorasi Limboro",
+    href: "/desa/limboro",
   },
 ] as const;
 export const PRODUCTS = [
@@ -1189,3 +1191,176 @@ export const DETAIL_UI = {
   questions: "PERTANYAAN UMUM",
   questionsTitle: "Hal yang perlu Anda ketahui.",
 } as const;
+
+export const VILLAGE_DETAILS = {
+  towale: {
+    slug: "towale",
+    name: "Desa Wisata Towale",
+    title: "Sentra Tenun Buya Sabe & Geowisata Purba Pusat Laut",
+    eyebrow: "DESA WISATA BANAWA TENGAH · DONGGALA",
+    tagline: "Pesona karst purba, kilau sutra Kaili, dan keramahan pesisir.",
+    description:
+      "Desa Wisata Towale berjarak 48 km dari Kota Palu (60 menit berkendara). Menjadi simpul budaya kriya tenun Buya Sabe, situs sakral peninggalan Raja Kaili Bulava Mpongeo, dan geowisata laut karst alami Pusentasi.",
+    image: "/images/destinasi/pusat-laut-pusentasi.jpg",
+    imageAlt: "Geowisata Pusentasi (Pusat Laut) di Desa Towale",
+    stats: [
+      { value: "2.034+", label: "Jiwa Warga Towale" },
+      { value: "5,33 km²", label: "Luas Wilayah" },
+      { value: "48 km", label: "Dari Kota Palu (60 mnt)" },
+      { value: "7 mdpl", label: "Elevasi Dataran Pesisir" },
+    ],
+    attractions: [
+      {
+        title: "Pusentasi (Pusat Laut)",
+        category: "GEOWISATA",
+        description:
+          "Sumur karst alami sedalam 7 meter dengan air asin toska jernih yang terhubung ke laut bebas. Spot favorit berenang dan cliff jumping.",
+        image: "/images/destinasi/pusat-laut-pusentasi.jpg",
+      },
+      {
+        title: "Sentra Tenun Buya Sabe",
+        category: "KRIYA PUSAKA",
+        description:
+          "Warisan tenun ikat sutra pusaka Kaili yang ditenun secara tradisional oleh ibu-ibu penenun Towale dengan ragam motif flora geometris.",
+        image: "/images/destinasi/tenun-buya-sabe-proses.jpg",
+      },
+      {
+        title: "Pantai Bonebula & Karampuana",
+        category: "WISATA BAHARI",
+        description:
+          "Lengkung semenanjung pasir putih alami, gugusan pulau karang atol Karampuana, dan perairan tenang untuk snorkeling.",
+        image: "/images/destinasi/pantai-bonebula-aerial.jpg",
+      },
+      {
+        title: "Wisata Hiu Paus Donggala",
+        category: "FAUNA LAUT",
+        description:
+          "Perairan pesisir Towale menjadi jalur perlintasan megafauna Hiu Paus ramah yang dapat diamati bersama nelayan pemandu lokal.",
+        image: "/images/destinasi/hiu-paus-donggala.jpg",
+      },
+      {
+        title: "Pusaka Bulava Mpongeo & Masjid Tua",
+        category: "SEJARAH & BUDAYA",
+        description:
+          "Situs keramat pusaka Raja Kaili serta Masjid Tertua Towale yang menjadi tonggak awal syiar Islam di pesisir barat Donggala.",
+        image: "/images/destinasi/bulava-mpongeo-kaili.jpg",
+      },
+      {
+        title: "Homestay Cottage Kayu Pesisir",
+        category: "AKOMODASI",
+        description:
+          "Cottage A-frame kayu tepi pantai dengan fasilitas kamar AC, kolam renang pesisir, balkon sunset Selat Makassar, dan sarapan lokal.",
+        image: "/images/destinasi/homestay-cottage-depan.jpg",
+      },
+    ],
+    guide: [
+      {
+        title: "Aksesibilitas & Rute",
+        text: "Dari Bandara Mutiara SIS Al-Jufri Palu, tempuh jalur darat 60 menit via jalan beraspal mulus ke Towale. Menuju Pusentasi dapat diakses 15 menit jalur darat atau 5 menit speed boat.",
+      },
+      {
+        title: "Waktu Terbaik Berkunjung",
+        text: "Pagi hari (08.00–11.00) untuk kejernihan air laut Pusentasi dan sore hari (16.30–18.00) untuk menikmati matahari terbenam spektakuler di Pantai Bonebula.",
+      },
+      {
+        title: "Etika Kunjungan Tenun",
+        text: "Wisatawan dipersilakan berkunjung ke rumah penenun warga untuk belajar menenun dan dapat membeli kain tenun sutra langsung dari pengrajin.",
+      },
+      {
+        title: "Keamanan Berenang",
+        text: "Gunakan pelampung jika belum mahir berenang di kedalaman Pusentasi (7 meter). Ikuti instruksi petugas Pokdarwis pengelola sumur laut.",
+      },
+    ],
+    ctaOtherVillage: {
+      name: "Desa Limboro",
+      href: "/desa/limboro",
+      tagline: "Teluk pasir putih Kaluku & sentra ketahanan pangan sagu pesisir.",
+    },
+  },
+  limboro: {
+    slug: "limboro",
+    name: "Desa Wisata Limboro",
+    title: "Lanskap Teluk Pasir Putih Kaluku & Ketahanan Pangan Sagu",
+    eyebrow: "DESA WISATA BANAWA TENGAH · DONGGALA",
+    tagline: "Perairan tenang, lumbung sagu pesisir, dan keramahan warga nelayan.",
+    description:
+      "Desa Wisata Limboro berbatasan langsung dengan Towale di pesisir Banawa Tengah. Terkenal dengan pesona Pantai Kaluku yang berpasir putih bersih, terumbu karang dangkal, serta geliat dapur pengolahan sagu tradisional oleh kelompok wanita tani warga.",
+    image: "/images/destinasi/pantai-kaluku-limboro.jpg",
+    imageAlt: "Bentang Pantai Kaluku di Desa Limboro",
+    stats: [
+      { value: "3 km", label: "Panjang Garis Pantai" },
+      { value: "50+ ha", label: "Kebun Sagu & Kelapa" },
+      { value: "52 km", label: "Dari Kota Palu" },
+      { value: "KWT", label: "Sentra Sagu Sejahtera" },
+    ],
+    attractions: [
+      {
+        title: "Pantai Kaluku Limboro",
+        category: "WISATA PANTAI",
+        description:
+          "Pantai berpasir putih halus dengan deretan pohon kelapa menjulang dan ombak tenang, sangat ramah untuk rekreasi keluarga dan santai sore.",
+        image: "/images/destinasi/pantai-kaluku-limboro.jpg",
+      },
+      {
+        title: "Snorkeling Terumbu Karang Dangkal",
+        category: "BAHARI",
+        description:
+          "Taman karang bawah laut yang tumbuh di perairan dangkal Pantai Kaluku, menjadi habitat ikan karang warna-warni dan bintang laut biru.",
+        image: "/images/destinasi/snorkeling-kaluku.jpg",
+      },
+      {
+        title: "Sentra Pengolahan Sagu Tradisional",
+        category: "KULINER & PANGAN",
+        description:
+          "Dapur pengolahan sagu basah menjadi aneka kuliner khas: Dange Tabaro bakar belanga tanah, kue bagea renyah, cookies sagu, dan keripik gurih.",
+        image: "/images/destinasi/cookies-sagu-limboro.jpg",
+      },
+      {
+        title: "Tradisi Nelayan Pesisir",
+        category: "BUDAYA BAHARI",
+        description:
+          "Menyaksikan nelayan pesisir melaut dengan perahu bercadik tradisional dan menikmati hasil tangkapan ikan segar bakar di tepi teluk.",
+        image: "/images/destinasi/sepeda-ontel-towale.jpg",
+      },
+      {
+        title: "Sabuk Hijau Mangrove Pesisir",
+        category: "KONSERVASI",
+        description:
+          "Ekosistem hutan bakau alami yang meredam abrasi Selat Makassar dan menjadi area pembibitan kepiting serta pemijahan biota laut.",
+        image: "/images/destinasi/pantai-bonebula-aerial.jpg",
+      },
+      {
+        title: "Pondok Santai Tepi Pantai",
+        category: "FASILITAS",
+        description:
+          "Gazebo bambu dan pondok peristirahatan di bawah naungan pohon kelapa dengan sajian es kelapa muda segar langsung dari pohon.",
+        image: "/images/destinasi/homestay-pesisir-towale.jpg",
+      },
+    ],
+    guide: [
+      {
+        title: "Akses & Perjalanan",
+        text: "Terletak bersebelahan dengan Desa Towale, hanya 5–10 menit berkendara ke arah selatan menyusuri jalan pesisir Banawa Tengah yang indah.",
+      },
+      {
+        title: "Aktivitas Rekreasi Air",
+        text: "Pantai Kaluku memiliki ombak yang tenang dan dasar laut landai, sangat ideal untuk berenang, bermain kano, atau snorkeling di dekat pantai.",
+      },
+      {
+        title: "Kuliner Sagu Segar",
+        text: "Kunjungi rumah produksi KWT Sejahtera untuk mencicipi Dange Tabaro hangat yang baru matang dari cetakan wajan tanah liat.",
+      },
+      {
+        title: "Kebersihan & Konservasi",
+        text: "Jaga kelestarian terumbu karang dengan tidak menginjak karang saat snorkeling dan selalu membuang sampah pada tempat yang disediakan.",
+      },
+    ],
+    ctaOtherVillage: {
+      name: "Desa Towale",
+      href: "/desa/towale",
+      tagline: "Geowisata purba sumur laut Pusentasi & sentra tenun sutra Buya Sabe.",
+    },
+  },
+} as const;
+
+export type VillageSlug = keyof typeof VILLAGE_DETAILS;
