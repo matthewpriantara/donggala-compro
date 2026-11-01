@@ -1,3 +1,11 @@
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardPanel,
+  CardDescription,
+} from "@/components/ui/card";
+import styles from "./contact-section.module.css";
 import { ShieldCheck, Phone, ArrowUpRight } from "lucide-react";
 import { PORTAL, EMERGENCY_CONTACTS } from "@/constants/helper";
 export function ContactSection() {
@@ -14,17 +22,29 @@ export function ContactSection() {
         <p className="emergency-intro">{PORTAL.emergencyText}</p>
         <div className="emergency-grid">
           {EMERGENCY_CONTACTS.map((contact) => (
-            <a
-              href={`tel:${contact.number}`}
-              className="emergency-card"
+            <Card
+              render={<a href={`tel:${contact.number}`} />}
+              className={styles.card}
               key={contact.number}
             >
-              <Phone size={18} />
-              <strong>{contact.number}</strong>
-              <span>{contact.label}</span>
-              <small>{contact.note}</small>
-              <ArrowUpRight size={18} />
-            </a>
+              <CardHeader className={styles.header}>
+                <Phone size={20} aria-hidden="true" />
+                <CardTitle render={<strong />} className={styles.number}>
+                  {contact.number}
+                </CardTitle>
+                <ArrowUpRight
+                  size={20}
+                  className={styles.arrow}
+                  aria-hidden="true"
+                />
+              </CardHeader>
+              <CardPanel className={styles.panel}>
+                <p className={styles.label}>{contact.label}</p>
+                <CardDescription className={styles.note}>
+                  {contact.note}
+                </CardDescription>
+              </CardPanel>
+            </Card>
           ))}
         </div>
         <div className="safety-advice">
