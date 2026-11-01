@@ -26,20 +26,26 @@
 .label {
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: #a9bec7;
-  margin-bottom: 18px;
+  color: #82ded2;
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 .copy h2 {
   font-size: clamp(28px, 3vw, 40px);
+  color: #f8fafc;
+  line-height: 1.25;
 }
 .copy > p:not(.label) {
-  color: #b0c1c8;
-  margin-top: 22px;
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 16px;
   max-width: 65ch;
 }
 .copy a {
-  color: #d1e2e7;
+  color: #82ded2;
   margin-top: 16px;
+  font-weight: 600;
 }
 @media (max-width: 900px) {
   .row {

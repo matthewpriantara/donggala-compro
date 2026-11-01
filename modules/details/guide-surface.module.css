@@ -25,6 +25,9 @@
   top: auto;
   bottom: -79px;
   transform: rotate(180deg);
+  background: var(--guide-bottom-bg, var(--color-ocean-900));
+  color: #d8e2e1;
+  fill: #d8e2e1;
   margin-bottom: 0;
   margin-top: -1px;
 }
@@ -37,16 +40,20 @@
 }
 .surface.surface :global(.topic-guide h2),
 .surface.surface :global(.topic-guide h3) {
-  color: #18333d;
+  color: #0f172a !important;
 }
-.surface.surface :global(.topic-guide .eyebrow),
-.surface.surface :global(.topic-guide p) {
-  color: #52676f;
+.surface.surface :global(.topic-guide .eyebrow) {
+  color: #475569 !important;
 }
-.surface.surface :global([data-slot="card"]) {
+.surface.surface :global(.topic-guide p),
+.surface.surface :global(.topic-guide-grid p) {
+  color: #1e293b !important;
+}
+.surface.surface :global([data-slot="card"]),
+.surface.surface :global(.topic-guide-grid article) {
   background: transparent;
   border: 0;
-  border-top: 1px solid #aebfc2;
+  border-top: 1px solid #94a3b8 !important;
   border-radius: 0;
   box-shadow: none;
 }

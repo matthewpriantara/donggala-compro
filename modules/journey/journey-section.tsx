@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { Compass, Clock3 } from "lucide-react";
+import { Clock3 } from "lucide-react";
 import { PORTAL, TRIPS, MOTIF_PATH } from "@/constants/helper";
 import { ExternalLink } from "@/components/ui/external-link";
+import { InteractiveMapCallout } from "./interactive-map-callout";
+
 export function JourneySection() {
   return (
     <section id="aktivitas" className="section wrap">
@@ -30,7 +32,6 @@ export function JourneySection() {
                   />
                 </div>
               )}
-              <span className="photo-index">{trip.number}</span>
             </div>
             <div className="trip-content">
               <p className="eyebrow">
@@ -50,15 +51,7 @@ export function JourneySection() {
         ))}
       </div>
       <p className="fine-print">{PORTAL.tripNote}</p>
-      <div className="map-callout">
-        <Compass size={60} strokeWidth={1} />
-        <div>
-          <p className="eyebrow">{PORTAL.mapEyebrow}</p>
-          <h3>{PORTAL.mapTitle}</h3>
-          <p>{PORTAL.mapText}</p>
-        </div>
-        <ExternalLink href={`${PORTAL.url}/cari`}>{PORTAL.mapCta}</ExternalLink>
-      </div>
+      <InteractiveMapCallout />
     </section>
   );
 }

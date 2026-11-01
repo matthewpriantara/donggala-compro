@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   ChevronDown,
+  Sailboat,
+  Mountain,
   Landmark,
   Palmtree,
   Compass,
@@ -28,13 +30,13 @@ import {
   Waves,
   Leaf,
   Phone,
-  ArrowUpRight,
 } from "lucide-react";
-import type { NavItem, SubNavItem } from "@/types";
-import { Badge } from "@/components/ui/badge";
+import type { NavItem } from "@/types";
 
 // Icon registry for dynamic lookup
 const ICON_MAP: Record<string, typeof Landmark> = {
+  Sailboat,
+  Mountain,
   Landmark,
   Palmtree,
   Compass,
@@ -61,15 +63,15 @@ const ICON_MAP: Record<string, typeof Landmark> = {
 };
 
 function renderNavIcon(name?: string) {
-  if (!name) return <Compass size={18} aria-hidden="true" />;
+  if (!name) return <Compass size={20} strokeWidth={1.8} aria-hidden="true" />;
   const IconComponent = ICON_MAP[name] || Compass;
-  return <IconComponent size={18} aria-hidden="true" />;
+  return <IconComponent size={20} strokeWidth={1.8} aria-hidden="true" />;
 }
 
 export function DesktopNav({ items }: { items: readonly NavItem[] }) {
   const pathname = usePathname();
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeoutRef = useRef<number | undefined>(undefined);
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Close when clicking outside
@@ -98,12 +100,12 @@ export function DesktopNav({ items }: { items: readonly NavItem[] }) {
   }, []);
 
   function handleMouseEnter(title: string) {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    clearTimeout(timeoutRef.current);
     setOpenDropdown(title);
   }
 
   function handleMouseLeave() {
-    timeoutRef.current = setTimeout(() => {
+    timeoutRef.current = window.setTimeout(() => {
       setOpenDropdown(null);
     }, 180);
   }
@@ -170,17 +172,6 @@ export function DesktopNav({ items }: { items: readonly NavItem[] }) {
                   aria-label={`Sub-menu ${item.title}`}
                 >
                   <div className="dropdown-menu-card">
-                    <div className="dropdown-header">
-                      <span className="dropdown-category">{item.title}</span>
-                      <Link
-                        href={item.href}
-                        className="dropdown-all-link"
-                        onClick={() => setOpenDropdown(null)}
-                      >
-                        Buka Halaman Utama <ArrowUpRight size={13} />
-                      </Link>
-                    </div>
-
                     <div className="dropdown-items-grid">
                       {item.items?.map((sub) => {
                         const isTel = sub.href.startsWith("tel:");
@@ -192,31 +183,7 @@ export function DesktopNav({ items }: { items: readonly NavItem[] }) {
                               {renderNavIcon(sub.iconName)}
                             </span>
                             <div className="sub-content">
-                              <div className="sub-title-row">
-                                <span className="sub-title">{sub.title}</span>
-                                {sub.badge && (
-                                  <Badge
-                                    size="sm"
-                                    variant={
-                                      item.title === "Darurat"
-                                        ? "destructive"
-                                        : item.title === "Kesehatan"
-                                        ? "success"
-                                        : "secondary"
-                                    }
-                                    className={`gap-1 font-mono text-[10px] ${
-                                      item.title === "Darurat"
-                                        ? "badge-emergency"
-                                        : item.title === "Kesehatan"
-                                        ? "badge-health"
-                                        : "badge-default"
-                                    }`}
-                                  >
-                                    {sub.phone && <Phone size={10} />}
-                                    {sub.badge}
-                                  </Badge>
-                                )}
-                              </div>
+                              <span className="sub-title">{sub.title}</span>
                               {sub.description && (
                                 <p className="sub-description">
                                   {sub.description}

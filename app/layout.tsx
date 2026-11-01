@@ -20,6 +20,10 @@ const PLUS_JAKARTA_SANS = localFont({
 export const metadata: Metadata = {
   title: `${COMPANY_NAME} | ${COMPANY_TAGLINE}`,
   description: COMPANY_DESCRIPTION,
+  icons: {
+    icon: "/images/donggala-logo-mark.png",
+    apple: "/images/donggala-logo-mark.png",
+  },
   openGraph: {
     title: COMPANY_NAME,
     description: COMPANY_DESCRIPTION,

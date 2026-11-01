@@ -12,7 +12,7 @@
   line-height: 1.18;
 }
 .guide .heading p {
-  color: #52676f;
+  color: #475569;
 }
 .items {
   display: grid;
@@ -37,12 +37,12 @@
   padding: 0;
 }
 .item h3 {
-  color: #18333d;
+  color: #0f172a;
   font-size: 28px;
   line-height: 1.25;
 }
 .item p {
-  color: #52676f;
+  color: #334155;
   line-height: 1.85;
 }
 .number {

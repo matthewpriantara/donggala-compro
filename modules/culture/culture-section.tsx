@@ -19,11 +19,8 @@ export function LanguageSection() {
           <p>{PORTAL.languageText}</p>
         </div>
         <div className="language-grid">
-          {KAILI_WORDS.map((word, i) => (
+          {KAILI_WORDS.map((word) => (
             <article key={word.word}>
-              <span className="word-index">
-                {String(i + 1).padStart(2, "0")}
-              </span>
               <h3>{word.word}</h3>
               <strong>{word.meaning}</strong>
               <p>{word.context}</p>

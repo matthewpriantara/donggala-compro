@@ -3,17 +3,16 @@ import { GuideSurface } from "@/modules/details/guide-surface";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, ArrowLeft, ArrowUpRight, Compass } from "lucide-react";
+import { ChevronRight, ArrowLeft, ArrowUpRight } from "lucide-react";
 import {
   VILLAGE_DETAILS,
-  PORTAL,
   TOPIC_UI,
   MOTIF_PATH,
   type VillageSlug,
 } from "@/constants/helper";
 import styles from "./village-cover.module.css";
 import { RelatedTopics } from "@/modules/details/related-topics";
-import { ExternalLink } from "@/components/ui/external-link";
+import { VillageMapButton } from "./village-map-button";
 
 export function VillageDetailView({ slug }: { slug: VillageSlug }) {
   const village = VILLAGE_DETAILS[slug];
@@ -46,10 +45,7 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
               <h1>{village.title}</h1>
               <p className="topic-description">{village.description}</p>
               <div className="village-hero-actions flex flex-wrap gap-4 items-center mt-6">
-                <ExternalLink href={PORTAL.url} className="button village-cta">
-                  <Compass size={17} aria-hidden="true" />
-                  Buka Peta Eksplorasi
-                </ExternalLink>
+                <VillageMapButton />
                 <Link
                   className="text-link inline-flex items-center gap-1.5"
                   href="/desa"
@@ -96,7 +92,7 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          {village.attractions.map((attraction, idx) => (
+          {village.attractions.map((attraction) => (
             <Card
               render={<article />}
               key={attraction.title}
@@ -111,9 +107,6 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
                   className="object-cover transition-transform duration-500 hover:scale-105"
                 />
                 <span className={styles.badge}>{attraction.category}</span>
-                <span className="absolute top-3 right-3 z-10 text-xs font-mono font-bold text-white/70 bg-[#041d2a]/60 px-2 py-0.5 rounded">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
               </div>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
@@ -131,16 +124,13 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
       </section>
 
       {/* 4. Travel Guide Section */}
-      <GuideSurface>
+      <GuideSurface bottomBgColor="var(--color-ocean-950)">
         <section className="wrap section topic-guide" data-village-guide={slug}>
           <p className="eyebrow">{TOPIC_UI.guide}</p>
           <h2>Panduan Berkunjung ke {village.name}</h2>
           <div className="topic-guide-grid mt-8">
-            {village.guide.map((item, index) => (
+            {village.guide.map((item) => (
               <Card render={<article />} key={item.title}>
-                <span className="eyebrow">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </Card>

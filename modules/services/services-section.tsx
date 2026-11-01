@@ -18,19 +18,17 @@ export function ServicesSection({ isDetail = false }: { isDetail?: boolean }) {
           <h2>{PORTAL.productsTitle}</h2>
         </div>
         <div className="product-grid">
-          {PRODUCTS.map((p, index) => (
+          {PRODUCTS.map((p) => (
             <TiltCard className="product-card" key={p.name}>
-              <div className={`product-art product-art-${index}`}>
+              <div className="product-art">
                 <Image
-                  src={`${MOTIF_PATH}${p.motif}.png`}
-                  alt=""
-                  width={130}
-                  height={130}
+                  src={p.image}
+                  alt={p.name}
+                  fill
+                  sizes="(max-width: 600px) 100vw, (max-width: 1100px) 50vw, 25vw"
+                  className="product-photo"
                 />
                 <span className="product-category">{p.tag}</span>
-                <span className="product-number" aria-hidden="true">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
               </div>
               <div className="product-content">
                 <p className="maker">{p.maker}</p>

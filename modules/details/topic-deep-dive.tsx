@@ -58,11 +58,6 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
               }
               style={{ scrollMarginTop: 120 }}
             >
-              <div className="flex items-center justify-between gap-2 mb-4">
-                <span className="deep-dive-number" aria-hidden="true">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-              </div>
               <h3>{card.title}</h3>
               <p>{card.text}</p>
               <ul>

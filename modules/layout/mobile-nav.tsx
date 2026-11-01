@@ -6,6 +6,8 @@ import {
   Menu,
   X,
   ChevronDown,
+  Sailboat,
+  Mountain,
   Landmark,
   Palmtree,
   Compass,
@@ -36,9 +38,10 @@ import type { NavItem } from "@/types";
 import { Badge } from "@/components/ui/badge";
 
 const ICON_MAP: Record<string, typeof Landmark> = {
+  Sailboat,
+  Mountain,
   Landmark,
   Palmtree,
-  Compass,
   Sparkles,
   UtensilsCrossed,
   ShoppingBag,

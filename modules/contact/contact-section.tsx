@@ -13,7 +13,6 @@ export function ContactSection() {
     <section id="kedaruratan" className="sand-section">
       <div className="wrap section">
         <div className="emergency-heading">
-          <ShieldCheck size={40} strokeWidth={1.3} />
           <div>
             <p className="eyebrow">{PORTAL.emergencyEyebrow}</p>
             <h2>{PORTAL.emergencyTitle}</h2>
@@ -46,10 +45,6 @@ export function ContactSection() {
               </CardPanel>
             </Card>
           ))}
-        </div>
-        <div className="safety-advice">
-          <p>{PORTAL.emergencyAdvice}</p>
-          <p>{PORTAL.emergencyLocal}</p>
         </div>
       </div>
     </section>

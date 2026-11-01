@@ -36,16 +36,13 @@ export function TopicGuide({ topic }: { topic: TopicKey }) {
           </Accordion>
         ) : (
           <div className={styles.items}>
-            {page.guide.map((item, index) => (
+            {page.guide.map((item) => (
               <Card
                 render={<article />}
                 className={styles.item}
                 key={item.title}
               >
                 <CardHeader>
-                  <span className={styles.number} aria-hidden="true">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
                   <CardTitle render={<h3 />}>{item.title}</CardTitle>
                 </CardHeader>
                 <CardPanel>

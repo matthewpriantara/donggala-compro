@@ -5,8 +5,9 @@
   flex-shrink: 0;
 }
 .navbar {
-  width: 132px;
-  height: 88px;
+  width: 78px;
+  height: 52px;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 .footer {
   width: 240px;
@@ -15,13 +16,13 @@
 }
 @media (max-width: 1350px) {
   .navbar {
-    width: 108px;
-    height: 72px;
+    width: 66px;
+    height: 44px;
   }
 }
 @media (max-width: 600px) {
   .navbar {
-    width: 96px;
-    height: 64px;
+    width: 57px;
+    height: 38px;
   }
 }

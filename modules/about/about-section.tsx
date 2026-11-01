@@ -1,8 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { PORTAL, VILLAGES, VILLAGE_STATS } from "@/constants/helper";
 import { FadeIn } from "@/components/motion/fade-in";
-import { ExternalLink } from "@/components/ui/external-link";
 import { Badge } from "@/components/ui/badge";
 export function AboutSection() {
   return (
@@ -50,7 +50,6 @@ export function AboutSection() {
                 fill
                 sizes="(max-width: 760px) 100vw, 50vw"
               />
-              <span className="photo-index">{v.number}</span>
             </div>
             <div className="village-content">
               <p className="eyebrow">{v.tag}</p>
@@ -67,9 +66,10 @@ export function AboutSection() {
                   </Badge>
                 ))}
               </div>
-              <ExternalLink href={`${PORTAL.url}/desa`} className="text-link">
+              <Link href={v.href} className="button village-cta">
                 {v.cta}
-              </ExternalLink>
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </Link>
             </div>
           </article>
         ))}
