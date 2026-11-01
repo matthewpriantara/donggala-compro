@@ -20,7 +20,7 @@ export function AboutSection() {
         <figure className="about-photo">
           <Image
             src={PORTAL.aboutImage}
-            alt={VILLAGES[0].alt}
+            alt={PORTAL.aboutCaption}
             fill
             sizes="(max-width: 760px) 100vw, 45vw"
           />
