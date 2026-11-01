@@ -1,0 +1,75 @@
+.list {
+  display: grid;
+  gap: 40px;
+}
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #294654;
+  scroll-margin-top: 124px;
+}
+.image {
+  position: relative;
+  min-height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a2c3e;
+}
+.image img {
+  object-fit: cover;
+}
+.copy {
+  padding-block: 12px;
+}
+.label {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #82ded2;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.copy h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  color: #f8fafc;
+  line-height: 1.25;
+}
+.copy > p:not(.label) {
+  color: #cbd5e1;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 16px;
+  max-width: 65ch;
+}
+.copy a {
+  color: #82ded2;
+  margin-top: 16px;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .image {
+    aspect-ratio: 16/9;
+    min-height: 220px;
+  }
+}
+.row,
+.copy,
+.image {
+  min-width: 0;
+}
+.image {
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .image {
+    min-height: 0;
+  }
+}

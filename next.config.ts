@@ -1,17 +1,18 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
+export default function nextConfig(phase: string): NextConfig {
+  return {
+    // Production validation must not replace files used by an active preview.
+    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next",
+    cacheComponents: true,
+    partialPrefetching: true,
+    images: {
+      remotePatterns: [
+        { protocol: "https", hostname: "www.twblocks.com" },
+        { protocol: "https", hostname: "images.unsplash.com" },
+        { protocol: "https", hostname: "cdn.21st.dev" },
+      ],
     },
-  },
-};
-
-export default nextConfig;
+  };
+}
