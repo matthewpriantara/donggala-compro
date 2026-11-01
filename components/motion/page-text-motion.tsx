@@ -15,6 +15,9 @@ export function PageTextMotion() {
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
       const seen = new WeakSet<Element>();
+      const shouldBlur = window.matchMedia(
+        "(min-width: 768px) and (pointer: fine)",
+      ).matches;
       const context = gsap.context(() => {}, main);
       const handleDiscoverText = () =>
         context.add(() => {
@@ -40,16 +43,19 @@ export function PageTextMotion() {
                   opacity: 0,
                   yPercent: 65,
                   rotationX: -12,
-                  filter: "blur(4px)",
+                  ...(shouldBlur ? { filter: "blur(4px)" } : {}),
                   transformOrigin: "50% 100%",
                 },
                 {
                   opacity: 1,
                   yPercent: 0,
                   rotationX: 0,
-                  filter: "blur(0px)",
-                  duration: 0.85,
-                  stagger: { amount: 0.35, from: "start" },
+                  ...(shouldBlur ? { filter: "blur(0px)" } : {}),
+                  duration: shouldBlur ? 0.85 : 0.65,
+                  stagger: { amount: shouldBlur ? 0.35 : 0.22, from: "start" },
+                  onComplete: () => {
+                    gsap.set(words, { clearProps: "filter" });
+                  },
                   ease: "power3.out",
                   scrollTrigger: {
                     trigger: element,

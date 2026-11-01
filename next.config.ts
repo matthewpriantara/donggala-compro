@@ -5,6 +5,7 @@ export default function nextConfig(phase: string): NextConfig {
   return {
     // Production validation must not replace files used by an active preview.
     distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next",
+    poweredByHeader: false,
     cacheComponents: true,
     partialPrefetching: true,
     images: {

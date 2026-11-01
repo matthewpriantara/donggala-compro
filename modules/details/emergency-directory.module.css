@@ -16,7 +16,7 @@
 .directory strong {
   color: var(--color-motif-white);
   font:
-    32px Fraunces,
+    32px var(--font-fraunces),
     Georgia,
     serif;
   min-width: 80px;

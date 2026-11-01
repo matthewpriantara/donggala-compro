@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { HEALTH_CHECKS, type HealthSlug } from "@/constants/health-checks";
@@ -15,10 +16,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   if (!isHealthSlug(slug)) notFound();
-  return {
+  return createPageMetadata({
+    path: `/kesehatan/${slug}`,
     title: `${HEALTH_CHECKS[slug].label} | ${COMPANY_NAME}`,
     description: HEALTH_CHECKS[slug].description,
-  };
+  });
 }
 export default async function Page({
   params,
