@@ -1,0 +1,45 @@
+.directory {
+  padding: 0;
+  margin: 40px 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.directory li {
+  border-bottom: 1px solid var(--line);
+}
+.directory a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 0;
+}
+.directory strong {
+  color: var(--color-motif-white);
+  font:
+    32px Fraunces,
+    Georgia,
+    serif;
+  min-width: 80px;
+}
+.directory span {
+  flex: 1;
+  font-size: 16px;
+}
+.directory small {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.directory a:hover {
+  color: #82ded2;
+}
+@media (max-width: 600px) {
+  .directory a {
+    gap: 16px;
+  }
+  .directory strong {
+    font-size: 28px;
+    min-width: 60px;
+  }
+}
