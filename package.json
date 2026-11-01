@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "merge:child": "bash ./scripts/merge-child.sh"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

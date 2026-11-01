@@ -14,4 +14,6 @@ Untuk panduan arsitektur, standar Next.js App Router, dan regulasi pemisahan CSR
 - [`ARCHITECTURE.md`](file:///Users/matthewpriantara/Documents/coolyeah/KKN/compro/ARCHITECTURE.md)
 - [`REFERENSI.md`](file:///Users/matthewpriantara/Documents/coolyeah/KKN/compro/REFERENSI.md)
 - [`DESIGN_BENCHMARK_ANALYSIS.md`](file:///Users/matthewpriantara/Documents/coolyeah/KKN/compro/DESIGN_BENCHMARK_ANALYSIS.md)
+- [`MULTI_AGENT_COORDINATION.md`](file:///Users/matthewpriantara/Documents/coolyeah/KKN/compro/MULTI_AGENT_COORDINATION.md)
+
 
