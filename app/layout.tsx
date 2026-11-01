@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+import { PageTextMotion } from "@/components/motion/page-text-motion";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -47,6 +49,9 @@ export default function RootLayout({
           {PORTAL.skip}
         </a>
         <SmoothScroll />
+        <Suspense fallback={null}>
+          <PageTextMotion />
+        </Suspense>
         <CursorFollower />
         <SiteHeader />
         <main id="konten">{children}</main>

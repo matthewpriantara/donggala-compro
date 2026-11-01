@@ -1,12 +1,16 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 /** Updates only the header's presentation; its content remains server-rendered. */
 export function HeaderScrollEffect() {
+  const pathname = usePathname();
   const markerRef = useRef<HTMLSpanElement>(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const header = markerRef.current?.closest("header");
     if (!header) return;
+    header.dataset.home = String(pathname === "/");
+    header.dataset.scrolled = String(window.scrollY > 64);
     let frameId = 0;
     function handleUpdate() {
       frameId = 0;
@@ -18,6 +22,9 @@ export function HeaderScrollEffect() {
       if (!frameId) frameId = requestAnimationFrame(handleUpdate);
     }
     handleUpdate();
+    frameId = requestAnimationFrame(() => {
+      frameId = requestAnimationFrame(handleUpdate);
+    });
     window.addEventListener("scroll", handleScroll, { passive: true });
     window.addEventListener("pageshow", handleUpdate);
     return () => {
@@ -25,6 +32,6 @@ export function HeaderScrollEffect() {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("pageshow", handleUpdate);
     };
-  }, []);
+  }, [pathname]);
   return <span ref={markerRef} hidden aria-hidden="true" />;
 }
