@@ -1080,17 +1080,37 @@ em {
   gap: 15px;
 }
 .cursor-follower {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
   position: fixed;
-  top: -6px;
-  left: -6px;
-  background: #82ded2;
-  opacity: 0.35;
+  top: 0;
+  left: 0;
   pointer-events: none;
+  user-select: none;
   z-index: 60;
-  mix-blend-mode: screen;
+  will-change: transform;
+}
+.cursor-follower-fish {
+  display: block;
+  width: 52px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 4px 10px rgba(4, 29, 42, 0.45)) drop-shadow(0 0 12px rgba(130, 222, 210, 0.35));
+}
+@keyframes fish-swim-wiggle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-1.5px) rotate(-1.5deg);
+  }
+  75% {
+    transform: translateY(1.5px) rotate(1.5deg);
+  }
+}
+.cursor-follower-wiggle {
+  animation: fish-swim-wiggle 1.8s ease-in-out infinite;
+  display: inline-block;
+  will-change: transform;
 }
 .skip-link {
   position: fixed;
@@ -1610,7 +1630,10 @@ em {
 }
 @media (pointer: coarse), (prefers-reduced-motion: reduce) {
   .cursor-follower {
-    display: none;
+    display: none !important;
+  }
+  .cursor-follower-wiggle {
+    animation: none !important;
   }
 }
 @media (prefers-reduced-motion: reduce) {
