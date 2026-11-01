@@ -1,0 +1,22 @@
+.section { background: var(--color-ocean-950); border-block: 1px solid var(--line); }
+.heading { max-width: 760px; margin-bottom: 48px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+.story { min-width: 0; }
+.photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: var(--card-radius, 24px); background: var(--color-ocean-900); }
+.photo img { object-fit: cover; }
+.copy { padding: 30px 0 0; }
+.label { font-size: 12px; font-weight: 500; letter-spacing: .12em; color: #b0c1c8; margin-bottom: 18px; }
+.copy h3 { font-size: clamp(30px, 2.7vw, 42px); line-height: 1.23; text-wrap: balance; }
+.description { font-size: 16px; line-height: 1.9; color: #b0c1c8; margin-top: 22px; max-width: 560px; }
+@media (max-width: 900px) {
+ .grid { grid-template-columns: 1fr; gap: 48px; }
+ .description { max-width: none; }
+ .photo { aspect-ratio: 16 / 10; }
+}
+@media (max-width: 600px) {
+ .heading { margin-bottom: 32px; }
+ .copy { padding-top: 24px; }
+ .copy h3 { font-size: 30px; }
+ .description { font-size: 15px; margin-top: 18px; }
+ .label { font-size: 11px; }
+}
