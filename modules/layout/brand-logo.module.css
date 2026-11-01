@@ -1,0 +1,27 @@
+.navbar,
+.footer {
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.navbar {
+  width: 132px;
+  height: 88px;
+}
+.footer {
+  width: 240px;
+  height: 160px;
+  max-width: 100%;
+}
+@media (max-width: 1350px) {
+  .navbar {
+    width: 108px;
+    height: 72px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    width: 96px;
+    height: 64px;
+  }
+}

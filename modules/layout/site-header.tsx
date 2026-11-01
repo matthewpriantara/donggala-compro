@@ -1,12 +1,11 @@
+import { BrandLogo } from "./brand-logo";
 import { LiquidGlassCard } from "@/components/ui/liquid-weather-glass";
 import { HeaderScrollEffect } from "./header-scroll-effect";
 import Link from "next/link";
-import Image from "next/image";
 import {
   COMPANY_NAME,
   NAV_LINKS,
   PORTAL,
-  MOTIF_PATH,
 } from "@/constants/helper";
 import { ExternalLink } from "@/components/ui/external-link";
 import { DesktopNav } from "./desktop-nav";
@@ -25,18 +24,8 @@ export function SiteHeader() {
         glowIntensity="sm"
       >
         <div className="header-inner">
-          <Link href="/" className="brand">
-            <span className="brand-mark">{PORTAL.initials}</span>
-            <span>
-              <strong>{COMPANY_NAME}</strong>
-              <small>{PORTAL.subtitle}</small>
-            </span>
-            <Image
-              src={`${MOTIF_PATH}kuning.png`}
-              width={23}
-              height={23}
-              alt=""
-            />
+          <Link href="/" className="brand" aria-label={`${COMPANY_NAME} Beranda`}>
+            <BrandLogo />
           </Link>
           <DesktopNav items={NAV_LINKS} />
           <ExternalLink href={PORTAL.url} className="button header-cta">
