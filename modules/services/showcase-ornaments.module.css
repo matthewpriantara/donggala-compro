@@ -1,0 +1,24 @@
+.section {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+}
+.content { position: relative; z-index: 1; }
+.ornaments { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+.motif { position: absolute; object-fit: contain; opacity: .25; filter: saturate(.8); }
+.motif:nth-child(1) { width: 190px; height: 190px; top: -48px; left: -50px; transform: rotate(-22deg); opacity: .34; }
+.motif:nth-child(2) { width: 135px; height: 135px; top: 32px; right: 5%; transform: rotate(18deg); }
+.motif:nth-child(3) { width: 80px; height: 80px; top: 26%; left: 2%; transform: rotate(28deg); opacity: .18; }
+.motif:nth-child(4) { width: 170px; height: 170px; top: 45%; right: -70px; transform: rotate(-16deg); }
+.motif:nth-child(5) { width: 110px; height: 110px; bottom: 15px; left: 12%; transform: rotate(16deg); opacity: .3; }
+.motif:nth-child(6) { width: 190px; height: 190px; bottom: -70px; right: 12%; transform: rotate(-24deg); opacity: .32; }
+.motif:nth-child(7) { width: 50px; height: 50px; bottom: 140px; right: 4%; transform: rotate(24deg); opacity: .24; }
+@media (max-width: 600px) {
+ .motif:nth-child(1) { width: 120px; height: 120px; left: -44px; top: -25px; }
+ .motif:nth-child(2) { width: 90px; height: 90px; right: -24px; top: 45px; }
+ .motif:nth-child(3) { left: -40px; }
+ .motif:nth-child(4) { right: -105px; }
+ .motif:nth-child(5) { width: 80px; height: 80px; left: -20px; bottom: 10px; }
+ .motif:nth-child(6) { width: 130px; height: 130px; right: -26px; bottom: -45px; }
+ .motif:nth-child(7) { right: -15px; }
+}
