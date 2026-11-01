@@ -2,15 +2,36 @@
 set -euo pipefail
 
 # Script untuk melakukan merge lokal child worktree ke parent branch (dev)
-# Usage: ./scripts/merge-child.sh [branch-name] [worktree-path]
+# Usage:
+#   ./scripts/merge-child.sh              (default: agent-worker)
+#   ./scripts/merge-child.sh 2            (merges agent-worker-2)
+#   ./scripts/merge-child.sh agent-worker-2
+#   ./scripts/merge-child.sh <branch-name> [worktree-path]
 
-CHILD_BRANCH="${1:-matthewpriantara/agent-worker}"
-CHILD_PATH="${2:-/Users/matthewpriantara/orca/workspaces/compro/agent-worker}"
+INPUT_ARG="${1:-agent-worker}"
+
+case "$INPUT_ARG" in
+  "1"|"agent-worker"|"matthewpriantara/agent-worker")
+    CHILD_BRANCH="matthewpriantara/agent-worker"
+    CHILD_NAME="agent-worker"
+    ;;
+  "2"|"agent-worker-2"|"matthewpriantara/agent-worker-2")
+    CHILD_BRANCH="matthewpriantara/agent-worker-2"
+    CHILD_NAME="agent-worker-2"
+    ;;
+  *)
+    CHILD_BRANCH="$INPUT_ARG"
+    CHILD_NAME="${INPUT_ARG##*/}"
+    ;;
+esac
+
+CHILD_PATH="${2:-/Users/matthewpriantara/orca/workspaces/compro/$CHILD_NAME}"
 PARENT_PATH="/Users/matthewpriantara/Documents/coolyeah/KKN/compro"
 CHILD_WORKTREE_ID="fb16f2c4-91e0-493a-b0b5-e919d45f7038::$CHILD_PATH"
 
 echo "=========================================================="
 echo "🔄 [Orca Merge] Memulai merge child worktree ke dev (parent)"
+echo "   Target Child    : $CHILD_NAME"
 echo "   Branch Child    : $CHILD_BRANCH"
 echo "   Child Worktree  : $CHILD_PATH"
 echo "   Parent Worktree : $PARENT_PATH (branch: dev)"
@@ -19,7 +40,7 @@ echo "=========================================================="
 # 1. Cek status uncommitted di child worktree jika foldernya ada
 if [ -d "$CHILD_PATH" ]; then
   if [ -n "$(git -C "$CHILD_PATH" status --porcelain)" ]; then
-    echo "❌ ERROR: Child worktree masih memiliki perubahan yang belum di-commit!"
+    echo "❌ ERROR: Child worktree '$CHILD_NAME' masih memiliki perubahan yang belum di-commit!"
     echo "Silakan commit terlebih dahulu di child worktree:"
     echo "   cd $CHILD_PATH && git add . && git commit -m '...'"
     exit 1
@@ -67,7 +88,7 @@ if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
   echo "🧹 Menghapus child worktree di Orca..."
   orca worktree rm --worktree "$CHILD_WORKTREE_ID" 2>/dev/null || true
   git branch -d "$CHILD_BRANCH" 2>/dev/null || true
-  echo "✅ Child worktree berhasil dibersihkan."
+  echo "✅ Child worktree '$CHILD_NAME' berhasil dibersihkan."
 else
   echo "ℹ️  Child worktree dipertahankan. Jika nanti ingin menghapus secara manual:"
   echo "   orca worktree rm --worktree \"$CHILD_WORKTREE_ID\""

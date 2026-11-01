@@ -1,37 +1,11 @@
-import Image from "next/image";
 import {
   PORTAL,
-  CULTURE_STORIES,
   KAILI_WORDS,
-  MOTIF_PATH,
 } from "@/constants/helper";
-import { FadeIn } from "@/components/motion/fade-in";
+import { CultureComparison } from "./culture-comparison";
+
 export function CultureStories() {
-  return (
-    <section id="budaya" className="culture-section">
-      <div className="wrap section">
-        <p className="eyebrow">{PORTAL.cultureEyebrow}</p>
-        <h2>{PORTAL.cultureTitle}</h2>
-        {CULTURE_STORIES.map((story) => (
-          <FadeIn className="culture-row" key={story.tag}>
-            <div className={`culture-art ${story.motif}`}>
-              <Image
-                src={`${MOTIF_PATH}${story.motif}.png`}
-                alt=""
-                width={200}
-                height={200}
-              />
-            </div>
-            <div>
-              <p className="eyebrow">{story.tag}</p>
-              <h3>{story.title}</h3>
-              <p className="body-copy">{story.description}</p>
-            </div>
-          </FadeIn>
-        ))}
-      </div>
-    </section>
-  );
+  return <CultureComparison />;
 }
 export function LanguageSection() {
   return (
