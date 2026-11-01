@@ -3,6 +3,7 @@ import { PageTextMotion } from "@/components/motion/page-text-motion";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "./mobile-layout.css";
 import { SiteHeader, SiteFooter } from "@/modules/layout";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
 import { CursorFollower } from "@/components/motion/cursor-follower";

@@ -1,0 +1,45 @@
+.badge.badge.badge {
+  position: absolute;
+  display: block;
+  padding: 0;
+  max-width: 100%;
+  white-space: normal;
+  background: linear-gradient(135deg, #ffffff20, #ffffff0d);
+  border: 1px solid #ffffff52;
+  color: #f5fbff;
+  backdrop-filter: blur(12px) saturate(125%);
+  -webkit-backdrop-filter: blur(12px) saturate(125%);
+  box-shadow:
+    inset 0 1px 0 #ffffff45,
+    0 8px 24px #041d2a1f;
+  text-shadow: 0 1px 4px #041d2a80;
+}
+.badge.badge :global(.glass-content) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+}
+.badge.badge :global(.glass-content) > span {
+  min-width: 0;
+  white-space: normal;
+}
+.badge.badge svg {
+  flex-shrink: 0;
+  color: inherit;
+  filter: none;
+}
+.badge.badge:hover {
+  box-shadow:
+    inset 0 1px 0 #ffffff45,
+    0 8px 24px #041d2a1f;
+}
+@media (max-width: 600px) {
+  .badge.badge.badge {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .badge.badge :global(.glass-content) {
+    padding: 9px 12px;
+  }
+}

@@ -1,0 +1,64 @@
+/* Small-screen refinements shared by the landing and detail routes. */
+@media (max-width: 600px) {
+  main h1,
+  main h2,
+  main h3 {
+    overflow-wrap: anywhere;
+  }
+  .title-reveal-word {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .header-inner {
+    min-width: 0;
+  }
+  .mobile-nav .mobile-nav-toggle-btn {
+    width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .mobile-nav .mobile-nav-panel {
+    max-height: calc(100dvh - 108px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .mobile-nav a,
+  .mobile-nav .mobile-nav-scroll-area button {
+    min-height: 44px;
+  }
+  .site-footer a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .hero-actions a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .village-hero-actions {
+    justify-content: center;
+  }
+  .village-hero-actions > a,
+  .village-hero-actions > button {
+    min-height: 44px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+  .breadcrumbs {
+    gap: 8px;
+    line-height: 1.6;
+  }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .mobile-nav .mobile-nav-panel {
+    max-height: calc(100dvh - 90px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
