@@ -7,7 +7,7 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
   gap: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #d3dbd6;
+  border-bottom: 1px solid #294654;
   scroll-margin-top: 124px;
 }
 .image {
@@ -15,7 +15,7 @@
   min-height: 250px;
   border-radius: 12px;
   overflow: hidden;
-  background: #dce4de;
+  background: #0a2c3e;
 }
 .image img {
   object-fit: cover;
@@ -26,19 +26,19 @@
 .label {
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: #61747a;
+  color: #a9bec7;
   margin-bottom: 18px;
 }
 .copy h2 {
   font-size: clamp(28px, 3vw, 40px);
 }
 .copy > p:not(.label) {
-  color: #52656c;
+  color: #b0c1c8;
   margin-top: 22px;
   max-width: 65ch;
 }
 .copy a {
-  color: #166f66;
+  color: #d1e2e7;
   margin-top: 16px;
 }
 @media (max-width: 900px) {
@@ -51,9 +51,19 @@
     min-height: 220px;
   }
 }
-.row, .copy, .image { min-width: 0; }
-.image { width: 100%; }
+.row,
+.copy,
+.image {
+  min-width: 0;
+}
+.image {
+  width: 100%;
+}
 @media (max-width: 900px) {
-  .row { grid-template-columns: minmax(0, 1fr); }
-  .image { min-height: 0; }
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .image {
+    min-height: 0;
+  }
 }
