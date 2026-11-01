@@ -389,9 +389,9 @@ export const PORTAL = {
   headlineAccent: "dalam satu perjalanan.",
   description:
     "Dari benang sutra ke birunya samudra. Temukan pusaka tenun Kaili, sumur laut alami Pusentasi, bentang teluk bahari, dan cerita yang hidup bersama warga.",
-  heroImage: "/images/destinasi/pusat-laut-pusentasi.jpg",
-  heroAlt: "Geowisata Pusentasi (Pusat Laut), sumur raksasa alami air laut toska di Desa Towale",
-  heroCaption: "PUSENTASI (PUSAT LAUT)",
+  heroImage: "/images/hero_limboro_coastal.png",
+  heroAlt: "Panorama pesisir teluk berpasir putih melengkung di Desa Limboro",
+  heroCaption: "PANORAMA PESISIR LIMBORO",
   heroNote: "Dua desa. Beragam cerita. Satu perjalanan.",
   scroll: "GULIR UNTUK MENGENAL",
   aboutTitle: "Dua desa pesisir,",
@@ -825,29 +825,19 @@ export type TopicKey = keyof typeof TOPIC_PAGES;
 
 export const HERO_SLIDES = [
   {
-    image: "/images/destinasi/pusat-laut-pusentasi.jpg",
-    alt: "Geowisata Pusentasi (Pusat Laut), sumur raksasa alami air laut toska di Desa Towale",
-    caption: "PUSENTASI (PUSAT LAUT)",
+    image: "/images/hero_limboro_coastal.png",
+    alt: "Panorama pesisir teluk berpasir putih melengkung di Desa Limboro",
+    caption: "PESISIR PANTAI LIMBORO",
   },
   {
-    image: "/images/destinasi/pantai-bonebula-aerial.jpg",
-    alt: "Panorama semenanjung pesisir dan Pantai Bonebula Desa Wisata Towale",
-    caption: "PANTAI BONEBULA TOWALE",
+    image: "/images/wisata_towale.jpg",
+    alt: "Pemandangan keindahan alam dan pesona destinasi wisata di Desa Towale",
+    caption: "PESONA WISATA TOWALE",
   },
   {
-    image: "/images/destinasi/tenun-buya-sabe-proses.jpg",
-    alt: "Penenun perempuan Towale merajut kain tenun sutra Buya Sabe tradisional Kaili",
-    caption: "TENUN SUTRA BUYA SABE",
-  },
-  {
-    image: "/images/destinasi/hiu-paus-donggala.jpg",
-    alt: "Penyelaman bersama megafauna Hiu Paus di perairan pesisir Donggala",
-    caption: "WISATA BAHARI & HIU PAUS",
-  },
-  {
-    image: "/images/destinasi/pantai-kaluku-limboro.jpg",
-    alt: "Bentang pantai pasir putih dan perairan tenang Pantai Kaluku Limboro",
-    caption: "PANTAI KALUKU LIMBORO",
+    image: "/images/wisata_limboro.jpeg",
+    alt: "Bentang alam pantai dan panorama bahari di Desa Limboro",
+    caption: "PESONA WISATA LIMBORO",
   },
 ] as const;
 export const HERO_CAROUSEL = {
