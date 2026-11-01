@@ -7,6 +7,7 @@ interface Footer7Props {
     src: string;
     alt: string;
     title: string;
+    content?: React.ReactNode;
   };
   sections?: Array<{
     title: string;
@@ -88,14 +89,18 @@ export const Footer7 = ({
             {/* Logo */}
             <div className="flex items-center gap-2 lg:justify-start">
               <a href={logo.url}>
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  title={logo.title}
-                  className="h-8"
-                />
+                {logo.content ?? (
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    title={logo.title}
+                    className="h-8"
+                  />
+                )}
               </a>
-              <h2 className="text-xl font-semibold">{logo.title}</h2>
+              {!logo.content && (
+                <h2 className="text-xl font-semibold">{logo.title}</h2>
+              )}
             </div>
             <p className="max-w-[70%] text-sm text-muted-foreground">
               {description}

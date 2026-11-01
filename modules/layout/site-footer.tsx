@@ -1,3 +1,4 @@
+import { BrandLogo } from "./brand-logo";
 import { Footer7 } from "@/components/ui/footer-7";
 import { COMPANY_NAME, PORTAL, NAV_LINKS } from "@/constants/helper";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -62,9 +63,10 @@ export function SiteFooter() {
       <Footer7
         logo={{
           url: "/",
-          src: "/images/tenun-donggala-motif.png",
+          src: "/donggala_logo.png",
           alt: `Logo ${COMPANY_NAME}`,
           title: COMPANY_NAME,
+          content: <BrandLogo isFooter />,
         }}
         description={PORTAL.footerText}
         sections={sections}
