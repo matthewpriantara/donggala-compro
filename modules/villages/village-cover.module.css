@@ -13,19 +13,18 @@
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(
-    90deg,
-    #041d2aeb 0%,
-    #041d2ac4 45%,
-    #041d2a5c 100%
-  );
+  background:
+    linear-gradient(0deg, #041d2a 0%, transparent 40%),
+    linear-gradient(90deg, #041d2aeb 0%, #041d2ac4 45%, #041d2a5c 100%);
 }
 .content {
   position: relative;
   padding-block: 40px 88px;
 }
 .text {
-  max-width: 860px;
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;
   padding-top: 28px;
 }
 .text h1 {
@@ -34,7 +33,8 @@
   text-wrap: balance;
 }
 .text :global(.topic-description) {
-  max-width: 720px;
+  max-width: 760px;
+  margin-inline: auto;
   color: #d3dfe3;
   line-height: 1.85;
   margin-top: 28px;
@@ -71,7 +71,7 @@
   }
 }
 
-/* Soft blue-white backgrounds with ocean surfaces and textile accents. */
+/* Ocean backgrounds continue the village cover into its key figures. */
 .content {
   padding-bottom: 88px;
 }
@@ -79,8 +79,8 @@
 .lightBand {
   position: relative;
   isolation: isolate;
-  background: #d8e2e1;
-  color: #18333d;
+  background: #041d2a;
+  color: #f5f3ed;
   padding-bottom: 64px !important;
   overflow: hidden;
 }
@@ -157,4 +157,8 @@
   .ornament {
     right: -60px;
   }
+}
+
+.text :global(.village-hero-actions) {
+  justify-content: center;
 }
