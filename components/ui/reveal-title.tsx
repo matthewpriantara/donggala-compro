@@ -40,5 +40,7 @@ export function RevealTitle({
   children,
   ...props
 }: HTMLAttributes<HTMLHeadingElement> & { as?: "h1" | "h2" }) {
-  return <Tag {...props}>{renderWords(children)}</Tag>;
+  return (
+    <Tag {...props}>{Tag === "h1" ? renderWords(children) : children}</Tag>
+  );
 }
