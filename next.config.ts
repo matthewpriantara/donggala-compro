@@ -7,5 +7,12 @@ export default function nextConfig(phase: string): NextConfig {
     distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next",
     cacheComponents: true,
     partialPrefetching: true,
+    images: {
+      remotePatterns: [
+        { protocol: "https", hostname: "www.twblocks.com" },
+        { protocol: "https", hostname: "images.unsplash.com" },
+        { protocol: "https", hostname: "cdn.21st.dev" },
+      ],
+    },
   };
 }

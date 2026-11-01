@@ -1,9 +1,16 @@
 import { Footer7 } from "@/components/ui/footer-7";
+import { Feature } from "@/components/ui/feature-with-image-comparison";
 
-const DemoOne = () => {
+function DemoOne() {
+  return <Footer7 />;
+}
+
+function FeatureDemo() {
   return (
-    <Footer7 />
+    <div className="w-full">
+      <Feature />
+    </div>
   );
-};
+}
 
-export { DemoOne };
+export { DemoOne, FeatureDemo };
