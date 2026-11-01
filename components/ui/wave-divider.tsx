@@ -25,7 +25,9 @@ export function WaveDivider({
 
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
-    const trigger = container.previousElementSibling;
+    const trigger = shouldRevealOnEnter
+      ? container
+      : container.previousElementSibling;
     if (!trigger) return;
     media.add(
       {

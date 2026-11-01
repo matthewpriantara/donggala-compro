@@ -21,7 +21,10 @@ import { EmergencyDirectory } from "./emergency-directory";
 export function TopicDeepDive({ topic }: { topic: TopicKey }) {
   const content = TOPIC_DETAILS[topic];
   return (
-    <section className={`topic-deep-dive ${styles.detail}`}>
+    <section
+      className={`topic-deep-dive ${styles.detail}`}
+      data-detail-topic={topic}
+    >
       <div className="wrap section">
         <p className="eyebrow">{content.eyebrow}</p>
         <h2>{content.title}</h2>

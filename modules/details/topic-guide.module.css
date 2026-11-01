@@ -1,0 +1,137 @@
+.guide {
+  color: #18333d;
+  padding-block: 80px;
+}
+.heading {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+.heading h2 {
+  color: #18333d;
+  font-size: clamp(32px, 3.2vw, 48px);
+  line-height: 1.18;
+}
+.guide .heading p {
+  color: #52676f;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+.guide .item {
+  border: 0;
+  border-top: 1px solid #9fb4b9;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.item::before {
+  display: none;
+}
+.item [data-slot="card-header"] {
+  padding: 24px 0 16px;
+  gap: 16px;
+}
+.item [data-slot="card-panel"] {
+  padding: 0;
+}
+.item h3 {
+  color: #18333d;
+  font-size: 28px;
+  line-height: 1.25;
+}
+.item p {
+  color: #52676f;
+  line-height: 1.85;
+}
+.number {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: #52676f;
+}
+.guide[data-guide-topic="mangrove"] {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+}
+.guide[data-guide-topic="mangrove"] .items {
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.guide[data-guide-topic="mangrove"] .item {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 24px;
+  padding-top: 24px;
+}
+.guide[data-guide-topic="mangrove"] .item [data-slot="card-header"] {
+  padding: 0;
+}
+.guide[data-guide-topic="budaya"] .items {
+  grid-template-columns: 1fr;
+}
+.guide[data-guide-topic="budaya"] .item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding-top: 28px;
+}
+.guide[data-guide-topic="budaya"] .item [data-slot="card-header"] {
+  padding: 0;
+}
+.guide[data-guide-topic="kedaruratan"] .items {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.guide[data-guide-topic="kedaruratan"] .item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 32px;
+  padding-block: 24px;
+}
+.guide[data-guide-topic="kedaruratan"] .item [data-slot="card-header"] {
+  padding: 0;
+}
+.guide:has(.accordion) {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+}
+.accordion [data-slot="accordion-item"] {
+  border-color: #9fb4b9;
+}
+.accordion [data-slot="accordion-trigger"] {
+  font-family: inherit;
+  color: #18333d;
+  font-size: 20px;
+  padding-block: 24px;
+}
+.accordion [data-slot="accordion-panel"] {
+  color: #52676f;
+  font-size: 17px;
+  line-height: 1.85;
+}
+@media (max-width: 900px) {
+  .guide[data-guide-topic],
+  .guide:has(.accordion) {
+    display: block;
+  }
+  .items {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .guide {
+    padding-block: 48px;
+  }
+  .guide[data-guide-topic] .item {
+    display: block;
+  }
+  .guide[data-guide-topic] .item [data-slot="card-header"] {
+    padding-block: 16px;
+  }
+}

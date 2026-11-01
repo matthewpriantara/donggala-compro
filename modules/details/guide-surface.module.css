@@ -1,0 +1,87 @@
+.surface {
+  position: relative;
+  background: #d8e2e1;
+  color: #18333d;
+  margin-block: 80px;
+}
+.edge {
+  position: absolute;
+  top: -79px;
+  display: block;
+  width: 100%;
+  --wave-height: 80px;
+  height: var(--wave-height);
+  color: #d8e2e1;
+  background: transparent;
+  fill: #d8e2e1;
+  margin-bottom: -1px;
+  pointer-events: none;
+}
+.edge :global(.wave-surface) {
+  bottom: 0;
+  height: 100%;
+}
+.bottom {
+  top: auto;
+  bottom: -79px;
+  transform: rotate(180deg);
+  margin-bottom: 0;
+  margin-top: -1px;
+}
+.surface.surface :global(.topic-guide) {
+  color: #18333d;
+  border: 0;
+  background: transparent;
+  margin-block: 0;
+  padding-inline: 0;
+}
+.surface.surface :global(.topic-guide h2),
+.surface.surface :global(.topic-guide h3) {
+  color: #18333d;
+}
+.surface.surface :global(.topic-guide .eyebrow),
+.surface.surface :global(.topic-guide p) {
+  color: #52676f;
+}
+.surface.surface :global([data-slot="card"]) {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #aebfc2;
+  border-radius: 0;
+  box-shadow: none;
+}
+.surface :global([data-slot="card"])::before {
+  display: none;
+}
+@media (max-width: 600px) {
+  .edge {
+    --wave-height: 48px;
+    top: -47px;
+  }
+  .bottom {
+    top: auto;
+    bottom: -47px;
+  }
+  .surface {
+    margin-block: 48px;
+  }
+}
+
+/* Village guides retain a readable itinerary; Limboro uses a wider two-column field guide. */
+.surface.surface :global([data-village-guide="limboro"] .topic-guide-grid) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 48px;
+}
+.surface.surface
+  :global([data-village-guide="limboro"] .topic-guide-grid article) {
+  display: block;
+  padding-block: 24px;
+}
+.surface.surface :global([data-village-guide="limboro"] h3) {
+  margin-block: 16px;
+}
+@media (max-width: 600px) {
+  .surface.surface :global([data-village-guide="limboro"] .topic-guide-grid) {
+    grid-template-columns: 1fr;
+  }
+}
