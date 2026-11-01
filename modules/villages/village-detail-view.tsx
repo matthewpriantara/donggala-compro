@@ -1,3 +1,4 @@
+import { VillageStatsParallax } from "./village-stats-parallax";
 import { GuideSurface } from "@/modules/details/guide-surface";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
@@ -64,6 +65,7 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
 
       {/* 2. Key Stats Bar */}
       <section className={`${styles.lightBand} section village-stats-section`}>
+        <VillageStatsParallax />
         <Image
           src="/images/tenun-donggala-motif.svg"
           alt=""
