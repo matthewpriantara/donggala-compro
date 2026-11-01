@@ -2163,7 +2163,7 @@ em {
 .site-header[data-scrolled="false"] .glass-bend {
   opacity: 0;
 }
-body:has(.hero) .site-header {
+.site-header[data-home="true"] {
   margin-bottom: calc(-1 * var(--header-height));
 }
 .hero,
