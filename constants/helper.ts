@@ -26,11 +26,205 @@ export const COMPANY_DESCRIPTION =
 // 2. NAVIGASI UTAMA
 // ============================================================================
 export const NAV_LINKS: readonly NavItem[] = [
-  { title: "Profil Desa", href: "/desa" },
-  { title: "Kriya & Kuliner", href: "/kriya-kuliner" },
-  { title: "Budaya", href: "/budaya" },
-  { title: "Bahasa Kaili", href: "/bahasa" },
-  { title: "Kedaruratan", href: "/kedaruratan" },
+  {
+    title: "Profil",
+    href: "/desa",
+    items: [
+      {
+        title: "Desa Towale",
+        description: "Sentra tenun Buya Sabe, sumur Pusat Laut purba, dan Pantai Bonebula.",
+        href: "/desa#towale",
+        iconName: "Landmark",
+        badge: "Towale",
+      },
+      {
+        title: "Desa Limboro",
+        description: "Panorama teluk pasir putih Pantai Kaluku, sentra sagu, dan tradisi bahari.",
+        href: "/desa#limboro",
+        iconName: "Palmtree",
+        badge: "Limboro",
+      },
+      {
+        title: "Satu Koridor Dua Desa",
+        description: "Kemitraan koridor terpadu kriya tenun dan wisata bahari Banawa Tengah.",
+        href: "/#tentang",
+        iconName: "Compass",
+      },
+    ],
+  },
+  {
+    title: "Kriya & Kuliner",
+    href: "/kriya-kuliner",
+    items: [
+      {
+        title: "Tenun Buya Sabe / Bomba",
+        description: "Pusaka tenun ikat sutra buatan tangan ibu-ibu penenun Towale.",
+        href: "/kriya-kuliner#tenun",
+        iconName: "Sparkles",
+        badge: "Kriya Pusaka",
+      },
+      {
+        title: "Kuliner Tradisional & Sagu",
+        description: "Kaledo ubi Donggala, Dange Tabaro, Sinole, dan keripik sagu gurih.",
+        href: "/kriya-kuliner#kuliner",
+        iconName: "UtensilsCrossed",
+        badge: "Kuliner Khas",
+      },
+      {
+        title: "Camilan & Oleh-Oleh",
+        description: "Kue Bagea, Baurasa, Balurengga, Somo, dan keripik pisang Towale.",
+        href: "/kriya-kuliner#oleh-oleh",
+        iconName: "ShoppingBag",
+        badge: "Oleh-Oleh",
+      },
+    ],
+  },
+  {
+    title: "Budaya",
+    href: "/budaya",
+    items: [
+      {
+        title: "Filosofi Tenun Kaili",
+        description: "Makna simbolis motif bunga mekar kemakmuran dan doa keselamatan.",
+        href: "/budaya#filosofi",
+        iconName: "BookOpen",
+        badge: "Filosofi",
+      },
+      {
+        title: "Pusaka Bulava Mpongeo",
+        description: "Peninggalan Raja Kaili dan ritual tahunan Modiu Bulava Mpongeo.",
+        href: "/budaya#ritual",
+        iconName: "Crown",
+        badge: "Pusaka Sakral",
+      },
+      {
+        title: "Kearifan Bahari & Konservasi",
+        description: "Etika nelayan menjaga terumbu karang dan sabuk pantai Selat Makassar.",
+        href: "/budaya#konservasi",
+        iconName: "Fish",
+        badge: "Tradisi Laut",
+      },
+      {
+        title: "Kamus Sapaan Bahasa Kaili",
+        description: "Kosakata santun untuk menyapa warga penenun dan nelayan lokal.",
+        href: "/bahasa",
+        iconName: "Languages",
+        badge: "Bahasa Daerah",
+      },
+    ],
+  },
+  {
+    title: "Kesehatan",
+    href: "/kesehatan",
+    items: [
+      {
+        title: "Tekanan Darah (Tensi)",
+        description: "Standar tensi normal (<120/80 mmHg), panduan pencegahan hipertensi pesisir.",
+        href: "/kesehatan#tekanan-darah",
+        iconName: "HeartPulse",
+        badge: "< 120/80 mmHg",
+      },
+      {
+        title: "Glukosa (Gula Darah)",
+        description: "Standar normal glukosa puasa (70–99 mg/dL) & pola konsumsi rendah gula.",
+        href: "/kesehatan#glukosa",
+        iconName: "Activity",
+        badge: "70-99 mg/dL",
+      },
+      {
+        title: "Kolesterol Total",
+        description: "Batas aman kolesterol (<200 mg/dL) & manfaat konsumsi ikan segar berlemak sehat.",
+        href: "/kesehatan#kolesterol",
+        iconName: "ShieldCheck",
+        badge: "< 200 mg/dL",
+      },
+      {
+        title: "Asam Urat (Uric Acid)",
+        description: "Standar batas asam urat pria (3.5–7.2) & wanita (2.6–6.0) ramah sendi.",
+        href: "/kesehatan#asam-urat",
+        iconName: "Stethoscope",
+        badge: "< 7.0 mg/dL",
+      },
+    ],
+  },
+  {
+    title: "Darurat",
+    href: "/kedaruratan",
+    items: [
+      {
+        title: "Polsek Banawa / Banawa Tengah",
+        description: "Keamanan & ketertiban sektor pesisir Banawa Tengah.",
+        href: "tel:045771110",
+        iconName: "ShieldAlert",
+        badge: "(0457) 71110",
+        phone: "(0457) 71110",
+        isExternal: true,
+      },
+      {
+        title: "Polres Donggala / Polisi 110",
+        description: "Layanan darurat kepolisian 24 jam bebas pulsa nasional.",
+        href: "tel:110",
+        iconName: "PhoneCall",
+        badge: "Call 110",
+        phone: "110",
+        isExternal: true,
+      },
+      {
+        title: "Puskesmas Banawa Tengah",
+        description: "Layanan medis darurat pertama, ambulans, dan penanganan gawat darurat.",
+        href: "tel:119",
+        iconName: "Ambulance",
+        badge: "119 / Medis",
+        phone: "119 / Medis",
+        isExternal: true,
+      },
+      {
+        title: "Basarnas Palu / SAR Laut",
+        description: "Kedaruratan bahari dan pertolongan perahu nelayan Selat Makassar.",
+        href: "tel:115",
+        iconName: "LifeBuoy",
+        badge: "Call 115",
+        phone: "115",
+        isExternal: true,
+      },
+      {
+        title: "Darurat Nasional 112",
+        description: "Layanan bebas pulsa 24 jam semua jenis kedaruratan & bencana.",
+        href: "tel:112",
+        iconName: "PhoneForwarded",
+        badge: "Call 112",
+        phone: "112",
+        isExternal: true,
+      },
+    ],
+  },
+  {
+    title: "Informasi Mangrove",
+    href: "/mangrove",
+    items: [
+      {
+        title: "Sabuk Hijau Pesisir",
+        description: "Peran ekologis hutan bakau meredam abrasi gelombang Selat Makassar.",
+        href: "/mangrove#sabuk-hijau",
+        iconName: "Trees",
+        badge: "Ekologi Pesisir",
+      },
+      {
+        title: "Habitat Biota & Terumbu Karang",
+        description: "Zona pemijahan ikan, kepiting bakau, dan penopang ekonomi nelayan.",
+        href: "/mangrove#ekosistem",
+        iconName: "Waves",
+        badge: "Fauna & Flora",
+      },
+      {
+        title: "Edukasi & Pembibitan Bakau",
+        description: "Program pembibitan mangrove dan aksi bersih pesisir bersama warga & KKN.",
+        href: "/mangrove#konservasi",
+        iconName: "Leaf",
+        badge: "Aksi Nyata",
+      },
+    ],
+  },
 ];
 
 // ============================================================================
@@ -563,6 +757,64 @@ export const TOPIC_PAGES = {
       },
     ],
   },
+  kesehatan: {
+    path: "/kesehatan",
+    label: "Kesehatan",
+    eyebrow: "LAYANAN KESEHATAN · SKRINING & EDUKASI POSYANDU",
+    title: "Pencegahan dini untuk kehidupan pesisir yang sehat.",
+    description:
+      "Panduan indikator kesehatan dasar: tekanan darah, glukosa, kolesterol, dan asam urat sebagai langkah pencegahan penyakit degeneratif bagi warga dan pengunjung.",
+    image: null,
+    imageAlt: "",
+    introTitle: "Sehat bersama alam dan kearifan pangan lokal.",
+    paragraphs: [
+      "Kesehatan warga pesisir Banawa Tengah ditopang oleh pola konsumsi pangan alami seperti sagu, ikan segar, dan sayur kelor (uta kelo). Skrining berkala di posyandu membantu memantau kondisi kesehatan sejak dini.",
+      "Kenali empat parameter utama: tekanan darah untuk mencegah stroke, glukosa untuk mencegah diabetes, kolesterol untuk kesehatan jantung, dan asam urat untuk kenyamanan gerak beraktivitas di pesisir.",
+    ],
+    guide: [
+      {
+        title: "Pemeriksaan Rutin Posyandu",
+        text: "Manfaatkan posyandu dan posbindu terdekat di Desa Towale dan Limboro untuk cek tensi dan tes darah berkala.",
+      },
+      {
+        title: "Perhatikan Pola Konsumsi",
+        text: "Kurangi konsumsi garam berlebih dan makanan olahan tinggi gula; perbanyak konsumsi serat sagu dan ikan segar.",
+      },
+      {
+        title: "Konsultasi ke Tenaga Medis",
+        text: "Bila hasil skrining melebihi ambang normal, segera periksakan ke Puskesmas Banawa Tengah untuk penanganan medis tepat.",
+      },
+    ],
+  },
+  mangrove: {
+    path: "/mangrove",
+    label: "Informasi Mangrove",
+    eyebrow: "KONSERVASI PESISIR · SABUK HIJAU SELAT MAKASSAR",
+    title: "Menjaga benteng hijau di batas samudra.",
+    description:
+      "Peran penting ekosistem hutan mangrove sebagai pelindung alami dari abrasi gelombang Selat Makassar, penyimpan karbon, dan habitat pemijahan biota laut Towale dan Limboro.",
+    image: null,
+    imageAlt: "",
+    introTitle: "Akar yang mengikat tanah, meneduhkan samudra.",
+    paragraphs: [
+      "Hutan mangrove di pesisir Banawa Tengah merupakan benteng pelindung alami pertama warga dari hantaman ombak besar dan potensi ancaman tsunami Selat Makassar. Rumpun bakau menjaga garis pantai dari abrasi tahunan.",
+      "Selain melindungi daratan, ekosistem mangrove menjadi rumah dan tempat berkembang biak kepiting bakau, udang, dan aneka ikan karang yang menjadi sumber mata pencaharian utama para nelayan tradisional.",
+    ],
+    guide: [
+      {
+        title: "Jaga Kelestarian Rumpun Bakau",
+        text: "Hindari penebangan pohon bakau dan buang sampah plastik di area perairan pasang surut.",
+      },
+      {
+        title: "Dukung Program Pembibitan",
+        text: "Ikuti aksi penanaman bibit mangrove bersama pemuda desa, pokdarwis, dan tim KKN-PPM UGM.",
+      },
+      {
+        title: "Ekowisata Berkelanjutan",
+        text: "Susuri jalur mangrove dengan perahu tradisional tanpa merusak perakaran dan habitat fauna.",
+      },
+    ],
+  },
 } as const;
 export type TopicKey = keyof typeof TOPIC_PAGES;
 
@@ -815,6 +1067,115 @@ export const TOPIC_DETAILS = {
     actionLabel: "Kembali mengenali wilayah desa",
     actionHref: "/desa",
     isExternal: false,
+  },
+  kesehatan: {
+    eyebrow: "PANDUAN EMPAT PARAMETER KESEHATAN",
+    title: "Ambang batas normal & anjuran pola hidup sehat.",
+    cards: [
+      {
+        title: "Tekanan Darah (Tensi)",
+        text: "Tekanan darah optimal adalah di bawah 120/80 mmHg. Menjaga tensi stabil sangat penting untuk mencegah risiko stroke dan penyakit kardiovaskular pada masyarakat pesisir.",
+        points: [
+          "Normal: Sistolik < 120 mmHg dan Diastolik < 80 mmHg.",
+          "Pra-hipertensi: Sistolik 120–129 mmHg.",
+          "Hipertensi Derajat 1: Sistolik 130–139 atau Diastolik 80–89 mmHg.",
+          "Anjuran: Batasi konsumsi garam, rutin jalan kaki di pantai, dan kelola stres.",
+        ],
+      },
+      {
+        title: "Glukosa (Gula Darah)",
+        text: "Kadar gula darah yang terkontrol menjaga energi harian stabil dan mencegah risiko komplikasi diabetes melitus.",
+        points: [
+          "Gula Darah Puasa normal: 70–99 mg/dL.",
+          "Gula Darah Sewaktu normal: < 140 mg/dL.",
+          "Pra-diabetes puasa: 100–125 mg/dL.",
+          "Anjuran: Manfaatkan pati sagu lokal berindeks glikemik rendah sebagai alternatif sehat.",
+        ],
+      },
+      {
+        title: "Kolesterol Total",
+        text: "Kadar kolesterol total darah sebaiknya di bawah 200 mg/dL demi menjaga kelancaran sirkulasi pembuluh darah.",
+        points: [
+          "Batas aman optimal: < 200 mg/dL.",
+          "Batas tinggi (borderline): 200–239 mg/dL.",
+          "Tinggi (berisiko): ≥ 240 mg/dL.",
+          "Anjuran: Konsumsi ikan laut segar tanpa digoreng berlebih (bakar/sup asam) dan hindari lemak jenuh.",
+        ],
+      },
+      {
+        title: "Asam Urat (Uric Acid)",
+        text: "Kadar asam urat yang normal mencegah penumpukan kristal pada persendian yang memicu nyeri sendi akut.",
+        points: [
+          "Pria normal: 3,5 – 7,2 mg/dL.",
+          "Wanita normal: 2,6 – 6,0 mg/dL.",
+          "Tinggi (hiperurisemia): > 7,0 mg/dL.",
+          "Anjuran: Cukupi minum air putih, batasi jeroan/emping, dan perbanyak sayur daun kelor segar.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question: "Di mana warga dan pengunjung dapat mengecek tensi dan gula darah di desa?",
+        answer:
+          "Pemeriksaan tensi dan tes darah sederhana dapat dilakukan di Posyandu/Posbindu berkala di balai desa Towale dan Limboro, atau di Puskesmas Banawa Tengah.",
+      },
+      {
+        question: "Apakah makanan khas Donggala aman bagi penderita kolesterol?",
+        answer:
+          "Sangat aman bila memilih olahan ikan bakar rempah segar, sup kaledo tanpa lemak berlebih, sayur kelor bening, serta olahan sagu alami yang bebas kolesterol.",
+      },
+    ],
+    actionLabel: "Lihat Kontak Puskesmas & Darurat",
+    actionHref: "/kedaruratan",
+    isExternal: false,
+  },
+  mangrove: {
+    eyebrow: "EKOLOGI PESISIR BANAWA TENGAH",
+    title: "Fungsi strategis ekosistem mangrove Donggala.",
+    cards: [
+      {
+        title: "Peredam Gelombang & Mitigasi Abrasi",
+        text: "Sistem perakaran tunjang pohon bakau (Rhizophora) terbukti meredam energi ombak besar dan mengurangi laju abrasi pesisir Selat Makassar hingga 60%.",
+        points: [
+          "Melindungi pemukiman warga pesisir dari hempasan gelombang badai.",
+          "Menstabilkan garis pantai dan mencegah hanyutnya pasir pantai alami.",
+          "Meredam risiko kenaikan permukaan air laut di muara sungai.",
+        ],
+      },
+      {
+        title: "Nursery Ground Biota Laut Pesisir",
+        text: "Rindang mangrove menjadi tempat pemijahan dan perlindungan anak ikan karang, udang, dan kepiting bakau sebelum berenang ke laut lepas.",
+        points: [
+          "Menjaga ketersediaan tangkapan ikan harian nelayan Limboro dan Towale.",
+          "Habitat utama kepiting bakau berkualitas unggul.",
+          "Menyaring sedimen lumpur dari darat agar air terumbu karang tetap jernih.",
+        ],
+      },
+      {
+        title: "Penyerapan Karbon Biru (Blue Carbon)",
+        text: "Hutan mangrove memiliki kapasitas menyerap dan mengunci karbon 3 hingga 5 kali lebih tinggi dibandingkan hutan hujan daratan.",
+        points: [
+          "Mendukung pelestarian iklim dan perlindungan keanekaragaman hayati pesisir.",
+          "Menjadi kawasan laboratorium riset biologi dan ekologi bagi pelajar/mahasiswa.",
+          "Potensi pengembangan jalur ekowisata berbasis komunitas yang berkelanjutan.",
+        ],
+      },
+    ],
+    questions: [
+      {
+        question: "Apakah ada program penanaman mangrove di Towale dan Limboro?",
+        answer:
+          "Ya, kelompok pemuda dan Pokdarwis bersama tim KKN-PPM UGM secara rutin melakukan pembibitan dan aksi tanam bakau di titik pesisir rawan abrasi.",
+      },
+      {
+        question: "Bagaimana cara wisatawan berpartisipasi dalam konservasi?",
+        answer:
+          "Wisatawan dapat ikut serta dalam aksi adopsi bibit mangrove atau mengikuti tur edukasi susur pesisir bersama pengelola Pokdarwis.",
+      },
+    ],
+    actionLabel: "Eksplorasi Peta Mangrove di Platform",
+    actionHref: "https://jelajah-donggala.vercel.app/cari",
+    isExternal: true,
   },
 } as const;
 export const DETAIL_UI = {

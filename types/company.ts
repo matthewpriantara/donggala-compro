@@ -1,6 +1,18 @@
+export interface SubNavItem {
+  readonly title: string
+  readonly description?: string
+  readonly href: string
+  readonly iconName?: string
+  readonly badge?: string
+  readonly phone?: string
+  readonly isExternal?: boolean
+}
+
 export interface NavItem {
   readonly title: string
   readonly href: string
+  readonly badge?: string
+  readonly items?: readonly SubNavItem[]
 }
 
 export interface ServiceItem {
