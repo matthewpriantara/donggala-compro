@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import { HEALTH_CHECKS, HEALTH_UI } from "@/constants/health-checks";
 import { Card } from "@/components/ui/card";
 import styles from "./detail-content.module.css";
@@ -41,7 +42,7 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
     >
       <div className="wrap section">
         <p className="eyebrow">{content.eyebrow}</p>
-        <h2>{content.title}</h2>
+        <RevealTitle as="h2">{content.title}</RevealTitle>
         {topic === "kedaruratan" && <EmergencyDirectory />}
         <div className="deep-dive-grid">
           {cards.map((card, index) => (
@@ -89,7 +90,7 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
         <div className="topic-faq">
           <div>
             <p className="eyebrow">{DETAIL_UI.questions}</p>
-            <h2>{DETAIL_UI.questionsTitle}</h2>
+            <RevealTitle as="h2">{DETAIL_UI.questionsTitle}</RevealTitle>
           </div>
           <div className="coss-faq-wrapper">
             <Accordion className="w-full space-y-2">

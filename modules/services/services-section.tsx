@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import styles from "./showcase-ornaments.module.css";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -7,15 +8,28 @@ import { TiltCard } from "@/components/motion/tilt-card";
 import { ExternalLink } from "@/components/ui/external-link";
 export function ServicesSection({ isDetail = false }: { isDetail?: boolean }) {
   return (
-    <section id="karya" className={`sand-section products-section ${styles.section}`}>
+    <section
+      id="karya"
+      className={`sand-section products-section ${styles.section}`}
+    >
       <div className={styles.ornaments} aria-hidden="true">
-        {(["biru", "pink", "kuning", "biru", "pink", "kuning", "biru"] as const).map((color, index) => (
-          <Image key={`${color}-${index}`} src={`${MOTIF_PATH}${color}.png`} width={190} height={190} alt="" className={styles.motif} sizes="190px" />
+        {(
+          ["biru", "pink", "kuning", "biru", "pink", "kuning", "biru"] as const
+        ).map((color, index) => (
+          <Image
+            key={`${color}-${index}`}
+            src={`${MOTIF_PATH}${color}.png`}
+            width={190}
+            height={190}
+            alt=""
+            className={styles.motif}
+            sizes="190px"
+          />
         ))}
       </div>
       <div className={`wrap section ${styles.content}`}>
         <div className="section-heading products-heading">
-          <h2>{PORTAL.productsTitle}</h2>
+          <RevealTitle as="h2">{PORTAL.productsTitle}</RevealTitle>
         </div>
         <div className="product-grid">
           {PRODUCTS.map((p) => (

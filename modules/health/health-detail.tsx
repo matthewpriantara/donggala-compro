@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import {
@@ -17,7 +18,7 @@ export function HealthDetail({ slug }: { slug: HealthSlug }) {
           {HEALTH_UI.back}
         </Link>
         <p className="eyebrow">{HEALTH_UI.eyebrow}</p>
-        <h1>{config.label}</h1>
+        <RevealTitle as="h1">{config.label}</RevealTitle>
         <p>{config.description}</p>
         <p className={styles.scope}>{HEALTH_UI.scope}</p>
       </header>
@@ -25,7 +26,7 @@ export function HealthDetail({ slug }: { slug: HealthSlug }) {
         <div className={`wrap ${styles.body}`}>
           <HealthChecker slug={slug} />
           <aside className={styles.reference}>
-            <h2>{HEALTH_UI.sources}</h2>
+            <RevealTitle as="h2">{HEALTH_UI.sources}</RevealTitle>
             <p>{config.reference}</p>
             <ul>
               {config.sources.map((source) => (
@@ -47,7 +48,7 @@ export function HealthDetail({ slug }: { slug: HealthSlug }) {
         </div>
       </section>
       <nav className={`wrap ${styles.more}`} aria-label={HEALTH_UI.more}>
-        <h2>{HEALTH_UI.more}</h2>
+        <RevealTitle as="h2">{HEALTH_UI.more}</RevealTitle>
         {Object.entries(HEALTH_CHECKS)
           .filter(([key]) => key !== slug)
           .map(([key, item]) => (

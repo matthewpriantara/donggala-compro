@@ -1,3 +1,4 @@
+import { SiteStructuredData } from "@/modules/seo/site-structured-data";
 import { WaveDivider } from "@/components/ui/wave-divider";
 import { PatternDivider } from "@/components/ui/pattern-divider";
 import { TENUN_DIVIDER_IMAGE } from "@/constants/helper";
@@ -10,6 +11,7 @@ import { ContactSection } from "@/modules/contact";
 export default function HomePage() {
   return (
     <>
+      <SiteStructuredData />
       <HeroSection />
       <AboutSection />
       <PatternDivider imageUrl={TENUN_DIVIDER_IMAGE} />

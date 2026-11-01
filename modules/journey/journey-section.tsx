@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import Image from "next/image";
 import { Clock3 } from "lucide-react";
 import { PORTAL, TRIPS, MOTIF_PATH } from "@/constants/helper";
@@ -9,7 +10,7 @@ export function JourneySection() {
     <section id="aktivitas" className="section wrap">
       <div className="section-heading">
         <p className="eyebrow">{PORTAL.tripsEyebrow}</p>
-        <h2>{PORTAL.tripsTitle}</h2>
+        <RevealTitle as="h2">{PORTAL.tripsTitle}</RevealTitle>
       </div>
       <div className="trip-grid">
         {TRIPS.map((trip) => (

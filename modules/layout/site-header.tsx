@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import styles from "./site-header.module.css";
 import { BrandLogo } from "./brand-logo";
 import { LiquidGlassCard } from "@/components/ui/liquid-weather-glass";
@@ -11,7 +12,9 @@ import { MobileNav } from "./mobile-nav";
 export function SiteHeader() {
   return (
     <header className={`site-header ${styles.header}`} data-scrolled="false">
-      <HeaderScrollEffect />
+      <Suspense fallback={null}>
+        <HeaderScrollEffect />
+      </Suspense>
       <LiquidGlassCard
         className={`header-surface ${styles.surface}`}
         draggable={false}

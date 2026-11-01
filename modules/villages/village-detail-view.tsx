@@ -1,3 +1,4 @@
+import { RevealTitle } from "@/components/ui/reveal-title";
 import { VillageStatsParallax } from "./village-stats-parallax";
 import { GuideSurface } from "@/modules/details/guide-surface";
 import { Card } from "@/components/ui/card";
@@ -42,7 +43,7 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
           <div className={styles.text}>
             <div>
               <p className="eyebrow">{village.eyebrow}</p>
-              <h1>{village.title}</h1>
+              <RevealTitle as="h1">{village.title}</RevealTitle>
               <p className="topic-description">{village.description}</p>
               <div className="village-hero-actions flex flex-wrap gap-4 items-center mt-6">
                 <VillageMapButton />
@@ -85,7 +86,9 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
       <section className="wrap section village-attractions-section">
         <div className="section-heading">
           <p className="eyebrow">DAYA TARIK & PESONA WISATA</p>
-          <h2>Titik Eksplorasi Unggulan {village.name}</h2>
+          <RevealTitle as="h2">
+            Titik Eksplorasi Unggulan {village.name}
+          </RevealTitle>
           <p className="body-copy max-w-2xl mt-3 text-muted">
             {village.tagline}
           </p>
@@ -127,7 +130,9 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
       <GuideSurface bottomBgColor="var(--color-ocean-950)">
         <section className="wrap section topic-guide" data-village-guide={slug}>
           <p className="eyebrow">{TOPIC_UI.guide}</p>
-          <h2>Panduan Berkunjung ke {village.name}</h2>
+          <RevealTitle as="h2">
+            Panduan Berkunjung ke {village.name}
+          </RevealTitle>
           <div className="topic-guide-grid mt-8">
             {village.guide.map((item) => (
               <Card render={<article />} key={item.title}>

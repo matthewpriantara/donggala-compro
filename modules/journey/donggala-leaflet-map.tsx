@@ -412,7 +412,7 @@ export function DonggalaLeafletMap() {
       </div>
 
       {/* Leaflet Map Canvas */}
-      <div className="relative flex-1 min-h-[380px] md:min-h-[460px] w-full bg-slate-100">
+      <div className="relative flex-1 min-h-[200px] w-full bg-slate-100">
         <div ref={mapContainerRef} className="absolute inset-0 w-full h-full" />
 
         {/* Floating Quick Legend - Clean White Card */}
