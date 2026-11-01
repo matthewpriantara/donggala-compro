@@ -50,3 +50,56 @@
   line-height: 1.9;
   padding-bottom: 24px;
 }
+
+/* Let the content determine the reading layout rather than repeating one card grid. */
+.detail[data-detail-topic="mangrove"] :global(.deep-dive-grid),
+.detail[data-detail-topic="budaya"] :global(.deep-dive-grid) {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.detail[data-detail-topic="mangrove"] .card,
+.detail[data-detail-topic="budaya"] .card {
+  display: grid;
+  grid-template-columns: 44px 1fr 1.2fr;
+  gap: 16px 40px;
+  padding: 32px 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+}
+.detail[data-detail-topic="mangrove"] .card::before,
+.detail[data-detail-topic="budaya"] .card::before {
+  display: none;
+}
+.detail[data-detail-topic="mangrove"] .card > p,
+.detail[data-detail-topic="budaya"] .card > p {
+  grid-column: 2;
+}
+.detail[data-detail-topic="mangrove"] .card > ul,
+.detail[data-detail-topic="budaya"] .card > ul {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  margin: 0;
+}
+.detail[data-detail-topic="karya"] :global(.deep-dive-grid) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.detail[data-detail-topic="bahasa"] :global(.deep-dive-grid) {
+  grid-template-columns: 1fr;
+}
+.detail[data-detail-topic="bahasa"] .card {
+  padding: 32px;
+}
+@media (max-width: 900px) {
+  .detail[data-detail-topic] :global(.deep-dive-grid) {
+    grid-template-columns: 1fr;
+  }
+  .detail[data-detail-topic] .card {
+    display: block;
+    padding: 24px;
+  }
+  .detail[data-detail-topic] .card > ul {
+    margin-top: 24px;
+  }
+}

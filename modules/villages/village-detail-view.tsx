@@ -1,3 +1,5 @@
+import { GuideSurface } from "@/modules/details/guide-surface";
+import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight, ArrowLeft, ArrowUpRight, Compass } from "lucide-react";
@@ -5,11 +7,12 @@ import {
   VILLAGE_DETAILS,
   PORTAL,
   TOPIC_UI,
+  MOTIF_PATH,
   type VillageSlug,
 } from "@/constants/helper";
-import { ExternalLink } from "@/components/ui/external-link";
 import styles from "./village-cover.module.css";
 import { RelatedTopics } from "@/modules/details/related-topics";
+import { ExternalLink } from "@/components/ui/external-link";
 
 export function VillageDetailView({ slug }: { slug: VillageSlug }) {
   const village = VILLAGE_DETAILS[slug];
@@ -60,14 +63,23 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
       </section>
 
       {/* 2. Key Stats Bar */}
-      <section className="wrap section village-stats-section pt-8 pb-12">
-        <div className="stats">
-          {village.stats.map((item) => (
-            <div key={item.label}>
-              <strong>{item.value}</strong>
-              <span>{item.label}</span>
-            </div>
-          ))}
+      <section className={`${styles.lightBand} section village-stats-section`}>
+        <Image
+          src="/images/tenun-donggala-motif.svg"
+          alt=""
+          width={88}
+          height={304}
+          className={styles.textile}
+        />
+        <div className="wrap">
+          <Card className="stats">
+            {village.stats.map((item) => (
+              <div key={item.label}>
+                <strong>{item.value}</strong>
+                <span>{item.label}</span>
+              </div>
+            ))}
+          </Card>
         </div>
       </section>
 
@@ -83,7 +95,8 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {village.attractions.map((attraction, idx) => (
-            <article
+            <Card
+              render={<article />}
               key={attraction.title}
               className="village-attraction-card bg-[#092532] border border-[#1a4456] rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-white/30"
             >
@@ -110,31 +123,42 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
                   </p>
                 </div>
               </div>
-            </article>
+            </Card>
           ))}
         </div>
       </section>
 
       {/* 4. Travel Guide Section */}
-      <section className="wrap section topic-guide">
-        <p className="eyebrow">{TOPIC_UI.guide}</p>
-        <h2>Panduan Berkunjung ke {village.name}</h2>
-        <div className="topic-guide-grid mt-8">
-          {village.guide.map((item, index) => (
-            <article key={item.title}>
-              <span className="eyebrow">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <GuideSurface>
+        <section className="wrap section topic-guide" data-village-guide={slug}>
+          <p className="eyebrow">{TOPIC_UI.guide}</p>
+          <h2>Panduan Berkunjung ke {village.name}</h2>
+          <div className="topic-guide-grid mt-8">
+            {village.guide.map((item, index) => (
+              <Card render={<article />} key={item.title}>
+                <span className="eyebrow">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+      </GuideSurface>
 
       {/* 5. Cross-Village Navigation Banner */}
       <section className="wrap section pb-16">
-        <div className="neighbor-banner bg-gradient-to-r from-[#062433] to-[#0d3b4e] border border-[#23586e] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <Card
+          className={`${styles.neighbor} neighbor-banner rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6`}
+        >
+          <Image
+            src={`${MOTIF_PATH}biru.png`}
+            alt=""
+            width={160}
+            height={160}
+            className={styles.ornament}
+          />
           <div className="max-w-xl">
             <span className="text-xs font-bold tracking-widest text-[#c7d6dc] uppercase">
               SATU KORIDOR · DESA TETANGGA
@@ -153,7 +177,7 @@ export function VillageDetailView({ slug }: { slug: VillageSlug }) {
             Eksplorasi {village.ctaOtherVillage.name}
             <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
-        </div>
+        </Card>
       </section>
 
       {/* 6. Related Topics */}

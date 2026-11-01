@@ -171,3 +171,17 @@
 .shell :global(.related-grid a:hover) {
   color: #f5f3ed;
 }
+.shell :global(.topic-guide) {
+  background: transparent;
+  color: inherit;
+}
+.shell :global(.topic-guide .eyebrow),
+.shell :global(.topic-guide-grid p) {
+  color: #52676f;
+}
+.shell :global(.topic-guide-grid article) {
+  border-color: #d4ded9;
+}
+.shell :global(.topic-guide-grid h3) {
+  color: #18333d;
+}

@@ -70,3 +70,91 @@
     font-size: 38px;
   }
 }
+
+/* Soft blue-white backgrounds with ocean surfaces and textile accents. */
+.content {
+  padding-bottom: 88px;
+}
+
+.lightBand {
+  position: relative;
+  isolation: isolate;
+  background: #d8e2e1;
+  color: #18333d;
+  padding-bottom: 64px !important;
+  overflow: hidden;
+}
+.lightBand :global(.wrap) {
+  position: relative;
+  z-index: 1;
+}
+.lightBand :global(.stats) {
+  display: grid;
+  background: #0a2c3e;
+  border-color: #42606b;
+  margin-top: 0;
+  box-shadow: none;
+}
+.lightBand :global(.stats > div) {
+  border-color: #42606b;
+}
+.lightBand.lightBand :global(.stats strong) {
+  color: #f5f3ed;
+}
+.lightBand :global(.stats span) {
+  color: #b9cbd1;
+}
+.textile {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0.09;
+  pointer-events: none;
+}
+
+.neighbor {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0a2c3e;
+  border: 1px solid #345362;
+  color: #f5f3ed;
+  box-shadow: none;
+}
+.neighbor :global(h3) {
+  color: #f5f3ed;
+}
+.neighbor :global(p),
+.neighbor :global(span) {
+  color: #b9cbd1;
+}
+.neighbor > div,
+.neighbor > a {
+  position: relative;
+  z-index: 1;
+}
+.ornament {
+  position: absolute;
+  right: 20%;
+  bottom: -65px;
+  width: 220px;
+  height: 220px;
+  opacity: 0.12;
+  transform: rotate(-20deg);
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .content {
+    padding-bottom: 72px;
+  }
+
+  .lightBand {
+    padding-bottom: 56px !important;
+  }
+
+  .ornament {
+    right: -60px;
+  }
+}
