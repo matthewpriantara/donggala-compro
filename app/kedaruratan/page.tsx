@@ -5,7 +5,6 @@ import { TopicHero } from "@/modules/details/topic-hero";
 import { TopicIntroduction } from "@/modules/details/topic-introduction";
 import { TopicGuide } from "@/modules/details/topic-guide";
 import { RelatedTopics } from "@/modules/details/related-topics";
-import { ContactSection } from "@/modules/contact";
 export const metadata: Metadata = {
   title: `${TOPIC_PAGES.kedaruratan.label} | ${COMPANY_NAME}`,
   description: TOPIC_PAGES.kedaruratan.description,
@@ -21,7 +20,6 @@ export default function Page() {
     <>
       <TopicHero topic="kedaruratan" />
       <TopicIntroduction topic="kedaruratan" />
-      <ContactSection />
       <TopicDeepDive topic="kedaruratan" />
       <TopicGuide topic="kedaruratan" />
       <RelatedTopics topic="kedaruratan" />

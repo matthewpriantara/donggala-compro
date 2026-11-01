@@ -1,0 +1,52 @@
+.detail {
+  --card: #102d38;
+  --card-foreground: #f5f3ed;
+  --border: #354e58;
+  --ring: #a5b4ba;
+  background: var(--color-ocean-950);
+}
+.detail .card {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--card-foreground);
+  box-shadow: none;
+}
+.detail :global(.eyebrow),
+.detail :global(.deep-dive-number) {
+  color: #b8c7cd;
+}
+.detail :global(.deep-dive-card li svg) {
+  color: #b8c7cd;
+}
+.detail :global(.deep-dive-card li) {
+  border-color: var(--border);
+}
+.detail .faqItem {
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+}
+.detail .faqTrigger {
+  color: #f5f3ed;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  padding-block: 22px;
+}
+.detail .faqTrigger:hover {
+  color: #d5dfe3;
+}
+.detail .faqTrigger:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+.detail .faqContent {
+  color: #b6c6cd;
+  font-size: 15px;
+  line-height: 1.9;
+  padding-bottom: 24px;
+}

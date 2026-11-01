@@ -42,7 +42,7 @@ export function AboutSection() {
       </div>
       <div className="village-grid">
         {VILLAGES.map((v) => (
-          <article className="village-card" key={v.name}>
+          <article className="village-card" id={v.href.split("/").pop()} style={{ scrollMarginTop: 120 }} key={v.name}>
             <div className="village-photo">
               <Image
                 src={v.image}

@@ -1,6 +1,14 @@
+import { Card } from "@/components/ui/card";
+import styles from "./detail-content.module.css";
 import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
-import { TOPIC_DETAILS, DETAIL_UI, type TopicKey } from "@/constants/helper";
+import {
+  TOPIC_DETAILS,
+  TOPIC_PAGES,
+  NAV_LINKS,
+  DETAIL_UI,
+  type TopicKey,
+} from "@/constants/helper";
 import { ExternalLink } from "@/components/ui/external-link";
 import {
   Accordion,
@@ -8,25 +16,35 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { Badge } from "@/components/ui/badge";
+import { EmergencyDirectory } from "./emergency-directory";
 
 export function TopicDeepDive({ topic }: { topic: TopicKey }) {
   const content = TOPIC_DETAILS[topic];
   return (
-    <section className="topic-deep-dive">
+    <section className={`topic-deep-dive ${styles.detail}`}>
       <div className="wrap section">
         <p className="eyebrow">{content.eyebrow}</p>
         <h2>{content.title}</h2>
+        {topic === "kedaruratan" && <EmergencyDirectory />}
         <div className="deep-dive-grid">
           {content.cards.map((card, index) => (
-            <article className="deep-dive-card" key={card.title}>
+            <Card
+              render={<article />}
+              className={`deep-dive-card ${styles.card}`}
+              key={card.title}
+              id={
+                topic === "kesehatan"
+                  ? NAV_LINKS.find(
+                      (item) => item.href === TOPIC_PAGES[topic].path,
+                    )?.items?.[index]?.href.split("#")[1]
+                  : undefined
+              }
+              style={{ scrollMarginTop: 120 }}
+            >
               <div className="flex items-center justify-between gap-2 mb-4">
                 <span className="deep-dive-number" aria-hidden="true">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <Badge variant="outline" size="sm" className="border-[#335564] text-[#82ded2]">
-                  Parameter {index + 1}
-                </Badge>
               </div>
               <h3>{card.title}</h3>
               <p>{card.text}</p>
@@ -38,7 +56,7 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
                   </li>
                 ))}
               </ul>
-            </article>
+            </Card>
           ))}
         </div>
         <div className="topic-faq">
@@ -52,12 +70,12 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
                 <AccordionItem
                   key={item.question}
                   value={`q-${qIdx}`}
-                  className="border border-[#40606d] rounded-xl px-4 py-1 bg-[#051c27]/60"
+                  className={styles.faqItem}
                 >
-                  <AccordionTrigger className="text-left font-medium text-base text-white hover:text-[#82ded2] transition-colors py-4">
+                  <AccordionTrigger className={styles.faqTrigger}>
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-[#b6cbd2] text-sm leading-relaxed pb-4">
+                  <AccordionContent className={styles.faqContent}>
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
