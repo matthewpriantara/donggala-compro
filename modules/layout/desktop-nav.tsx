@@ -31,6 +31,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import type { NavItem, SubNavItem } from "@/types";
+import { Badge } from "@/components/ui/badge";
 
 // Icon registry for dynamic lookup
 const ICON_MAP: Record<string, typeof Landmark> = {
@@ -194,8 +195,16 @@ export function DesktopNav({ items }: { items: readonly NavItem[] }) {
                               <div className="sub-title-row">
                                 <span className="sub-title">{sub.title}</span>
                                 {sub.badge && (
-                                  <span
-                                    className={`sub-badge ${
+                                  <Badge
+                                    size="sm"
+                                    variant={
+                                      item.title === "Darurat"
+                                        ? "destructive"
+                                        : item.title === "Kesehatan"
+                                        ? "success"
+                                        : "secondary"
+                                    }
+                                    className={`gap-1 font-mono text-[10px] ${
                                       item.title === "Darurat"
                                         ? "badge-emergency"
                                         : item.title === "Kesehatan"
@@ -205,7 +214,7 @@ export function DesktopNav({ items }: { items: readonly NavItem[] }) {
                                   >
                                     {sub.phone && <Phone size={10} />}
                                     {sub.badge}
-                                  </span>
+                                  </Badge>
                                 )}
                               </div>
                               {sub.description && (

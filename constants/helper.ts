@@ -388,38 +388,37 @@ export const PORTAL = {
   headlineSecond: "dua pesona",
   headlineAccent: "dalam satu perjalanan.",
   description:
-    "Dari benang sutra ke birunya samudra. Temukan pusaka tenun Kaili, bentang teluk bahari, dan cerita yang hidup bersama warga.",
-  heroImage: "/images/hero_limboro_coastal.png",
-  heroAlt: "Panorama teluk pesisir dengan air toska dan pantai melengkung",
-  heroCaption: "TELUK LIMBORO",
+    "Dari benang sutra ke birunya samudra. Temukan pusaka tenun Kaili, sumur laut alami Pusentasi, bentang teluk bahari, dan cerita yang hidup bersama warga.",
+  heroImage: "/images/destinasi/pusat-laut-pusentasi.jpg",
+  heroAlt: "Geowisata Pusentasi (Pusat Laut), sumur raksasa alami air laut toska di Desa Towale",
+  heroCaption: "PUSENTASI (PUSAT LAUT)",
   heroNote: "Dua desa. Beragam cerita. Satu perjalanan.",
   scroll: "GULIR UNTUK MENGENAL",
-  aboutEyebrow: "SELAMAT DATANG DI DONGGALA",
   aboutTitle: "Dua desa pesisir,",
   aboutAccent: "satu denyut kearifan.",
   aboutText:
-    "Di tepian Selat Makassar, Towale dan Limboro menyimpan cara hidup yang dekat dengan alam. Tangan-tangan penenun merawat ingatan, perahu menyapa laut, dan sagu menghidupi meja makan keluarga.",
+    "Di tepian Selat Makassar, Towale dan Limboro menyimpan cara hidup yang dekat dengan alam. Dari sumur raksasa alami Pusentasi, tangan tekun penenun Buya Sabe, hingga ketahanan pangan sagu di dapur-dapur warga.",
   aboutTextSecond:
-    "Singgahlah lebih lama. Kenali Towale lewat kriya tenun dan Pusentasi, lalu ikuti garis pesisir menuju pasir putih Kaluku dan cerita pangan Limboro.",
-  aboutCaption: "SELANGKAH LEBIH DEKAT DENGAN KEHIDUPAN PESISIR",
-  aboutImage: "/images/wisata_towale.jpg",
+    "Singgahlah lebih lama. Kenali Towale lewat kriya tenun dan geowisata Pusentasi, lalu ikuti garis pesisir menuju pasir putih Pantai Kaluku dan tradisi bahari Limboro yang hangat.",
+  aboutCaption: "KERAMAHAN WARGA & HOMESTAY PESISIR TOWALE",
+  aboutImage: "/images/destinasi/homestay-pesisir-towale.jpg",
   statsNote:
-    "Gambaran dua desa · angka perencanaan dari PRD, menunggu validasi pemerintah desa.",
+    "Profil Desa Wisata Pusat Laut Towale & Limboro · data terverifikasi Proposal ADWI 2023 & KKN-PPM UGM.",
   villagesEyebrow: "DUA WAJAH DONGGALA",
   villagesTitle: "Berbeda pesona, bertaut cerita.",
   productsEyebrow: "DARI TANGAN WARGA",
   productsTitle: "Rasa, rupa, dan warisan.",
   productsCta: "Jelajahi Kriya & Kuliner",
   productsText:
-    "Bawa pulang cerita dalam sehelai tenun dan cita rasa yang tumbuh dari tanah sendiri.",
+    "Bawa pulang cerita dalam sehelai tenun sutra dan cita rasa kuliner khas Kaili dari hasil bumi sendiri.",
   productCta: "Detail & hubungi pengrajin",
   productNote:
-    "Harga acuan PRD. Ketersediaan dan harga dikonfirmasi bersama pengrajin melalui platform.",
+    "Katalog kriya & kuliner Desa Wisata. Ketersediaan dan harga dikonfirmasi bersama pengrajin dan Pokdarwis.",
   tripsEyebrow: "PERJALANAN YANG BERMAKNA",
   tripsTitle: "Datang sebagai tamu. Pulang membawa cerita.",
   tripCta: "Cek jadwal & kuota keberangkatan",
   tripNote:
-    "Setiap perjalanan mengikuti kesiapan warga, cuaca, dan konfirmasi pengelola lokal.",
+    "Setiap perjalanan mengikuti kesiapan warga, cuaca bahari, dan konfirmasi pengelola lokal Pokdarwis.",
   cultureEyebrow: "BUDAYA & KONSERVASI",
   cultureTitle: "Yang diwariskan, yang kita jaga.",
   languageEyebrow: "SEJENAK BELAJAR BAHASA KAILI",
@@ -429,11 +428,11 @@ export const PORTAL = {
   emergencyEyebrow: "JELAJAH DENGAN BIJAK",
   emergencyTitle: "Selamat berangkat, selamat kembali.",
   emergencyText:
-    "Tanyakan kondisi laut dan pasang surut kepada pendamping lokal. Kenali titik kumpul dan rute evakuasi sebelum beraktivitas di pesisir.",
+    "Patuhi pemandu saat berenang di sumur Pusat Laut dan perhatikan pasang surut Selat Makassar. Kenali titik kumpul dan rute evakuasi sebelum beraktivitas.",
   emergencyLocal:
-    "Kontak Puskesmas Banawa Tengah dan peta evakuasi lokal menunggu verifikasi pemerintah desa. Minta informasi terbaru kepada pendamping sebelum berkunjung.",
+    "Kontak Pokdarwis Towale (@pokdarwis_towale), Pos Pengamanan Pantai, dan Puskesmas Banawa Tengah siap mendampingi kunjungan Anda.",
   emergencyAdvice:
-    "Jika merasakan guncangan kuat atau lama di pesisir, segera evakuasi mandiri ke tempat tinggi melalui jalur aman dan ikuti arahan petugas.",
+    "Jika merasakan guncangan kuat atau lama di pesisir, segera evakuasi mandiri ke arah perbukitan melalui jalur aman dan ikuti arahan petugas.",
   mapEyebrow: "SATU PINTU EKSPLORASI",
   mapTitle: "Mulai dari rasa ingin tahu.",
   mapText:
@@ -443,7 +442,7 @@ export const PORTAL = {
     "Ruang perjumpaan dengan alam, budaya, dan warga Towale & Limboro. Jelajahi dengan rasa hormat, tinggalkan jejak yang baik.",
   footerNav: "JELAJAH",
   footerContact: "BERSAMA WARGA",
-  footerPartners: "KKN-PPM UGM · Pemerintah Desa Towale & Limboro",
+  footerPartners: "KKN-PPM UGM · Pemerintah Desa & Pokdarwis Towale & Limboro",
   footerAddress: "Banawa Tengah, Donggala\nSulawesi Tengah, Indonesia",
   copyright: "© 2026 Jelajah Donggala. Merawat cerita, menjaga pesisir.",
   skip: "Langsung ke konten",
@@ -453,115 +452,121 @@ export const PORTAL = {
   loading: "Memuat cerita Donggala…",
 } as const;
 export const MARQUEE_ITEMS = [
-  "AIR TOSKA TELUK LIMBORO",
-  "TENUN IKAT BUYA BOMBA",
-  "GEOWISATA PUSENTASI",
+  "GEOWISATA PUSENTASI (PUSAT LAUT)",
+  "TENUN SUTRA BUYA SABE",
+  "PANORAMA PANTAI BONEBULA",
+  "WISATA BAHARI & HIU PAUS",
+  "PANTAI KALUKU LIMBORO",
   "KETAHANAN PANGAN SAGU",
   "KKN-PPM UGM",
 ] as const;
 export const VILLAGE_STATS = [
-  { value: "4.820", label: "Jiwa penduduk" },
-  { value: "1.240", label: "Kepala keluarga" },
-  { value: "64,2 km²", label: "Pesisir & daratan" },
-  { value: "8", label: "Dusun binaan" },
+  { value: "2.034+", label: "Jiwa warga Towale" },
+  { value: "5,33 km²", label: "Luas wilayah Towale" },
+  { value: "48 km", label: "Dari Kota Palu" },
+  { value: "20+", label: "Pengelola Pokdarwis & BUMDes" },
 ] as const;
 export const VILLAGES = [
   {
     name: "Towale",
     number: "01",
-    tag: "SIMPUL WARISAN KAILI",
-    image: "/images/wisata_towale.jpg",
-    alt: "Pesisir Towale dengan pohon kelapa dan perahu warga",
+    tag: "SIMPUL WARISAN KAILI & GEOWISATA",
+    image: "/images/destinasi/pusat-laut-pusentasi.jpg",
+    alt: "Geowisata Pusentasi (Pusat Laut) sumur alami air asin toska di Desa Towale",
     description:
-      "Di antara helaian sutra dan debur ombak, warisan Kaili terus ditenun dari generasi ke generasi.",
-    highlights: ["Tenun Buya Bomba", "Pusentasi", "Pantai Bonebula"],
+      "Desa wisata bahari dengan fenomena sumur raksasa alami Pusentasi, tradisi sakral pusaka Bulava Mpongeo, dan sentra kriya tenun sutra Buya Sabe.",
+    highlights: ["Pusentasi (Pusat Laut)", "Tenun Buya Sabe", "Pantai Bonebula", "Hiu Paus & Karampuana"],
     cta: "Eksplorasi Towale",
   },
   {
     name: "Limboro",
     number: "02",
-    tag: "RITME KEHIDUPAN BAHARI",
-    image: "/images/wisata_limboro.jpeg",
-    alt: "Bentang pantai dan suasana bahari Limboro",
+    tag: "RITME KEHIDUPAN BAHARI & SAGU",
+    image: "/images/destinasi/pantai-kaluku-limboro.jpg",
+    alt: "Bentang Pantai Kaluku Limboro dengan pasir putih dan deretan pohon kelapa",
     description:
-      "Ikuti lengkung pantai Kaluku, kenali kehidupan nelayan, dan cicipi sagu dari dapur-dapur warga.",
-    highlights: ["Pantai Kaluku", "Olahan sagu", "Tradisi nelayan"],
+      "Menyusuri garis pantai pasir putih Kaluku, terumbu karang dangkal, serta geliat dapur warga pengolah sagu dan tradisi nelayan pesisir.",
+    highlights: ["Pantai Kaluku", "Sentra Olahan Sagu", "Snorkeling Karang", "Tradisi Nelayan"],
     cta: "Eksplorasi Limboro",
   },
 ] as const;
 export const PRODUCTS = [
   {
-    name: "Kain Tenun Buya Bomba",
-    maker: "Penenun Subaer · Towale",
+    name: "Kain Tenun Buya Sabe & Bomba",
+    maker: "Penenun Tradisional · Towale",
     price: "Rp450.000",
     tag: "KRIYA",
     motif: "pink",
-    description: "Warisan keterampilan dalam helaian benang dan motif Kaili.",
+    description:
+      "Tenun sutra pusaka Kaili dengan ragam motif flora geometris yang ditenun menggunakan alat tenun tradisional gedongan.",
   },
   {
-    name: "Keripik Sagu Gurih",
-    maker: "KWT Sejahtera · Limboro",
-    price: "Rp20.000",
-    tag: "PANGAN",
-    motif: "kuning",
-    description: "Olahan sagu lokal untuk teman berbagi cerita.",
-  },
-  {
-    name: "Cookies Sagu Rendah Gula",
-    maker: "Sentra Pangan · Limboro",
+    name: "Kue Bagea & Keripik Pisang",
+    maker: "Kelompok Usaha Rumahan · Towale",
     price: "Rp25.000",
-    tag: "OLAHAN SAGU",
-    motif: "biru",
-    description: "Kreasi dapur warga dari hasil bumi sendiri.",
+    tag: "OLEH-OLEH",
+    motif: "kuning",
+    description:
+      "Kue kering bagea berbahan pati sagu dan kacang serta keripik pisang renyah oleh-oleh khas UMKM Towale.",
   },
   {
-    name: "Ikan Bakar Selat Makassar",
-    maker: "Nelayan pesisir Kaluku",
-    price: "Segar harian",
-    tag: "BAHARI",
+    name: "Kaledo & Dange Tabaro",
+    maker: "Dapur Tradisional · Towale & Banawa",
+    price: "Khas Kaili",
+    tag: "KULINER",
+    motif: "biru",
+    description:
+      "Sup kaki lembu kuah asam-pedas segar berpadu ubi rebus serta olahan sagu bakar Dange Tabaro di wajan tanah liat.",
+  },
+  {
+    name: "Kerajinan Kayu Hitam & Batok",
+    maker: "Pengrajin Kriya · Towale",
+    price: "Karya Warga",
+    tag: "KRIYA LOKAL",
     motif: "putih",
-    description: "Hasil tangkapan laut, dinikmati bersama di pesisir.",
+    description:
+      "Jam dinding ukir kayu hitam berbentuk Pulau Sulawesi dan aneka kerajinan artistik tempurung kelapa.",
   },
 ] as const;
 export const TRIPS = [
   {
     number: "01",
-    title: "Jelajah Tanah Kaili",
+    title: "Eksplorasi Pusentasi & Homestay Pesisir",
     duration: "2 HARI · 1 MALAM",
     description:
-      "Menginap di rumah warga, menyusuri teluk, dan mengenal proses menenun.",
-    image: "/images/hero_limboro_coastal.png",
+      "Menginap di cottage kayu tepi pantai Towale, merasakan segarnya sumur laut Pusentasi, dan belajar menenun Buya Sabe bersama warga.",
+    image: "/images/destinasi/homestay-cottage-depan.jpg",
   },
   {
     number: "02",
-    title: "Snorkeling Pantai Kaluku",
+    title: "Wisata Bahari Hiu Paus & Karampuana",
     duration: "WISATA BAHARI",
     description:
-      "Mengenal terumbu karang dangkal bersama pendamping lokal tanpa menyentuh atau mengambil biota.",
-    image: "/images/wisata_limboro.jpeg",
+      "Menyusuri pulau karang Karampuana dan atol, mengamati megafauna hiu paus Donggala, serta snorkeling terumbu karang Pantai Kaluku.",
+    image: "/images/destinasi/hiu-paus-donggala.jpg",
   },
   {
     number: "03",
-    title: "Kelas Olahan Sagu",
-    duration: "BELAJAR BERSAMA WARGA",
+    title: "Tur Sepeda Ontel & Kelas Olahan Sagu",
+    duration: "JELAJAH DESA",
     description:
-      "Mengenal bahan pangan lokal dan praktik mengolah sagu bersama warga Limboro.",
-    image: null,
+      "Bersepeda ontel klasik menyusuri jalan pesisir, mengunjungi Masjid Tertua Towale, dan belajar membuat Dange Tabaro bersama warga.",
+    image: "/images/destinasi/sepeda-ontel-towale.jpg",
   },
 ] as const;
 export const CULTURE_STORIES = [
   {
     tag: "01 / WARISAN TOWALE",
-    title: "Sehelai tenun, berlapis ingatan.",
+    title: "Pusaka Bulava Mpongeo & Sehelai Tenun Buya Sabe.",
     description:
-      "Buya Bomba menyimpan cerita tentang bunga, kehidupan, dan ketekunan. Mengenalnya berarti meluangkan waktu untuk mendengar penenun, menghargai prosesnya, dan menjaga keterampilan ini tetap hidup.",
+      "Di Desa Wisata Towale, peninggalan Raja Kaili berupa pusaka 'Bulava Mpongeo' (Emas Mengeong) dirawat melalui tradisi ritual adat tahunan Modiu Bulava Mpongeo. Bersanding dengan ketekunan para perempuan menenun Buya Sabe di alat tenun gedongan, merawat ingatan leluhur lintas generasi.",
     motif: "pink",
   },
   {
-    tag: "02 / KEARIFAN LIMBORO",
-    title: "Laut yang memberi, laut yang dijaga.",
+    tag: "02 / KEARIFAN BAHARI",
+    title: "Keajaiban Pusat Laut & Harmoni Samudra.",
     description:
-      "Keindahan teluk adalah titipan bersama. Hormati ruang kerja nelayan, bawa kembali sampah, hindari menginjak karang, dan ikuti arahan pendamping agar perjalanan kita ikut menjaga pesisir.",
+      "Pusentasi membuktikan hubungan magis daratan karst dengan perairan Selat Makassar. Menjaga teluk berarti menghormati habitat Hiu Paus, merawat terumbu karang Karampuana, dan menjaga ruang penghidupan para nelayan tradisional.",
     motif: "biru",
   },
 ] as const;

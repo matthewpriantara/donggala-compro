@@ -3,12 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 import { PORTAL, VILLAGES, VILLAGE_STATS } from "@/constants/helper";
 import { FadeIn } from "@/components/motion/fade-in";
 import { ExternalLink } from "@/components/ui/external-link";
+import { Badge } from "@/components/ui/badge";
 export function AboutSection() {
   return (
     <section id="tentang" className="section wrap">
       <FadeIn className="about-grid">
         <div>
-          <p className="eyebrow">{PORTAL.aboutEyebrow}</p>
           <h2>
             {PORTAL.aboutTitle}
             <br />
@@ -16,14 +16,6 @@ export function AboutSection() {
           </h2>
           <p className="body-copy">{PORTAL.aboutText}</p>
           <p className="body-copy">{PORTAL.aboutTextSecond}</p>
-          <div className="village-tags">
-            {VILLAGES.map((v) => (
-              <span key={v.name}>
-                {v.name}
-                <ArrowUpRight size={14} />
-              </span>
-            ))}
-          </div>
         </div>
         <figure className="about-photo">
           <Image
@@ -64,9 +56,15 @@ export function AboutSection() {
               <p className="eyebrow">{v.tag}</p>
               <h3>{v.name}</h3>
               <p>{v.description}</p>
-              <div className="highlights">
+              <div className="highlights flex flex-wrap gap-2 my-4">
                 {v.highlights.map((h) => (
-                  <span key={h}>{h}</span>
+                  <Badge
+                    key={h}
+                    variant="outline"
+                    className="border-[#35505a] text-[#c0d0d5] bg-[#0a2c3e]/50 text-xs py-1 px-2.5 rounded-full"
+                  >
+                    {h}
+                  </Badge>
                 ))}
               </div>
               <ExternalLink href={`${PORTAL.url}/desa`} className="text-link">

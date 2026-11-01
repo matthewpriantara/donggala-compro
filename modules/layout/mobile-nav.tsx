@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import { NAV_LINKS, PORTAL } from "@/constants/helper";
 import type { NavItem } from "@/types";
+import { Badge } from "@/components/ui/badge";
 
 const ICON_MAP: Record<string, typeof Landmark> = {
   Landmark,
@@ -183,8 +184,16 @@ export function MobileNav() {
                                 <div className="mobile-sub-title-row">
                                   <span className="mobile-sub-name">{sub.title}</span>
                                   {sub.badge && (
-                                    <span
-                                      className={`mobile-sub-badge ${
+                                    <Badge
+                                      size="sm"
+                                      variant={
+                                        item.title === "Darurat"
+                                          ? "destructive"
+                                          : item.title === "Kesehatan"
+                                          ? "success"
+                                          : "secondary"
+                                      }
+                                      className={`gap-1 font-mono text-[9px] ${
                                         item.title === "Darurat"
                                           ? "badge-emergency"
                                           : item.title === "Kesehatan"
@@ -194,7 +203,7 @@ export function MobileNav() {
                                     >
                                       {sub.phone && <Phone size={9} />}
                                       {sub.badge}
-                                    </span>
+                                    </Badge>
                                   )}
                                 </div>
                                 {sub.description && (

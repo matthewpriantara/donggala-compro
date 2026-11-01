@@ -2,6 +2,13 @@ import Link from "next/link";
 import { ArrowUpRight, Check } from "lucide-react";
 import { TOPIC_DETAILS, DETAIL_UI, type TopicKey } from "@/constants/helper";
 import { ExternalLink } from "@/components/ui/external-link";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
 
 export function TopicDeepDive({ topic }: { topic: TopicKey }) {
   const content = TOPIC_DETAILS[topic];
@@ -13,9 +20,14 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
         <div className="deep-dive-grid">
           {content.cards.map((card, index) => (
             <article className="deep-dive-card" key={card.title}>
-              <span className="deep-dive-number" aria-hidden="true">
-                {String(index + 1).padStart(2, "0")}
-              </span>
+              <div className="flex items-center justify-between gap-2 mb-4">
+                <span className="deep-dive-number" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <Badge variant="outline" size="sm" className="border-[#335564] text-[#82ded2]">
+                  Parameter {index + 1}
+                </Badge>
+              </div>
               <h3>{card.title}</h3>
               <p>{card.text}</p>
               <ul>
@@ -34,16 +46,23 @@ export function TopicDeepDive({ topic }: { topic: TopicKey }) {
             <p className="eyebrow">{DETAIL_UI.questions}</p>
             <h2>{DETAIL_UI.questionsTitle}</h2>
           </div>
-          <div>
-            {content.questions.map((item) => (
-              <details key={item.question}>
-                <summary>
-                  {item.question}
-                  <span aria-hidden="true">+</span>
-                </summary>
-                <p>{item.answer}</p>
-              </details>
-            ))}
+          <div className="coss-faq-wrapper">
+            <Accordion className="w-full space-y-2">
+              {content.questions.map((item, qIdx) => (
+                <AccordionItem
+                  key={item.question}
+                  value={`q-${qIdx}`}
+                  className="border border-[#40606d] rounded-xl px-4 py-1 bg-[#051c27]/60"
+                >
+                  <AccordionTrigger className="text-left font-medium text-base text-white hover:text-[#82ded2] transition-colors py-4">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-[#b6cbd2] text-sm leading-relaxed pb-4">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
         <div className="topic-detail-action">
